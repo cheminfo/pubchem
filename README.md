@@ -1,4 +1,4 @@
-# pubchem
+# PubChem
 
 [![NPM version][npm-image]][npm-url]
 [![build status][ci-image]][ci-url]
@@ -33,6 +33,10 @@ doAll();
 You can run a working example using:
 
 `node -r esm test/simple.js`
+
+## CDN
+
+## Online demo
 
 ## [API Documentation](https://cheminfo.github.io/pubchem/)
 

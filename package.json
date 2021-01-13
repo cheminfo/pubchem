@@ -41,6 +41,7 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@types/jest": "^26.0.20",
+    "cheminfo-build": "^1.1.8",
     "eslint": "^7.17.0",
     "eslint-config-cheminfo": "^5.2.2",
     "esm": "^3.2.25",
