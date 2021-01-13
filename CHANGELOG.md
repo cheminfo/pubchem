@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.3](https://www.github.com/cheminfo/pubchem/compare/v0.0.2...v0.0.3) (2021-01-13)
+
+
+### Bug Fixes
+
+* add missing cheminfo-build dev dependency ([f25a5b8](https://www.github.com/cheminfo/pubchem/commit/f25a5b8e878d187a31d836ed33fe006234d44afb))
+
 ### [0.0.2](https://www.github.com/cheminfo/pubchem/compare/v0.0.1...v0.0.2) (2021-01-13)
 
 
