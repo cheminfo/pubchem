@@ -5,7 +5,7 @@
 [![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
 
-Simplify the retrieval of information from PubChem
+Simplify the retrieval of information from PubChem using PubChem JSON API.
 
 ## Installation
 

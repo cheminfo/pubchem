@@ -1,7 +1,7 @@
 {
   "name": "pubchem",
   "version": "0.0.0",
-  "description": "Proxy for pubchem API",
+  "description": "Simplify PubChem API access",
   "main": "lib/index.js",
   "module": "src/index.js",
   "files": [
