@@ -9,6 +9,7 @@
     "src"
   ],
   "scripts": {
+    "build": "cheminfo-build --entry src/index.js --root PubChem",
     "eslint": "eslint src",
     "eslint-fix": "npm run eslint -- --fix",
     "prepublishOnly": "rollup -c",
