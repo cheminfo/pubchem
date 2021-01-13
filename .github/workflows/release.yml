@@ -7,7 +7,7 @@ on:
 
 env:
   NODE_VERSION: 14.x
-  PACKAGE_NAME: 'PACKAGE-NAME'
+  PACKAGE_NAME: 'pubchem'
 
 jobs:
   release-please:

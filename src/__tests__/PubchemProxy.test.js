@@ -1,6 +1,6 @@
 import { Compound } from '..';
 
-describe('pubchem-proxy', () => {
+describe('pubchem', () => {
   it('Check properties', () => {
     expect(Compound).toBeDefined();
   });

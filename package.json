@@ -1,5 +1,5 @@
 {
-  "name": "pubchem-proxy",
+  "name": "pubchem",
   "version": "0.0.0",
   "description": "Proxy for pubchem API",
   "main": "lib/index.js",
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheminfo/pubchem-proxy.git"
+    "url": "git+https://github.com/cheminfo/pubchem.git"
   },
   "keywords": [],
   "author": "Luc Patiny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cheminfo/pubchem-proxy/issues"
+    "url": "https://github.com/cheminfo/pubchem/issues"
   },
-  "homepage": "https://github.com/cheminfo/pubchem-proxy#readme",
+  "homepage": "https://github.com/cheminfo/pubchem#readme",
   "jest": {
     "testEnvironment": "node"
   },
