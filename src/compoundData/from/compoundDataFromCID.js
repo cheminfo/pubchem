@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-import { CompoundData } from '../CompoundData';
+import { CompoundData } from '../CompoundData.js';
 
 export async function compoundDataFromCID(cid, options = {}) {
   const { cache } = options;

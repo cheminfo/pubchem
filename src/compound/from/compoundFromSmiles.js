@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-import { Compound } from '../Compound';
+import { Compound } from '../Compound.js';
 
 export async function compoundFromSmiles(smiles, options = {}) {
   const { cache } = options;

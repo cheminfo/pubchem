@@ -1,4 +1,4 @@
-import { Compound } from '..';
+import { Compound } from '../index.js';
 
 describe('pubchem', () => {
   it('Check properties', () => {

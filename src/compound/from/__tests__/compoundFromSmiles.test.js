@@ -1,5 +1,5 @@
-import { cache } from '../../../util/cache';
-import { compoundFromSmiles } from '../compoundFromSmiles';
+import { cache } from '../../../util/cache.js';
+import { compoundFromSmiles } from '../compoundFromSmiles.js';
 
 describe('compoundFromSmiles', () => {
   it('CCCBr', async () => {

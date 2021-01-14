@@ -1,1 +1,1 @@
-export * from './compound/Compound';
+export * from './compound/Compound.js';

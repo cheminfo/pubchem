@@ -1,6 +1,6 @@
-import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID';
+import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID.js';
 
-import { compoundFromSmiles } from './from/compoundFromSmiles';
+import { compoundFromSmiles } from './from/compoundFromSmiles.js';
 
 export class Compound {
   constructor(data, options = {}) {

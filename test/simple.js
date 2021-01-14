@@ -1,7 +1,7 @@
 // run this code with `node -r esm test/simple.js`
 
-import { Compound } from '../src';
-import { cache } from '../src/util/cache';
+import { Compound } from '../src/index.js';
+import { cache } from '../src/util/cache.js';
 
 async function doAll() {
   const compound = await Compound.fromSmiles('CCCCCBr', { cache });

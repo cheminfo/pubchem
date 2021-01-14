@@ -1,4 +1,4 @@
-import { getGHS } from './getGHS';
+import { getGHS } from './getGHS.js';
 
 export class CompoundData {
   constructor(data) {

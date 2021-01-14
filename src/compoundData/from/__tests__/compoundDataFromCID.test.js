@@ -1,5 +1,5 @@
-import { cache } from '../../../util/cache';
-import { compoundDataFromCID } from '../compoundDataFromCID';
+import { cache } from '../../../util/cache.js';
+import { compoundDataFromCID } from '../compoundDataFromCID.js';
 
 describe('compoundDataFromCID', () => {
   it('8037', async () => {
