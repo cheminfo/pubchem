@@ -14,6 +14,7 @@ export function getGHS(data) {
     .map((entry) => ({
       label: entry.Extra,
       value: entry.URL.replace(/.*(GHS..).*/, '$1'),
+      url: entry.URL,
     }));
   return {
     pictograms,
