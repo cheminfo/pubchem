@@ -1,5 +1,6 @@
 import jp from 'jsonpath';
 
+//ToDo(@kjappelbaum): Reduce duplicated code, e.g., make a function that makes the sets
 export function getGHS(data) {
   let allPictograms = jp
     .query(
