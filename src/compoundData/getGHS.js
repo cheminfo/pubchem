@@ -1,7 +1,7 @@
 import jp from 'jsonpath';
 
 export function getGHS(data) {
-  // todo we could extract other GHS information
+  // TODO: we could extract other GHS information
   let pictograms = jp
     .query(
       data,
@@ -13,7 +13,7 @@ export function getGHS(data) {
     )
     .map((entry) => ({
       label: entry.Extra,
-      value: entry.URL.replace(/.*(GHS..).*/, '$1'),
+      value: entry.URL.replace(/.*(?<code>GHS..).*/, '$<code>'),
       url: entry.URL,
     }));
   return {
