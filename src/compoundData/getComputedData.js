@@ -3,6 +3,16 @@ import jp from 'jsonpath';
 import { getReferences } from './getReferences.js';
 /*In case of computed data there is no need detail as it seems to be always just one value */
 
+/**
+ * @typedef {Object} ComputedData
+ * @property {Number} value
+ * @property {Object} references
+ * @property {String} references.url -
+ * @property {String} references.sourceName -
+ * @property {String} references.name -
+ * @property {String} references.description -
+ */
+
 function getComputedDataSection(data) {
   const computedData = jp.query(
     data,
@@ -44,12 +54,30 @@ function getNumberProperties(data, sectionName, returnReferences = false) {
   return output;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
 export function getComplexity(data, options = {}) {
   const { returnReferences = false } = options;
   const complexity = getNumberProperties(data, 'Complexity', returnReferences);
   return complexity;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
 export function getFormalCharge(data, options = {}) {
   const { returnReferences = false } = options;
   const formalCharge = getNumberProperties(
@@ -60,6 +88,15 @@ export function getFormalCharge(data, options = {}) {
   return formalCharge;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
 export function getHeavyAtomCount(data, options = {}) {
   const { returnReferences = false } = options;
   const heavyAtomCount = getNumberProperties(
@@ -70,6 +107,15 @@ export function getHeavyAtomCount(data, options = {}) {
   return heavyAtomCount;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
 export function getRotableBondCount(data, options = {}) {
   const { returnReferences = false } = options;
   const rotableBondCount = getNumberProperties(
@@ -80,6 +126,15 @@ export function getRotableBondCount(data, options = {}) {
   return rotableBondCount;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
 export function getHydrogenBondAcceptorCount(data, options = {}) {
   const { returnReferences = false } = options;
   const hydrogenBondAcceptorCount = getNumberProperties(
@@ -90,6 +145,15 @@ export function getHydrogenBondAcceptorCount(data, options = {}) {
   return hydrogenBondAcceptorCount;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
 export function getHydrogenBondDonorCount(data, options = {}) {
   const { returnReferences = false } = options;
   const hydrogenBondDonorCount = getNumberProperties(
