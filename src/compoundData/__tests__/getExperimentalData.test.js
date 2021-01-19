@@ -2,6 +2,7 @@ import {
   getBoilingPoint,
   getMeltingPoint,
   getSolubility,
+  getFlashPoint,
 } from '../getExperimentalData.js';
 
 import benzene from './benzene.json';
@@ -40,5 +41,14 @@ test('parsing experimental solubility', () => {
     mean: 0.000841,
     median: 0.000841,
     standardDeviation: NaN,
+  });
+});
+
+test('parsing flash point', () => {
+  let result = getFlashPoint(benzene);
+  expect(result.summary).toStrictEqual({
+    mean: 6.666666666666667,
+    median: 6.666666666666667,
+    standardDeviation: 0,
   });
 });

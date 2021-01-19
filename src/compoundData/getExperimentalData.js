@@ -196,3 +196,28 @@ export function getSolubility(data, options = {}) {
 
   return solubility;
 }
+
+/**
+ *
+ *
+ * @export
+ * @param {Object} data response of a compound data request to the PubChem API
+ * @param {ExperimentalDataOptions} options toUnit defaults to M
+ * @returns {ExperimentalData}
+ */
+export function getFlashPoint(data, options = {}) {
+  const {
+    returnDetails = false,
+    returnReferences = false,
+    toUnit = 'kelvin',
+  } = options;
+  const solubility = parseFloatPropertiesFromStringWithMarkup(
+    data,
+    'Flash Point',
+    toUnit,
+    returnDetails,
+    returnReferences,
+  );
+
+  return solubility;
+}
