@@ -32,7 +32,7 @@ doAll();
 
 You can run a working example using:
 
-`node -r esm test/simple.js`
+`node test/simple.js`
 
 ## CDN
 

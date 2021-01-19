@@ -1,5 +1,3 @@
-// run this code with `node -r esm test/simple.js`
-
 import { Compound } from '../src/index.js';
 import { cache } from '../src/util/cache.js';
 
