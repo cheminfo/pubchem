@@ -1,4 +1,4 @@
-export const harzardStatements = {
+export const hazardStatements = {
   H200: 'Unstable explosive',
   H201: 'Explosive; mass explosion hazard',
   H202: 'Explosive; severe projection hazard',

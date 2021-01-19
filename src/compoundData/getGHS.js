@@ -1,18 +1,19 @@
 import jp from 'jsonpath';
 
-import { harzardStatements } from './hazardStatements.js';
+import { getReferences } from './getReferences.js';
+import { hazardStatements } from './hazardStatements.js';
 import { precautionaryStatements } from './precautionaryStatements.js';
+
 /**
- *Remove duplicates from array of objects which contain objects via set
+ *Remove duplicates objects of arrays via set
  *
- * @param {Array[Object[Array]]} array input array
- * @param {String} keyName key used to access the inner arrays
+ * @param {Object} object
  * @returns Array flat list without duplicates
  */
-function removeDuplicates(array, keyName) {
+function removeDuplicates(object) {
   return [
-    ...array.reduce((newSet, entry) => {
-      entry[keyName].forEach(newSet.add, newSet);
+    ...Object.values(object).reduce((newSet, entry) => {
+      entry.forEach(newSet.add, newSet);
       return newSet;
     }, new Set()),
   ];
@@ -20,13 +21,21 @@ function removeDuplicates(array, keyName) {
 
 /**
  * @typedef {Object} GHSData
- * @property {Array[String]} pictograms - Array of unique GHS pictogram names, e.g., ["GHS01", "GHS02"]
- * @property {Array[String]} hCodes - Array of unique hCodes, e.g., ["H226", "H315"]
- * @property {Array[String]} hStatements - Array of unique hStatements, e.g., ["Flammable liquid and vapour", "Causes skin irritation"]
- * @property {Array[String]} pCodes - Array of unique pCodes, e.g., ["P210", "P233"]
- * @property {Array[String]} pStatements - Array of unique pStatements, e.g., ["Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]"]
- * @property {Object} detail
- * @property {Array[Object]} detail.pictograms - Array of objects containing the keys referenceNumber and pictograms
+ * @property {Object} summary
+ * @property {Array.<String>} summary.pictograms - Array of unique GHS pictogram names, e.g., ["GHS01", "GHS02"]
+ * @property {Array.<String>} summary.hCodes - Array of unique hCodes, e.g., ["H226", "H315"]
+ * @property {Array.<String>} summary.hStatements - Array of unique hStatements, e.g., ["Flammable liquid and vapour", "Causes skin irritation"]
+ * @property {Array.<String>} summary.pCodes - Array of unique pCodes, e.g., ["P210", "P233"]
+ * @property {Array.<String>} summary.pStatements - Array of unique pStatements, e.g., ["Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]"]
+ * @property {Object} details
+ * @property {Object.<string, Array.<String>} details.pictograms - Keys are the reference numbers, values arrays of GHS pictograms reported by reference
+ * @property {Object.<string, Array.<String>} details.hCodes - Keys are the reference numbers, values arrays of H codes reported by reference
+ * @property {Object.<string, Array.<String>} details.pCodes -Keys are the reference numbers, values arrays of P codes reported by reference
+ * @property {Object} references
+ * @property {String} references.url -
+ * @property {String} references.sourceName -
+ * @property {String} references.name -
+ * @property {String} references.description -
  */
 
 /**
@@ -34,9 +43,14 @@ function removeDuplicates(array, keyName) {
  *
  * @export
  * @param {Object} data response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnDetails if true also return a detailed results (H/P statements and pictograms for every reference). Defaults to false.
+ * @param {Boolean} options.returnReferences if true also return the bioliographic details of the relevant references. Defaults to false.
  * @returns {GHSData}
  */
-export function getGHS(data) {
+export function getGHS(data, options = {}) {
+  const { returnDetails = false, returnReferences = false } = options;
+
   let allPictograms = jp
     .query(
       data,
@@ -45,22 +59,12 @@ export function getGHS(data) {
         '.Section[?(@.TOCHeading==="GHS Classification")]' +
         '.Information[?(@.Name==="Pictogram(s)")]',
     )
-    .map((entry) => ({
-      referenceNumber: entry.ReferenceNumber,
-      pictograms: jp
+    .reduce((pictogramDict, entry) => {
+      pictogramDict[entry.ReferenceNumber] = jp
         .query(entry, '$.Value.StringWithMarkup[*].Markup[*]')
-        .map((entry) => entry.URL.match(/GHS\d+/)[0]),
-    }));
-
-  let references = jp.query(data, '$.Reference[*]').reduce((ref, entry) => {
-    ref[entry.ReferenceNumber] = {
-      url: entry.URL,
-      sourceName: entry.SourceName,
-      name: entry.Name,
-      description: entry.Description,
-    };
-    return ref;
-  }, {});
+        .map((entry) => entry.URL.match(/GHS\d+/)[0]);
+      return pictogramDict;
+    }, {});
 
   let allHCodes = jp
     .query(
@@ -70,12 +74,12 @@ export function getGHS(data) {
         '.Section[?(@.TOCHeading==="GHS Classification")]' +
         '.Information[?(@.Name==="GHS Hazard Statements")]',
     )
-    .map((entry) => ({
-      referenceNumber: entry.ReferenceNumber,
-      hStatements: jp
+    .reduce((hCodeDict, entry) => {
+      hCodeDict[entry.ReferenceNumber] = jp
         .query(entry, '$.Value.StringWithMarkup[*]')
-        .map((entry) => entry.String.match(/H\d+/)[0]),
-    }));
+        .map((entry) => entry.String.match(/H\d+/)[0]);
+      return hCodeDict;
+    }, {});
 
   //ToDo(kjappelbaum): investigate in more detail why they do not have the full P statements
   //For P statements the full sentence (with conditions) is more important than just the number
@@ -87,9 +91,8 @@ export function getGHS(data) {
         '.Section[?(@.TOCHeading==="GHS Classification")]' +
         '.Information[?(@.Name==="Precautionary Statement Codes")]',
     )
-    .map((entry) => ({
-      referenceNumber: entry.ReferenceNumber,
-      pStatements: jp
+    .reduce((pCodeDict, entry) => {
+      pCodeDict[entry.ReferenceNumber] = jp
         .query(entry, '$.Value.StringWithMarkup[*]')
         .reduce((filtred, entry) => {
           let res = entry.String.match(
@@ -97,32 +100,54 @@ export function getGHS(data) {
           );
           if (res) filtred.push(...res);
           return filtred;
-        }, []),
-    }));
+        }, []);
+      return pCodeDict;
+    }, {});
+  const uniquePictograms = removeDuplicates(allPictograms);
 
-  let uniquePictograms = removeDuplicates(allPictograms, 'pictograms');
+  let relevantReferences = new Set();
 
-  let uniqueHCodes = removeDuplicates(allHCodes, 'hStatements');
+  [allPictograms, allHCodes, allPCodes].forEach((list) =>
+    Object.keys(list).forEach(relevantReferences.add, relevantReferences),
+  );
 
-  let uniquePCodes = removeDuplicates(allPCodes, 'pStatements');
+  const uniqueHCodes = removeDuplicates(allHCodes);
 
-  return {
-    pictograms: uniquePictograms,
-    hCodes: uniqueHCodes,
-    hStatements: uniqueHCodes.reduce((hStatementList, entry) => {
-      hStatementList.push(harzardStatements[entry]);
-      return hStatementList;
-    }, []),
-    pCodes: uniquePCodes,
-    pStatements: uniquePCodes.reduce((pStatementList, entry) => {
-      pStatementList.push(precautionaryStatements[entry]);
-      return pStatementList;
-    }, []),
-    detail: {
+  const uniquePCodes = removeDuplicates(allPCodes);
+
+  const references = getReferences(data);
+
+  let output = {
+    summary: {
+      pictograms: uniquePictograms,
+      hCodes: uniqueHCodes,
+      hStatements: uniqueHCodes.reduce((hStatementList, entry) => {
+        hStatementList.push(hazardStatements[entry]);
+        return hStatementList;
+      }, []),
+      pCodes: uniquePCodes,
+      pStatements: uniquePCodes.reduce((pStatementList, entry) => {
+        pStatementList.push(precautionaryStatements[entry]);
+        return pStatementList;
+      }, []),
+    },
+  };
+
+  if (returnDetails) {
+    output.details = {
       pictograms: allPictograms,
       hCodes: allHCodes,
       pCodes: allPCodes,
-      references: references,
-    },
-  };
+    };
+  }
+
+  if (returnReferences) {
+    output.references = Object.keys(references)
+      .filter((key) => relevantReferences.has(key))
+      .reduce((obj, key) => {
+        obj[key] = references[key];
+        return obj;
+      }, {});
+  }
+  return output;
 }
