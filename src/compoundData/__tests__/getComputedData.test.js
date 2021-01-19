@@ -19,6 +19,19 @@ test('parsing hydrogen bond acceptor count', () => {
   expect(result).toStrictEqual({ value: 0 });
 });
 
+test('parsing hydrogen bond acceptor count w references', () => {
+  let result = getHydrogenBondAcceptorCount(data, { returnReferences: true });
+  expect(result.references).toStrictEqual({
+    53: {
+      url: 'https://pubchem.ncbi.nlm.nih.gov',
+      sourceName: 'PubChem',
+      name: undefined,
+      description: 'Data deposited in or computed by PubChem',
+    },
+  });
+  expect(result.value).toStrictEqual(0);
+});
+
 test('parsing hydrogen bond donor count', () => {
   let result = getHydrogenBondDonorCount(data);
   expect(result).toStrictEqual({ value: 0 });

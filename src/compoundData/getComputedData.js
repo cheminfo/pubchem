@@ -1,5 +1,6 @@
 import jp from 'jsonpath';
 
+import { getReferences } from './getReferences.js';
 /*In case of computed data there is no need detail as it seems to be always just one value */
 
 function getComputedDataSection(data) {
@@ -31,7 +32,14 @@ function getNumberProperties(data, sectionName, returnReferences = false) {
     value: Object.values(parsedData)[0],
   };
   if (returnReferences) {
-    output.references = null;
+    const allReferences = getReferences(data);
+    output.references = Object.keys(parsedData).reduce(
+      (referenceDict, entry) => {
+        referenceDict[entry] = allReferences[entry];
+        return referenceDict;
+      },
+      {},
+    );
   }
   return output;
 }

@@ -4,6 +4,8 @@ import mean from 'ml-array-mean';
 import median from 'ml-array-median';
 import standardDeviation from 'ml-array-standard-deviation';
 
+import { getReferences } from './getReferences.js';
+
 function getExperimentalDataSection(data) {
   const experimentalData = jp.query(
     data,
@@ -45,9 +47,19 @@ function parseFloatPropertiesFromStringWithMarkup(
       }, {});
 
     let output = {};
+
     output.summary = summarizeFloatData(parseUnits(floatDict, targetUnit));
     if (returnDetails) output.details = floatDict;
-    if (returnReferences) output.references = floatDict;
+    if (returnReferences) {
+      const allReferences = getReferences(data);
+      output.references = Object.keys(floatDict).reduce(
+        (referenceDict, entry) => {
+          referenceDict[entry] = allReferences[entry];
+          return referenceDict;
+        },
+        {},
+      );
+    }
     return output;
   } catch (e) {
     throw Error(
