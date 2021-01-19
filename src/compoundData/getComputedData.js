@@ -1,5 +1,7 @@
 import jp from 'jsonpath';
 
+/*In case of computed data there is no need detail as it seems to be always just one value */
+
 function getComputedDataSection(data) {
   const computedData = jp.query(
     data,
@@ -16,12 +18,7 @@ function getComputedPropertySection(data, sectionName) {
   );
 }
 
-function getNumberProperties(
-  data,
-  sectionName,
-  returnDetails = false,
-  returnReferences = false,
-) {
+function getNumberProperties(data, sectionName, returnReferences = false) {
   const computationalData = getComputedDataSection(data);
   const parsedData = getComputedPropertySection(
     computationalData[0],
@@ -30,33 +27,67 @@ function getNumberProperties(
     floatDict[entry.ReferenceNumber] = entry.Value.Number[0];
     return floatDict;
   }, {});
-  return parsedData;
+  let output = {
+    value: Object.values(parsedData)[0],
+  };
+  if (returnReferences) {
+    output.references = null;
+  }
+  return output;
 }
 
-export function getComplexity(data) {
-  const complexity = getNumberProperties(data, 'Complexity');
-  console.log(complexity);
+export function getComplexity(data, options = {}) {
+  const { returnReferences = false } = options;
+  const complexity = getNumberProperties(data, 'Complexity', returnReferences);
+  return complexity;
 }
 
-export function getFormalCharge(data) {
-  const formalCharge = getNumberProperties(data, 'Formal Charge');
-  console.log(formalCharge);
+export function getFormalCharge(data, options = {}) {
+  const { returnReferences = false } = options;
+  const formalCharge = getNumberProperties(
+    data,
+    'Formal Charge',
+    returnReferences,
+  );
+  return formalCharge;
 }
 
-export function getHeavyAtomCount(data) {
-  const heavyAtomCount = getNumberProperties(data, 'Heavy Atom Count');
-  console.log(heavyAtomCount);
+export function getHeavyAtomCount(data, options = {}) {
+  const { returnReferences = false } = options;
+  const heavyAtomCount = getNumberProperties(
+    data,
+    'Heavy Atom Count',
+    returnReferences,
+  );
+  return heavyAtomCount;
 }
 
-export function getRotableBondCount(data) {
-  const rotableBondCount = getNumberProperties(data, 'Rotatable Bond Count');
-  console.log(rotableBondCount);
+export function getRotableBondCount(data, options = {}) {
+  const { returnReferences = false } = options;
+  const rotableBondCount = getNumberProperties(
+    data,
+    'Rotatable Bond Count',
+    returnReferences,
+  );
+  return rotableBondCount;
 }
 
-export function getHydrogenBondAcceptorCount(data) {
+export function getHydrogenBondAcceptorCount(data, options = {}) {
+  const { returnReferences = false } = options;
   const hydrogenBondAcceptorCount = getNumberProperties(
     data,
     'Hydrogen Bond Acceptor Count',
+    returnReferences,
   );
-  console.log(hydrogenBondAcceptorCount);
+  return hydrogenBondAcceptorCount;
+}
+
+export function getHydrogenBondDonorCount(data, options = {}) {
+  const { returnReferences = false } = options;
+  const hydrogenBondDonorCount = getNumberProperties(
+    data,
+    'Hydrogen Bond Donor Count',
+    returnReferences,
+  );
+  return hydrogenBondDonorCount;
 }
