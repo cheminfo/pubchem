@@ -1,4 +1,6 @@
 import jp from 'jsonpath';
+import Qty from 'js-quantities';
+// import Qty from 'js-quantities/esm';
 
 function getExperimentalDataSection(data) {
   const experimentalData = jp.query(
@@ -9,9 +11,27 @@ function getExperimentalDataSection(data) {
   return experimentalData;
 }
 
-export function getExperimentalLogP(data, options = {}) {
-  const { returnDetails = false, returnReferences = false } = options;
-
+//todo: the indexing i do is maybe a bit dangerous as we do not catch errors...
+export function getBoilingPoint(data, options = {}) {
+  const {
+    returnDetails = false,
+    returnReferences = false,
+    toUnit = 'kelvin',
+  } = options;
   const experimentalSection = getExperimentalDataSection(data);
-  console.log(experimentalSection);
+  const boilingPointSectins = jp
+    .query(
+      experimentalSection[0],
+      '$.Section[?(@.TOCHeading==="Boiling Point")].Information[*]',
+    )
+    .reduce((valueDict, entry) => {
+      valueDict[entry.ReferenceNumber] = Qty.parse(
+        jp
+          .query(entry, '$.Value.StringWithMarkup[*].String')[0]
+          .replace('°', 'deg'),
+      ).to(toUnit).scalar;
+      return valueDict;
+    }, {});
+
+  console.log(boilingPointSectins);
 }
