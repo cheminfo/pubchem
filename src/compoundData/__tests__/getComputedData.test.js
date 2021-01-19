@@ -5,8 +5,11 @@ import {
   getRotableBondCount,
   getHeavyAtomCount,
   getFormalCharge,
+  getTPSA,
+  getxLogP3,
 } from '../getComputedData.js';
 
+import benzene from './benzene.json';
 import data from './test.json';
 
 test('parsing complexity', () => {
@@ -50,4 +53,14 @@ test('parsing heavy atom count', () => {
 test('parsing formal charge', () => {
   let result = getFormalCharge(data);
   expect(result).toStrictEqual({ value: 0 });
+});
+
+test('topological polar surface area', () => {
+  let result = getTPSA(data);
+  expect(result).toStrictEqual({ value: 0 });
+});
+
+test('parsing xlogp3', () => {
+  let result = getxLogP3(benzene);
+  expect(result).toStrictEqual({ value: 2.1 });
 });

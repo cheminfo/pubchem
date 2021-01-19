@@ -163,3 +163,37 @@ export function getHydrogenBondDonorCount(data, options = {}) {
   );
   return hydrogenBondDonorCount;
 }
+
+/**
+ *
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
+export function getxLogP3(data, options = {}) {
+  const { returnReferences = false } = options;
+  const xLogP3 = getNumberProperties(data, 'XLogP3', returnReferences);
+  return xLogP3;
+}
+
+/**
+ * Returns the topological polar surface area in angstrom^2
+ *
+ * @export
+ * @param {Object} response of a compound data request to the PubChem API
+ * @param {Object} options
+ * @param {Boolean} options.returnReferences If true it also returns info about references, defaults to false.
+ * @returns {ComputedData}
+ */
+export function getTPSA(data, options = {}) {
+  const { returnReferences = false } = options;
+  const tpsa = getNumberProperties(
+    data,
+    'Topological Polar Surface Area',
+    returnReferences,
+  );
+  return tpsa;
+}

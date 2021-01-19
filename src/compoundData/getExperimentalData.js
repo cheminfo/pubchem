@@ -202,7 +202,7 @@ export function getSolubility(data, options = {}) {
  *
  * @export
  * @param {Object} data response of a compound data request to the PubChem API
- * @param {ExperimentalDataOptions} options toUnit defaults to M
+ * @param {ExperimentalDataOptions} options toUnit defaults to kelvin
  * @returns {ExperimentalData}
  */
 export function getFlashPoint(data, options = {}) {
