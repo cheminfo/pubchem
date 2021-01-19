@@ -122,7 +122,6 @@ export const precautionaryStatements = {
     'IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.',
   'P306+360':
     'IF ON CLOTHING: Rinse immediately contaminated clothing and skin with plenty of water before removing clothes.',
-  'P307+311': '[Deleted by IV ATP]',
   'P307+311': 'IF exposed: Call a POISON CENTER or doctor/physician.',
   'P308+311':
     'IF exposed or concerned: Call a POISON CENTER/ doctor/… [Added by IV ATP]',

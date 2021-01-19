@@ -1,6 +1,41 @@
 import jp from 'jsonpath';
 
-//ToDo(@kjappelbaum): Reduce duplicated code, e.g., make a function that makes the sets
+import { harzardStatements } from './hazardStatements.js';
+import { precautionaryStatements } from './precautionaryStatements.js';
+/**
+ *Remove duplicates from array of objects which contain objects via set
+ *
+ * @param {Array[Object[Array]]} array input array
+ * @param {String} keyName key used to access the inner arrays
+ * @returns Array flat list without duplicates
+ */
+function removeDuplicates(array, keyName) {
+  return [
+    ...array.reduce((newSet, entry) => {
+      entry[keyName].forEach(newSet.add, newSet);
+      return newSet;
+    }, new Set()),
+  ];
+}
+
+/**
+ * @typedef {Object} GHSData
+ * @property {Array[String]} pictograms - Array of unique GHS pictogram names, e.g., ["GHS01", "GHS02"]
+ * @property {Array[String]} hCodes - Array of unique hCodes, e.g., ["H226", "H315"]
+ * @property {Array[String]} hStatements - Array of unique hStatements, e.g., ["Flammable liquid and vapour", "Causes skin irritation"]
+ * @property {Array[String]} pCodes - Array of unique pCodes, e.g., ["P210", "P233"]
+ * @property {Array[String]} pStatements - Array of unique pStatements, e.g., ["Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]"]
+ * @property {Object} detail
+ * @property {Array[Object]} detail.pictograms - Array of objects containing the keys referenceNumber and pictograms
+ */
+
+/**
+ *Extracts GHS information (H/P-Statements and pictograms)
+ *
+ * @export
+ * @param {Object} data response of a compound data request to the PubChem API
+ * @returns {GHSData}
+ */
 export function getGHS(data) {
   let allPictograms = jp
     .query(
@@ -42,7 +77,8 @@ export function getGHS(data) {
         .map((entry) => entry.String.match(/H\d+/)[0]),
     }));
 
-  //ToDo(@kjappelbaum): For precautionary Statements just having the code is often not enough as the text contains the storage conditions
+  //ToDo(kjappelbaum): investigate in more detail why they do not have the full P statements
+  //For P statements the full sentence (with conditions) is more important than just the number
   let allPCodes = jp
     .query(
       data,
@@ -57,37 +93,36 @@ export function getGHS(data) {
         .query(entry, '$.Value.StringWithMarkup[*]')
         .reduce((filtred, entry) => {
           let res = entry.String.match(
-            /((?<!\+)P\d\d\d(?!\+))|(P\d\d\d\+P\d\d\d(?!\+))|(P\d\d\d\+P\d\d\d\+P\d\d\d(?!\+))/gm,
+            /(?<oneP>(?<!\+)P\d\d\d(?!\+))|(?<twoP>P\d\d\d\+P\d\d\d(?!\+))|(?<threeP>P\d\d\d\+P\d\d\d\+P\d\d\d(?!\+))/gm,
           );
           if (res) filtred.push(...res);
           return filtred;
         }, []),
     }));
 
-  let uniquePictograms = allPictograms.reduce((newSet, entry) => {
-    newSet.add(entry.pictograms);
-    return newSet;
-  }, new Set());
+  let uniquePictograms = removeDuplicates(allPictograms, 'pictograms');
 
-  let uniqueHCodes = allHCodes.reduce((newSet, entry) => {
-    newSet.add(entry.hStatements);
-    return newSet;
-  }, new Set());
+  let uniqueHCodes = removeDuplicates(allHCodes, 'hStatements');
 
-  let uniquePCodes = allPCodes.reduce((newSet, entry) => {
-    newSet.add(entry.pStatements);
-    return newSet;
-  }, new Set());
+  let uniquePCodes = removeDuplicates(allPCodes, 'pStatements');
 
   return {
     pictograms: uniquePictograms,
     hCodes: uniqueHCodes,
+    hStatements: uniqueHCodes.reduce((hStatementList, entry) => {
+      hStatementList.push(harzardStatements[entry]);
+      return hStatementList;
+    }, []),
     pCodes: uniquePCodes,
+    pStatements: uniquePCodes.reduce((pStatementList, entry) => {
+      pStatementList.push(precautionaryStatements[entry]);
+      return pStatementList;
+    }, []),
     detail: {
       pictograms: allPictograms,
       hCodes: allHCodes,
       pCodes: allPCodes,
-      refences: references,
+      references: references,
     },
   };
 }
