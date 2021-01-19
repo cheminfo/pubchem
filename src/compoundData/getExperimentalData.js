@@ -6,6 +6,28 @@ import standardDeviation from 'ml-array-standard-deviation';
 
 import { getReferences } from './getReferences.js';
 
+/**
+ * @typedef {Object} ExperimentalData
+ * @property {Object} summary
+ * @property {Number} summary.mean - Mean of the entries that could be parsed to the selected unit
+ * @property {Number} summary.median - Median of the entries that could be parsed to the selected unit
+ * @property {Number} summary.standardDeviation - Standard deviation of the entries that could be parsed to the selected unit
+ * @property {Object} details - Object which keys are the reference numbers and the values are the unmodified strings
+ * @property {Object} references
+ * @property {String} references.url -
+ * @property {String} references.sourceName -
+ * @property {String} references.name -
+ * @property {String} references.description -
+ */
+
+/**
+ * @typedef {Object} ExperimentalDataOptions
+ * @property {Object} options
+ * @property {Boolean} options.returnDetails - If true, returns the details. Defaults to false.
+ * @property {Boolean} options.returnReferences - If true, returns the references. Defaults to false.
+ * @property {String} options.toUnit - Target unit
+ */
+
 function getExperimentalDataSection(data) {
   const experimentalData = jp.query(
     data,
@@ -76,6 +98,14 @@ function summarizeFloatData(array) {
   };
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} data response of a compound data request to the PubChem API
+ * @param {ExperimentalDataOptions} options toUnit defaults to kelvin
+ * @returns {ExperimentalData}
+ */
 export function getBoilingPoint(data, options = {}) {
   const {
     returnDetails = false,
@@ -93,6 +123,14 @@ export function getBoilingPoint(data, options = {}) {
   return boilingPoint;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} data response of a compound data request to the PubChem API
+ * @param {ExperimentalDataOptions} options toUnit defaults to kelvin
+ * @returns {ExperimentalData}
+ */
 export function getMeltingPoint(data, options = {}) {
   const {
     returnDetails = false,
@@ -110,6 +148,14 @@ export function getMeltingPoint(data, options = {}) {
   return meltingPoint;
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Object} data response of a compound data request to the PubChem API
+ * @param {ExperimentalDataOptions} options toUnit defaults to Pa
+ * @returns {ExperimentalData}
+ */
 export function getVaporPressure(data, options = {}) {
   const {
     returnDetails = false,
@@ -126,7 +172,14 @@ export function getVaporPressure(data, options = {}) {
 
   return vaporPressure;
 }
-
+/**
+ *
+ *
+ * @export
+ * @param {Object} data response of a compound data request to the PubChem API
+ * @param {ExperimentalDataOptions} options toUnit defaults to M
+ * @returns {ExperimentalData}
+ */
 export function getSolubility(data, options = {}) {
   const {
     returnDetails = false,
