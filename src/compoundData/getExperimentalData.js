@@ -15,8 +15,8 @@ function getExperimentalDataSection(data) {
 
 function parseUnits(floatDict, targetUnit) {
   return Object.values(floatDict).reduce((outArray, elem) => {
-    let res = Qty.parse(elem.replace('°', 'deg')).to(targetUnit).scalar;
-    if (res) outArray.push(res);
+    let res = Qty.parse(elem.replace('°', 'deg'));
+    if (res) outArray.push(res.to(targetUnit).scalar);
     return outArray;
   }, []);
 }
@@ -45,8 +45,7 @@ function parseFloatPropertiesFromStringWithMarkup(
       }, {});
 
     let output = {};
-
-    output.summary = summarizeFloatData(parseUnits(floatDict));
+    output.summary = summarizeFloatData(parseUnits(floatDict, targetUnit));
     if (returnDetails) output.details = floatDict;
     if (returnReferences) output.references = floatDict;
     return output;

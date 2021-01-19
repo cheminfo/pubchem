@@ -4,6 +4,7 @@ import {
   getSolubility,
 } from '../getExperimentalData.js';
 
+import benzene from './benzene.json';
 import data from './test.json';
 
 test('parsing experimental boiling point', () => {
@@ -12,6 +13,15 @@ test('parsing experimental boiling point', () => {
     mean: 129.8,
     median: 129.8,
     standardDeviation: NaN,
+  });
+});
+
+test('parsing experimental boiling point benzene', () => {
+  let result = getBoilingPoint(benzene);
+  expect(result.summary).toStrictEqual({
+    mean: 87.14933333333333,
+    median: 80.08,
+    standardDeviation: 9.75324680349455,
   });
 });
 
