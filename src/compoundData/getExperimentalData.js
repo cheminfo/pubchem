@@ -13,6 +13,14 @@ function getExperimentalDataSection(data) {
   return experimentalData;
 }
 
+function parseUnits(floatDict, targetUnit) {
+  return Object.values(floatDict).reduce((outArray, elem) => {
+    let res = Qty.parse(elem.replace('°', 'deg')).to(targetUnit).scalar;
+    if (res) outArray.push(res);
+    return outArray;
+  }, []);
+}
+
 //todo: the indexing i do is maybe a bit dangerous as we do not have a lot of logic ...
 function parseFloatPropertiesFromStringWithMarkup(
   data,
@@ -29,16 +37,16 @@ function parseFloatPropertiesFromStringWithMarkup(
         `$.Section[?(@.TOCHeading==="${sectionName}")].Information[*]`,
       )
       .reduce((valueDict, entry) => {
-        valueDict[entry.ReferenceNumber] = Qty.parse(
-          jp
-            .query(entry, '$.Value.StringWithMarkup[*].String')[0]
-            .replace('°', 'deg'), // because js-quantities does not know the symbol
-        ).to(targetUnit).scalar;
+        valueDict[entry.ReferenceNumber] = jp.query(
+          entry,
+          '$.Value.StringWithMarkup[*].String',
+        )[0];
         return valueDict;
       }, {});
 
     let output = {};
-    output.summary = summarizeFloatData(floatDict);
+
+    output.summary = summarizeFloatData(parseUnits(floatDict));
     if (returnDetails) output.details = floatDict;
     if (returnReferences) output.references = floatDict;
     return output;
@@ -49,12 +57,11 @@ function parseFloatPropertiesFromStringWithMarkup(
   }
 }
 
-function summarizeFloatData(object) {
-  const values = Object.values(object);
+function summarizeFloatData(array) {
   return {
-    mean: mean(values),
-    median: median(values),
-    standardDeviation: standardDeviation(values),
+    mean: mean(array),
+    median: median(array),
+    standardDeviation: standardDeviation(array),
   };
 }
 
