@@ -47,7 +47,11 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
+    "js-quantities": "^1.7.6",
     "jsonpath": "^1.1.0",
+    "ml-array-mean": "^1.1.4",
+    "ml-array-median": "^1.1.4",
+    "ml-array-standard-deviation": "^1.1.5",
     "node-fetch": "^2.6.1"
   }
 }

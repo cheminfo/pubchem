@@ -5,7 +5,7 @@
 [![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
 
-Simplify the retrieval of information from PubChem using PubChem JSON API.
+Simplify the retrieval of information from [PubChem](https://pubchem.ncbi.nlm.nih.gov) using the [PubChem JSON API](https://pubchemdocs.ncbi.nlm.nih.gov/power-user-gateway).
 
 ## Installation
 
