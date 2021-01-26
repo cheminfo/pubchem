@@ -55,9 +55,9 @@ export function getGHS(data, options = {}) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-      '.Section[?(@.TOCHeading==="GHS Classification")]' +
-      '.Information[?(@.Name==="Pictogram(s)")]',
+        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+        '.Section[?(@.TOCHeading==="GHS Classification")]' +
+        '.Information[?(@.Name==="Pictogram(s)")]',
     )
     .reduce((pictogramDict, entry) => {
       pictogramDict[entry.ReferenceNumber] = jp
@@ -70,9 +70,9 @@ export function getGHS(data, options = {}) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-      '.Section[?(@.TOCHeading==="GHS Classification")]' +
-      '.Information[?(@.Name==="GHS Hazard Statements")]',
+        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+        '.Section[?(@.TOCHeading==="GHS Classification")]' +
+        '.Information[?(@.Name==="GHS Hazard Statements")]',
     )
     .reduce((hCodeDict, entry) => {
       hCodeDict[entry.ReferenceNumber] = jp
@@ -87,9 +87,9 @@ export function getGHS(data, options = {}) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-      '.Section[?(@.TOCHeading==="GHS Classification")]' +
-      '.Information[?(@.Name==="Precautionary Statement Codes")]',
+        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+        '.Section[?(@.TOCHeading==="GHS Classification")]' +
+        '.Information[?(@.Name==="Precautionary Statement Codes")]',
     )
     .reduce((pCodeDict, entry) => {
       pCodeDict[entry.ReferenceNumber] = jp
@@ -117,19 +117,24 @@ export function getGHS(data, options = {}) {
 
   const references = getReferences(data);
 
+  let h = uniqueHCodes.reduce((hStatementList, entry) => {
+    hStatementList.push({ code: entry, statement: hazardStatements[entry] });
+    return hStatementList;
+  }, []);
+
+  let p = uniquePCodes.reduce((pStatementList, entry) => {
+    pStatementList.push({
+      code: entry,
+      statement: precautionaryStatements[entry],
+    });
+    return pStatementList;
+  }, []);
+
   let output = {
     summary: {
       pictograms: uniquePictograms,
-      hCodes: uniqueHCodes,
-      hStatements: uniqueHCodes.reduce((hStatementList, entry) => {
-        hStatementList.push(hazardStatements[entry]);
-        return hStatementList;
-      }, []),
-      pCodes: uniquePCodes,
-      pStatements: uniquePCodes.reduce((pStatementList, entry) => {
-        pStatementList.push(precautionaryStatements[entry]);
-        return pStatementList;
-      }, []),
+      h: h,
+      p: p,
     },
   };
 

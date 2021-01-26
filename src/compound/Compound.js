@@ -14,7 +14,22 @@ export class Compound {
 
   getData() {
     const cid = this.getCID();
-    return compoundDataFromCID(cid, { cache: this.cache });
+    let cd = compoundDataFromCID(cid, { cache: this.cache });
+    return cd;
+  }
+
+  toJSON() {
+    const methods = Object.entries(
+      Object.getOwnPropertyDescriptors(Compound.prototype),
+    )
+      .filter(([, descriptor]) => typeof descriptor.get === 'function')
+      .map(([key]) => key);
+    let result = {};
+    for (let method of methods) {
+      result[method] = this[method];
+    }
+
+    return result;
   }
 }
 

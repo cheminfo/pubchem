@@ -1,12 +1,4 @@
 import {
-  getComplexity,
-  getFormalCharge,
-  getHydrogenBondAcceptorCount,
-  getHydrogenBondDonorCount,
-  getTPSA,
-  getxLogP3,
-} from './getComputedData.js';
-import {
   getBoilingPoint,
   getMeltingPoint,
   getVaporPressure,
@@ -39,34 +31,6 @@ export class CompoundData {
     return getGHS(this.data, options);
   }
 
-  get complexity() {
-    return getComplexity(this.data);
-  }
-
-  getComplexity(options) {
-    return getComplexity(this.data, options);
-  }
-
-  getFormalCharge(options) {
-    return getFormalCharge(this.data, options);
-  }
-
-  getTPSA(options) {
-    return getTPSA(this.data, options);
-  }
-
-  getHydrogenBondAcceptorCount(options) {
-    return getHydrogenBondAcceptorCount(this.data, options);
-  }
-
-  getHydrogenBondDonorCount(options) {
-    return getHydrogenBondDonorCount(this.data, options);
-  }
-
-  getxLogP3(options) {
-    return getxLogP3(this.data, options);
-  }
-
   get boilingPoint() {
     return getBoilingPoint(this.data).summary;
   }
@@ -83,25 +47,35 @@ export class CompoundData {
     return getMeltingPoint(this.data);
   }
 
+  get vaporPressure() {
+    return getVaporPressure(this.data).summary;
+  }
+
   getVaporPressure(options) {
     return getVaporPressure(this.data, options);
+  }
+
+  get solubility() {
+    return getSolubility(this.data).summary;
   }
 
   getSolubility(options) {
     return getSolubility(this.data, options);
   }
 
+  get flashPoint() {
+    return getFlashPoint(this.data).summary;
+  }
+
   getFlashPoint(options) {
     return getFlashPoint(this.data, options);
   }
-
-
 
   toJSON() {
     const methods = Object.entries(
       Object.getOwnPropertyDescriptors(CompoundData.prototype),
     )
-      .filter(([key, descriptor]) => typeof descriptor.get === 'function')
+      .filter(([, descriptor]) => typeof descriptor.get === 'function')
       .map(([key]) => key);
     let result = {};
     for (let method of methods) {

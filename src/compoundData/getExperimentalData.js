@@ -84,9 +84,10 @@ function parseFloatPropertiesFromStringWithMarkup(
     }
     return output;
   } catch (e) {
-    throw Error(
-      `Could not parse experimental section to floats. The error was ${e}`,
-    );
+    // console.warn(
+    //   `Could not parse experimental section to floats. The error was ${e}`,
+    // );
+    return {};
   }
 }
 
