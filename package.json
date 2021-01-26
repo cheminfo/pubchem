@@ -1,6 +1,6 @@
 {
   "name": "pubchem",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Simplify PubChem API access",
   "type": "module",
   "exports": "./src/index.js",
