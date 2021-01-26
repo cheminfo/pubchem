@@ -4,16 +4,18 @@ import data from './test.json';
 
 test('getGHS default request', () => {
   let result = getGHS(data);
-  expect(result).toHaveProperty('summary.hCodes');
-  expect(result.summary.hCodes).toStrictEqual([
-    'H226',
-    'H315',
-    'H319',
-    'H335',
-    'H411',
-  ]);
-  expect(result).toHaveProperty('summary.pCodes');
-  expect(result.summary.pCodes).toStrictEqual([
+  expect(result).toHaveProperty('summary.h');
+  let hCodes = result.summary.h.reduce((hCodes, entry) => {
+    hCodes.push(entry.code);
+    return hCodes;
+  }, []);
+  expect(hCodes).toStrictEqual(['H226', 'H315', 'H319', 'H335', 'H411']);
+  expect(result).toHaveProperty('summary.p');
+  let pCodes = result.summary.p.reduce((pCodes, entry) => {
+    pCodes.push(entry.code);
+    return pCodes;
+  }, []);
+  expect(pCodes).toStrictEqual([
     'P210',
     'P233',
     'P240',
@@ -43,22 +45,22 @@ test('getGHS default request', () => {
   ]);
   expect(result).toHaveProperty('summary.pictograms');
   expect(result.summary.pictograms).toStrictEqual(['GHS02', 'GHS07', 'GHS09']);
-  expect(result).toHaveProperty('summary.hStatements');
-  expect(result).toHaveProperty('summary.pStatements');
 });
 
 test('getGHS detail request', () => {
   let result = getGHS(data, { returnDetails: true, returnReferences: true });
-  expect(result).toHaveProperty('summary.hCodes');
-  expect(result.summary.hCodes).toStrictEqual([
-    'H226',
-    'H315',
-    'H319',
-    'H335',
-    'H411',
-  ]);
-  expect(result).toHaveProperty('summary.pCodes');
-  expect(result.summary.pCodes).toStrictEqual([
+  expect(result).toHaveProperty('summary.h');
+  let hcodes = result.summary.h.reduce((hCodes, entry) => {
+    hCodes.push(entry.code);
+    return hCodes;
+  }, []);
+  expect(hcodes).toStrictEqual(['H226', 'H315', 'H319', 'H335', 'H411']);
+  expect(result).toHaveProperty('summary.p');
+  let pCodes = result.summary.p.reduce((pCodes, entry) => {
+    pCodes.push(entry.code);
+    return pCodes;
+  }, []);
+  expect(pCodes).toStrictEqual([
     'P210',
     'P233',
     'P240',
@@ -88,8 +90,6 @@ test('getGHS detail request', () => {
   ]);
   expect(result).toHaveProperty('summary.pictograms');
   expect(result.summary.pictograms).toStrictEqual(['GHS02', 'GHS07', 'GHS09']);
-  expect(result).toHaveProperty('summary.hStatements');
-  expect(result).toHaveProperty('summary.pStatements');
   expect(result).toHaveProperty('details');
   expect(result).toHaveProperty('references');
   expect(result.details).toHaveProperty('hCodes');

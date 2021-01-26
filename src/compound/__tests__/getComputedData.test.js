@@ -1,3 +1,5 @@
+import benzene from '../../compoundData/__tests__/benzene.json';
+import data from '../../compoundData/__tests__/test.json';
 import {
   getComplexity,
   getHydrogenBondAcceptorCount,
@@ -7,10 +9,7 @@ import {
   getFormalCharge,
   getTPSA,
   getxLogP3,
-} from '../getComputedData.js';
-
-import benzene from './benzene.json';
-import data from './test.json';
+} from '../../compoundData/getComputedData.js';
 
 test('parsing complexity', () => {
   let result = getComplexity(data);
