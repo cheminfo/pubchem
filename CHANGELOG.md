@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.0](https://www.github.com/cheminfo/pubchem/compare/v0.0.3...v0.1.0) (2021-01-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to native ESM (#9)
+
+### Features
+
+* add ghs pictograms URL ([1fff442](https://www.github.com/cheminfo/pubchem/commit/1fff442957c0ec1c43b6f1cddd52e528ab72538b))
+* get methods for the compound properties in compoundData ([#14](https://www.github.com/cheminfo/pubchem/issues/14)) ([51b778e](https://www.github.com/cheminfo/pubchem/commit/51b778e8f524a1c2d061e78b17b470b4db0ce494))
+* migrate to native ESM ([#9](https://www.github.com/cheminfo/pubchem/issues/9)) ([4b763d9](https://www.github.com/cheminfo/pubchem/commit/4b763d9b3a8554f72da4fc5ca2c904a11b4ff4e2))
+
 ### [0.0.3](https://www.github.com/cheminfo/pubchem/compare/v0.0.2...v0.0.3) (2021-01-13)
 
 
