@@ -20,55 +20,55 @@ export class CompoundData {
   constructor(data) {
     this.data = data;
   }
-  getReferences() {
+  get references() {
     return getReferences(this.data);
   }
 
-  getGHS() {
+  get ghs() {
     return getGHS(this.data);
   }
 
-  getComplexity() {
+  get complexity() {
     return getComplexity(this.data);
   }
 
-  getFormalCharge() {
+  get formalCharge() {
     return getFormalCharge(this.data);
   }
 
-  getTPSA() {
+  get tpsa() {
     return getTPSA(this.data);
   }
 
-  getHydrogenBondAcceptorCount() {
+  get hydrogenBondAcceptorCount() {
     return getHydrogenBondAcceptorCount(this.data);
   }
 
-  getHydrogenBondDonorCount() {
+  get hydrogenBondDonorCount() {
     return getHydrogenBondDonorCount(this.data);
   }
 
-  getxLogP3() {
+  get xLogP3() {
     return getxLogP3(this.data);
   }
 
-  getBoilingPoint() {
+  get boilingPoint() {
     return getBoilingPoint(this.data);
   }
 
-  getMeltingPoint() {
+  get meltingPoint() {
     return getMeltingPoint(this.data);
   }
 
-  getVaporPressure() {
+  get vaporPressure() {
     return getVaporPressure(this.data);
   }
 
-  getSolubility() {
+  get solubility() {
     return getSolubility(this.data);
   }
 
-  getFlashPoint() {
+  get flashPoint() {
     return getFlashPoint(this.data);
   }
 }
