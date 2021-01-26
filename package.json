@@ -13,7 +13,8 @@
     "eslint-fix": "npm run eslint -- --fix",
     "test": "npm run test-coverage && npm run eslint",
     "test-coverage": "npm run test-only -- --coverage",
-    "test-only": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+    "test-only": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
   },
   "repository": {
     "type": "git",

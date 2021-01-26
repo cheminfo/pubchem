@@ -20,67 +20,94 @@ export class CompoundData {
   constructor(data) {
     this.data = data;
   }
-  get references() {
+  getReferences() {
     return getReferences(this.data);
   }
 
+  /**
+   *
+   */
   get ghs() {
-    return getGHS(this.data);
+    return getGHS(this.data).summary;
+  }
+
+  /**
+   *
+   * @param {*} options
+   */
+  getGHS(options) {
+    return getGHS(this.data, options);
   }
 
   get complexity() {
     return getComplexity(this.data);
   }
 
-  get formalCharge() {
-    return getFormalCharge(this.data);
+  getComplexity(options) {
+    return getComplexity(this.data, options);
   }
 
-  get tpsa() {
-    return getTPSA(this.data);
+  getFormalCharge(options) {
+    return getFormalCharge(this.data, options);
   }
 
-  get hydrogenBondAcceptorCount() {
-    return getHydrogenBondAcceptorCount(this.data);
+  getTPSA(options) {
+    return getTPSA(this.data, options);
   }
 
-  get hydrogenBondDonorCount() {
-    return getHydrogenBondDonorCount(this.data);
+  getHydrogenBondAcceptorCount(options) {
+    return getHydrogenBondAcceptorCount(this.data, options);
   }
 
-  get xLogP3() {
-    return getxLogP3(this.data);
+  getHydrogenBondDonorCount(options) {
+    return getHydrogenBondDonorCount(this.data, options);
+  }
+
+  getxLogP3(options) {
+    return getxLogP3(this.data, options);
   }
 
   get boilingPoint() {
-    return getBoilingPoint(this.data);
+    return getBoilingPoint(this.data).summary;
+  }
+
+  getBoilingPoint(options) {
+    return getBoilingPoint(this.data, options);
   }
 
   get meltingPoint() {
+    return getMeltingPoint(this.data).summary;
+  }
+
+  getMeltingPoint() {
     return getMeltingPoint(this.data);
   }
 
-  get vaporPressure() {
-    return getVaporPressure(this.data);
+  getVaporPressure(options) {
+    return getVaporPressure(this.data, options);
   }
 
-  get solubility() {
-    return getSolubility(this.data);
+  getSolubility(options) {
+    return getSolubility(this.data, options);
   }
 
-  get flashPoint() {
-    return getFlashPoint(this.data);
+  getFlashPoint(options) {
+    return getFlashPoint(this.data, options);
   }
+
+
 
   toJSON() {
-    const getters = Object.entries(Object.getOwnPropertyDescriptors(CompoundData.prototype))
+    const methods = Object.entries(
+      Object.getOwnPropertyDescriptors(CompoundData.prototype),
+    )
       .filter(([key, descriptor]) => typeof descriptor.get === 'function')
-      .map(([key]) => key)
+      .map(([key]) => key);
     let result = {};
-    for (let getter of getters) {
-      result[getter] = this[getter];
+    for (let method of methods) {
+      result[method] = this[method];
     }
-    console.log(result);
+
     return result;
   }
 }
