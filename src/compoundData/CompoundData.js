@@ -71,4 +71,16 @@ export class CompoundData {
   get flashPoint() {
     return getFlashPoint(this.data);
   }
+
+  toJSON() {
+    const getters = Object.entries(Object.getOwnPropertyDescriptors(CompoundData.prototype))
+      .filter(([key, descriptor]) => typeof descriptor.get === 'function')
+      .map(([key]) => key)
+    let result = {};
+    for (let getter of getters) {
+      result[getter] = this[getter];
+    }
+    console.log(result);
+    return result;
+  }
 }
