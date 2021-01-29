@@ -5,7 +5,7 @@ import {
   getSolubility,
   getFlashPoint,
 } from './getExperimentalData.js';
-import { getGHS } from './getGHS.js';
+import { getGHS, getGHSSummary } from './getGHS.js';
 import { getReferences } from './getReferences.js';
 
 export class CompoundData {
@@ -17,18 +17,17 @@ export class CompoundData {
   }
 
   /**
-   *
+   * Property containing a summary of GHS information
    */
   get ghs() {
-    return getGHS(this.data).summary;
+    return getGHSSummary(this.data);
   }
 
   /**
-   *
-   * @param {*} options
+   * Detailed information about GHS information
    */
-  getGHS(options) {
-    return getGHS(this.data, options);
+  getGHS() {
+    return getGHS(this.data);
   }
 
   get boilingPoint() {
