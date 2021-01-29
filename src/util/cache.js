@@ -1,13 +1,9 @@
 import { readFileSync, existsSync, writeFileSync } from 'fs';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
 
 import md5 from 'md5';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 export function cache(query, value) {
-  const filename = join(__dirname, '../../cache', `${md5(query)}.json`);
+  const filename = new URL(`../../cache/${md5(query)}.json`, import.meta.url);
 
   if (!value) {
     if (!existsSync(filename)) return undefined;

@@ -55,9 +55,9 @@ export function getGHS(data, options = {}) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-        '.Section[?(@.TOCHeading==="GHS Classification")]' +
-        '.Information[?(@.Name==="Pictogram(s)")]',
+      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+      '.Section[?(@.TOCHeading==="GHS Classification")]' +
+      '.Information[?(@.Name==="Pictogram(s)")]',
     )
     .reduce((pictogramDict, entry) => {
       pictogramDict[entry.ReferenceNumber] = jp
@@ -70,9 +70,9 @@ export function getGHS(data, options = {}) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-        '.Section[?(@.TOCHeading==="GHS Classification")]' +
-        '.Information[?(@.Name==="GHS Hazard Statements")]',
+      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+      '.Section[?(@.TOCHeading==="GHS Classification")]' +
+      '.Information[?(@.Name==="GHS Hazard Statements")]',
     )
     .reduce((hCodeDict, entry) => {
       hCodeDict[entry.ReferenceNumber] = jp
@@ -87,19 +87,19 @@ export function getGHS(data, options = {}) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-        '.Section[?(@.TOCHeading==="GHS Classification")]' +
-        '.Information[?(@.Name==="Precautionary Statement Codes")]',
+      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+      '.Section[?(@.TOCHeading==="GHS Classification")]' +
+      '.Information[?(@.Name==="Precautionary Statement Codes")]',
     )
     .reduce((pCodeDict, entry) => {
       pCodeDict[entry.ReferenceNumber] = jp
         .query(entry, '$.Value.StringWithMarkup[*]')
-        .reduce((filtred, entry) => {
+        .reduce((filtered, entry) => {
           let res = entry.String.match(
             /(?<oneP>(?<!\+)P\d\d\d(?!\+))|(?<twoP>P\d\d\d\+P\d\d\d(?!\+))|(?<threeP>P\d\d\d\+P\d\d\d\+P\d\d\d(?!\+))/gm,
           );
-          if (res) filtred.push(...res);
-          return filtred;
+          if (res) filtered.push(...res);
+          return filtered;
         }, []);
       return pCodeDict;
     }, {});
