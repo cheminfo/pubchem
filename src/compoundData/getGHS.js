@@ -52,9 +52,9 @@ export function getGHS(data) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-      '.Section[?(@.TOCHeading==="GHS Classification")]' +
-      '.Information[?(@.Name==="Pictogram(s)")]',
+        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+        '.Section[?(@.TOCHeading==="GHS Classification")]' +
+        '.Information[?(@.Name==="Pictogram(s)")]',
     )
     .map((entry) => ({
       reference: references[entry.ReferenceNumber],
@@ -73,9 +73,9 @@ export function getGHS(data) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-      '.Section[?(@.TOCHeading==="GHS Classification")]' +
-      '.Information[?(@.Name==="GHS Hazard Statements")]',
+        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+        '.Section[?(@.TOCHeading==="GHS Classification")]' +
+        '.Information[?(@.Name==="GHS Hazard Statements")]',
     )
     .map((entry) => ({
       reference: references[entry.ReferenceNumber],
@@ -94,9 +94,9 @@ export function getGHS(data) {
     .query(
       data,
       '$.Section[?(@.TOCHeading==="Safety and Hazards")]' +
-      '.Section[?(@.TOCHeading==="Hazards Identification")]' +
-      '.Section[?(@.TOCHeading==="GHS Classification")]' +
-      '.Information[?(@.Name==="Precautionary Statement Codes")]',
+        '.Section[?(@.TOCHeading==="Hazards Identification")]' +
+        '.Section[?(@.TOCHeading==="GHS Classification")]' +
+        '.Information[?(@.Name==="Precautionary Statement Codes")]',
     )
     .map((entry) => ({
       reference: references[entry.ReferenceNumber],
