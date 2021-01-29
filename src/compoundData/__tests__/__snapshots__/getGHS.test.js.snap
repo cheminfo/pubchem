@@ -1,0 +1,1244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getGHS triethylamine 1`] = `
+Object {
+  "hStatements": Array [
+    Object {
+      "data": Array [
+        Object {
+          "code": "H225",
+          "description": "Highly flammable liquid and vapour",
+        },
+        Object {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        Object {
+          "code": "H312",
+          "description": "Harmful in contact with skin",
+        },
+        Object {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        Object {
+          "code": "H332",
+          "description": "Harmful if inhaled",
+        },
+      ],
+      "reference": Object {
+        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
+        "name": "triethylamine",
+        "sourceName": "EU REGULATION (EC) No 1272/2008",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008R1272",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "H225",
+          "description": "Highly flammable liquid and vapour",
+        },
+        Object {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        Object {
+          "code": "H311",
+          "description": "Toxic in contact with skin",
+        },
+        Object {
+          "code": "H312",
+          "description": "Harmful in contact with skin",
+        },
+        Object {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        Object {
+          "code": "H318",
+          "description": "Causes serious eye damage",
+        },
+        Object {
+          "code": "H331",
+          "description": "Toxic if inhaled",
+        },
+        Object {
+          "code": "H332",
+          "description": "Harmful if inhaled",
+        },
+        Object {
+          "code": "H335",
+          "description": "May cause respiratory irritation",
+        },
+      ],
+      "reference": Object {
+        "description": "The information provided here is aggregated from the \\"Notified classification and labelling\\" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
+        "name": "Triethylamine",
+        "sourceName": "European Chemicals Agency (ECHA)",
+        "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "H225",
+          "description": "Highly flammable liquid and vapour",
+        },
+        Object {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        Object {
+          "code": "H311",
+          "description": "Toxic in contact with skin",
+        },
+        Object {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        Object {
+          "code": "H331",
+          "description": "Toxic if inhaled",
+        },
+        Object {
+          "code": "H335",
+          "description": "May cause respiratory irritation",
+        },
+      ],
+      "reference": Object {
+        "description": "The Hazardous Chemical Information System (HCIS) at the Safe Work Australia is a database of chemical classifications and workplace exposure standards. It allows users to find information on chemicals that have been classified in accordance with the GHS or which have an Australian Workplace Exposure Standard.",
+        "name": "triethylamine",
+        "sourceName": "Hazardous Chemical Information System (HCIS), Safe Work Australia",
+        "url": "http://hcis.safeworkaustralia.gov.au/HazardousChemical/Details?chemicalID=4580",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "H225",
+          "description": "Highly flammable liquid and vapour",
+        },
+        Object {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        Object {
+          "code": "H311",
+          "description": "Toxic in contact with skin",
+        },
+        Object {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        Object {
+          "code": "H318",
+          "description": "Causes serious eye damage",
+        },
+        Object {
+          "code": "H331",
+          "description": "Toxic if inhaled",
+        },
+        Object {
+          "code": "H335",
+          "description": "May cause respiratory irritation",
+        },
+        Object {
+          "code": "H401",
+          "description": "Toxic to aquatic life",
+        },
+      ],
+      "reference": Object {
+        "description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "name": "TRIETHYLAMINE",
+        "sourceName": "Hazardous Substances Data Bank (HSDB)",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/896",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "H225",
+          "description": "Highly flammable liquid and vapour",
+        },
+        Object {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        Object {
+          "code": "H311",
+          "description": "Toxic in contact with skin",
+        },
+        Object {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        Object {
+          "code": "H318",
+          "description": "Causes serious eye damage",
+        },
+        Object {
+          "code": "H332",
+          "description": "Harmful if inhaled",
+        },
+        Object {
+          "code": "H335",
+          "description": "May cause respiratory irritation",
+        },
+        Object {
+          "code": "H370",
+          "description": "Causes damage to organs",
+        },
+        Object {
+          "code": "H373",
+          "description": "May cause damage to organs through prolonged or repeated exposure",
+        },
+        Object {
+          "code": "H401",
+          "description": "Toxic to aquatic life",
+        },
+        Object {
+          "code": "H412",
+          "description": "Harmful to aquatic life with long lasting effects",
+        },
+      ],
+      "reference": Object {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2016",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "H225",
+          "description": "Highly flammable liquid and vapour",
+        },
+        Object {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        Object {
+          "code": "H311",
+          "description": "Toxic in contact with skin",
+        },
+        Object {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        Object {
+          "code": "H318",
+          "description": "Causes serious eye damage",
+        },
+        Object {
+          "code": "H331",
+          "description": "Toxic if inhaled",
+        },
+        Object {
+          "code": "H370",
+          "description": "Causes damage to organs",
+        },
+        Object {
+          "code": "H372",
+          "description": "Causes damage to organs through prolonged or repeated exposure",
+        },
+      ],
+      "reference": Object {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2006",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
+      },
+    },
+  ],
+  "pStatements": Array [
+    Object {
+      "data": Array [
+        Object {
+          "code": "P210",
+          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        Object {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        Object {
+          "code": "P241",
+          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+        },
+        Object {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        Object {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        Object {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+        },
+        Object {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P264",
+          "description": "Wash … thoroughly after handling.",
+        },
+        Object {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        Object {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        Object {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P301+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P301+P330+P331",
+          "description": undefined,
+        },
+        Object {
+          "code": "P302+P352",
+          "description": undefined,
+        },
+        Object {
+          "code": "P303+P361+P353",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P340",
+          "description": undefined,
+        },
+        Object {
+          "code": "P305+P351+P338",
+          "description": undefined,
+        },
+        Object {
+          "code": "P310",
+          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P312",
+          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P321",
+          "description": "Specific treatment (see … on this label).",
+        },
+        Object {
+          "code": "P322",
+          "description": "[Deleted by IV ATP]",
+        },
+        Object {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        Object {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P370+P378",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P235",
+          "description": undefined,
+        },
+        Object {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        Object {
+          "code": "P501",
+          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+        },
+      ],
+      "reference": Object {
+        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
+        "name": "triethylamine",
+        "sourceName": "EU REGULATION (EC) No 1272/2008",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008R1272",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "P210",
+          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        Object {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        Object {
+          "code": "P241",
+          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+        },
+        Object {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        Object {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        Object {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+        },
+        Object {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P264",
+          "description": "Wash … thoroughly after handling.",
+        },
+        Object {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        Object {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        Object {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P301+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P301+P330+P331",
+          "description": undefined,
+        },
+        Object {
+          "code": "P302+P352",
+          "description": undefined,
+        },
+        Object {
+          "code": "P303+P361+P353",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P340",
+          "description": undefined,
+        },
+        Object {
+          "code": "P305+P351+P338",
+          "description": undefined,
+        },
+        Object {
+          "code": "P310",
+          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P311",
+          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P312",
+          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P321",
+          "description": "Specific treatment (see … on this label).",
+        },
+        Object {
+          "code": "P322",
+          "description": "[Deleted by IV ATP]",
+        },
+        Object {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        Object {
+          "code": "P361",
+          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P370+P378",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P233",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P235",
+          "description": undefined,
+        },
+        Object {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        Object {
+          "code": "P501",
+          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+        },
+      ],
+      "reference": Object {
+        "description": "The information provided here is aggregated from the \\"Notified classification and labelling\\" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
+        "name": "Triethylamine",
+        "sourceName": "European Chemicals Agency (ECHA)",
+        "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "P210",
+          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        Object {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        Object {
+          "code": "P241",
+          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+        },
+        Object {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        Object {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        Object {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+        },
+        Object {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P264",
+          "description": "Wash … thoroughly after handling.",
+        },
+        Object {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        Object {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        Object {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P301+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P301+P330+P331",
+          "description": undefined,
+        },
+        Object {
+          "code": "P302+P352",
+          "description": undefined,
+        },
+        Object {
+          "code": "P303+P361+P353",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P340",
+          "description": undefined,
+        },
+        Object {
+          "code": "P305+P351+P338",
+          "description": undefined,
+        },
+        Object {
+          "code": "P310",
+          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P311",
+          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P312",
+          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P321",
+          "description": "Specific treatment (see … on this label).",
+        },
+        Object {
+          "code": "P322",
+          "description": "[Deleted by IV ATP]",
+        },
+        Object {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        Object {
+          "code": "P361",
+          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P370+P378",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P233",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P235",
+          "description": undefined,
+        },
+        Object {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        Object {
+          "code": "P501",
+          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+        },
+      ],
+      "reference": Object {
+        "description": "The Hazardous Chemical Information System (HCIS) at the Safe Work Australia is a database of chemical classifications and workplace exposure standards. It allows users to find information on chemicals that have been classified in accordance with the GHS or which have an Australian Workplace Exposure Standard.",
+        "name": "triethylamine",
+        "sourceName": "Hazardous Chemical Information System (HCIS), Safe Work Australia",
+        "url": "http://hcis.safeworkaustralia.gov.au/HazardousChemical/Details?chemicalID=4580",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "P210",
+          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        Object {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        Object {
+          "code": "P241",
+          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+        },
+        Object {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        Object {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        Object {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+        },
+        Object {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P264",
+          "description": "Wash … thoroughly after handling.",
+        },
+        Object {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        Object {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        Object {
+          "code": "P273",
+          "description": "Avoid release to the environment.",
+        },
+        Object {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P301+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P301+P330+P331",
+          "description": undefined,
+        },
+        Object {
+          "code": "P302+P352",
+          "description": undefined,
+        },
+        Object {
+          "code": "P303+P361+P353",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P340",
+          "description": undefined,
+        },
+        Object {
+          "code": "P305+P351+P338",
+          "description": undefined,
+        },
+        Object {
+          "code": "P310",
+          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P311",
+          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P312",
+          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P321",
+          "description": "Specific treatment (see … on this label).",
+        },
+        Object {
+          "code": "P322",
+          "description": "[Deleted by IV ATP]",
+        },
+        Object {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        Object {
+          "code": "P361",
+          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P370+P378",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P233",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P235",
+          "description": undefined,
+        },
+        Object {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        Object {
+          "code": "P501",
+          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+        },
+      ],
+      "reference": Object {
+        "description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "name": "TRIETHYLAMINE",
+        "sourceName": "Hazardous Substances Data Bank (HSDB)",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/896",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "P210",
+          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        Object {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        Object {
+          "code": "P241",
+          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+        },
+        Object {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        Object {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        Object {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+        },
+        Object {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P264",
+          "description": "Wash … thoroughly after handling.",
+        },
+        Object {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        Object {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        Object {
+          "code": "P273",
+          "description": "Avoid release to the environment.",
+        },
+        Object {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P301+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P301+P330+P331",
+          "description": undefined,
+        },
+        Object {
+          "code": "P302+P352",
+          "description": undefined,
+        },
+        Object {
+          "code": "P303+P361+P353",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P340",
+          "description": undefined,
+        },
+        Object {
+          "code": "P305+P351+P338",
+          "description": undefined,
+        },
+        Object {
+          "code": "P307+P311",
+          "description": undefined,
+        },
+        Object {
+          "code": "P310",
+          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P312",
+          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P314",
+          "description": "Get Medical advice/attention if you feel unwell.",
+        },
+        Object {
+          "code": "P321",
+          "description": "Specific treatment (see … on this label).",
+        },
+        Object {
+          "code": "P322",
+          "description": "[Deleted by IV ATP]",
+        },
+        Object {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        Object {
+          "code": "P361",
+          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P370+P378",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P233",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P235",
+          "description": undefined,
+        },
+        Object {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        Object {
+          "code": "P501",
+          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+        },
+      ],
+      "reference": Object {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2016",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "P210",
+          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        Object {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        Object {
+          "code": "P241",
+          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+        },
+        Object {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        Object {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        Object {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+        },
+        Object {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P264",
+          "description": "Wash … thoroughly after handling.",
+        },
+        Object {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        Object {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        Object {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P301+P312",
+          "description": undefined,
+        },
+        Object {
+          "code": "P301+P330+P331",
+          "description": undefined,
+        },
+        Object {
+          "code": "P302+P352",
+          "description": undefined,
+        },
+        Object {
+          "code": "P303+P361+P353",
+          "description": undefined,
+        },
+        Object {
+          "code": "P304+P340",
+          "description": undefined,
+        },
+        Object {
+          "code": "P305+P351+P338",
+          "description": undefined,
+        },
+        Object {
+          "code": "P307+P311",
+          "description": undefined,
+        },
+        Object {
+          "code": "P310",
+          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P311",
+          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P312",
+          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P314",
+          "description": "Get Medical advice/attention if you feel unwell.",
+        },
+        Object {
+          "code": "P321",
+          "description": "Specific treatment (see … on this label).",
+        },
+        Object {
+          "code": "P322",
+          "description": "[Deleted by IV ATP]",
+        },
+        Object {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        Object {
+          "code": "P361",
+          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+        },
+        Object {
+          "code": "P370+P378",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P233",
+          "description": undefined,
+        },
+        Object {
+          "code": "P403+P235",
+          "description": undefined,
+        },
+        Object {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        Object {
+          "code": "P501",
+          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+        },
+      ],
+      "reference": Object {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2006",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
+      },
+    },
+  ],
+  "pictograms": Array [
+    Object {
+      "data": Array [
+        Object {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        Object {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        Object {
+          "code": "GHS07",
+          "description": "Harmful Irritant",
+        },
+      ],
+      "reference": Object {
+        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
+        "name": "triethylamine",
+        "sourceName": "EU REGULATION (EC) No 1272/2008",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008R1272",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        Object {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        Object {
+          "code": "GHS06",
+          "description": "Toxic",
+        },
+        Object {
+          "code": "GHS07",
+          "description": "Harmful Irritant",
+        },
+      ],
+      "reference": Object {
+        "description": "The information provided here is aggregated from the \\"Notified classification and labelling\\" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
+        "name": "Triethylamine",
+        "sourceName": "European Chemicals Agency (ECHA)",
+        "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        Object {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        Object {
+          "code": "GHS06",
+          "description": "Toxic",
+        },
+        Object {
+          "code": "GHS07",
+          "description": "Harmful Irritant",
+        },
+      ],
+      "reference": Object {
+        "description": "The Hazardous Chemical Information System (HCIS) at the Safe Work Australia is a database of chemical classifications and workplace exposure standards. It allows users to find information on chemicals that have been classified in accordance with the GHS or which have an Australian Workplace Exposure Standard.",
+        "name": "triethylamine",
+        "sourceName": "Hazardous Chemical Information System (HCIS), Safe Work Australia",
+        "url": "http://hcis.safeworkaustralia.gov.au/HazardousChemical/Details?chemicalID=4580",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        Object {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        Object {
+          "code": "GHS06",
+          "description": "Toxic",
+        },
+        Object {
+          "code": "GHS07",
+          "description": "Harmful Irritant",
+        },
+      ],
+      "reference": Object {
+        "description": "The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.",
+        "name": "TRIETHYLAMINE",
+        "sourceName": "Hazardous Substances Data Bank (HSDB)",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/896",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        Object {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        Object {
+          "code": "GHS06",
+          "description": "Toxic",
+        },
+        Object {
+          "code": "GHS07",
+          "description": "Harmful Irritant",
+        },
+        Object {
+          "code": "GHS08",
+          "description": "Health Hazard",
+        },
+      ],
+      "reference": Object {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2016",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+      },
+    },
+    Object {
+      "data": Array [
+        Object {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        Object {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        Object {
+          "code": "GHS06",
+          "description": "Toxic",
+        },
+        Object {
+          "code": "GHS07",
+          "description": "Harmful Irritant",
+        },
+        Object {
+          "code": "GHS08",
+          "description": "Health Hazard",
+        },
+      ],
+      "reference": Object {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2006",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
+      },
+    },
+  ],
+}
+`;
