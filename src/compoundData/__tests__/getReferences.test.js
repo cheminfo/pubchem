@@ -1,6 +1,6 @@
 import { getReferences } from '../getReferences.js';
 
-import data from './test.json';
+import data from './bromopentane.json';
 
 test('reference parsing', () => {
   let result = getReferences(data);
