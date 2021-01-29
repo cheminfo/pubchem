@@ -5,7 +5,7 @@ import jp from 'jsonpath';
  *
  * @export
  * @param {Object} data response of a compound data request to the PubChem API
- * @returns {Array.<Object>.<String,String>} References
+ * @returns {Array<Object>.<String,String>} References
  */
 export function getReferences(data) {
   const references = jp.query(data, '$.Reference[*]').reduce((ref, entry) => {

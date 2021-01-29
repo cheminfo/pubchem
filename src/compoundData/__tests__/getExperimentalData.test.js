@@ -6,7 +6,7 @@ import {
 } from '../getExperimentalData.js';
 
 import benzene from './benzene.json';
-import data from './test.json';
+import data from './bromopentane.json';
 
 test('parsing experimental boiling point', () => {
   let result = getBoilingPoint(data);
