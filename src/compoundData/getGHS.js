@@ -1,23 +1,9 @@
 import jp from 'jsonpath';
 
 import { getReferences } from './getReferences.js';
-import { ghsPictogramText } from './ghsPictograms';
+import { ghsPictogramText } from './ghsPictograms.js';
 import { hazardStatements } from './hazardStatements.js';
 import { precautionaryStatements } from './precautionaryStatements.js';
-/**
- *Remove duplicates objects of arrays via set
- *
- * @param {Object} object
- * @returns Array flat list without duplicates
- */
-function removeDuplicates(object) {
-  return [
-    ...Object.values(object).reduce((newSet, entry) => {
-      entry.forEach(newSet.add, newSet);
-      return newSet;
-    }, new Set()),
-  ];
-}
 
 /**
  * @typedef {Object} GHSData
