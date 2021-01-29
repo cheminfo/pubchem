@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/cheminfo/pubchem/compare/v0.1.0...v0.2.0) (2021-01-29)
+
+
+### Features
+
+* add toJSON ([c102657](https://www.github.com/cheminfo/pubchem/commit/c102657695f1c3c103d1057cbcb28ab14ab57fa6))
+* refactor getGHS and add getGHSSummary ([103ecbc](https://www.github.com/cheminfo/pubchem/commit/103ecbced961f60b1cae2cac6a530078a6f1edb3))
+* start refactor to have get and methods ([adaea71](https://www.github.com/cheminfo/pubchem/commit/adaea71f838e445237e44de2afe4a41deb985496))
+
 ## [0.1.0](https://www.github.com/cheminfo/pubchem/compare/v0.0.3...v0.1.0) (2021-01-26)
 
 
