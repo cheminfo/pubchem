@@ -5,8 +5,8 @@ import {
   getFlashPoint,
 } from '../getExperimentalData.js';
 
-import benzene from './benzene.json';
-import data from './bromopentane.json';
+import benzene from './data/benzene.json';
+import data from './data/bromopentane.json';
 
 test('parsing experimental boiling point', () => {
   let result = getBoilingPoint(data);
