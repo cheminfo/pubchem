@@ -1,5 +1,5 @@
-import benzene from '../../compoundData/__tests__/benzene.json';
-import data from '../../compoundData/__tests__/bromopentane.json';
+import benzene from '../../../data/benzene.json';
+import data from '../../../data/bromopentane.json';
 import {
   getComplexity,
   getHydrogenBondAcceptorCount,

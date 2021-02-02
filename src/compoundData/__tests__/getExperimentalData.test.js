@@ -1,12 +1,11 @@
+import benzene from '../../../data/benzene.json';
+import data from '../../../data/bromopentane.json';
 import {
   getBoilingPoint,
   getMeltingPoint,
   getSolubility,
   getFlashPoint,
 } from '../getExperimentalData.js';
-
-import benzene from './data/benzene.json';
-import data from './data/bromopentane.json';
 
 test('parsing experimental boiling point', () => {
   let result = getBoilingPoint(data);

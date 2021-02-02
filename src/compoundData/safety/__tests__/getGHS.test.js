@@ -1,7 +1,6 @@
+import bromopentane from '../../../../data/bromopentane.json';
+import triethylamine from '../../../../data/triethylamine.json';
 import { getGHS, getGHSSummary } from '../getGHS.js';
-
-import bromopentane from './data/bromopentane.json';
-import triethylamine from './data/triethylamine.json';
 
 describe('getGHS', () => {
   it('triethylamine', () => {

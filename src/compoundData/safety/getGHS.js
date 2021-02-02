@@ -1,6 +1,7 @@
 import jp from 'jsonpath';
 
-import { getReferences } from './getReferences.js';
+import { getReferences } from '../getReferences.js';
+
 import { ghsPictogramText } from './ghsPictograms.js';
 import { hazardStatements } from './hazardStatements.js';
 import { precautionaryStatements } from './precautionaryStatements.js';

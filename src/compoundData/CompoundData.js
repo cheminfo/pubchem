@@ -5,8 +5,8 @@ import {
   getSolubility,
   getFlashPoint,
 } from './getExperimentalData.js';
-import { getGHS, getGHSSummary } from './getGHS.js';
 import { getReferences } from './getReferences.js';
+import { getGHS, getGHSSummary } from './safety/getGHS.js';
 
 export class CompoundData {
   constructor(data) {

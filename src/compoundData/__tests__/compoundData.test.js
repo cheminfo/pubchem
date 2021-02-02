@@ -1,6 +1,5 @@
+import benzene from '../../../data/benzene.json';
 import { CompoundData } from '../CompoundData.js';
-
-import benzene from './data/benzene.json';
 
 describe('CompoundData', () => {
   let compoundData = new CompoundData(benzene);
