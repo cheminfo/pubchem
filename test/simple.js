@@ -8,8 +8,22 @@ async function doAll() {
 
   const compoundData = await compound.getData();
 
-  const ghs = compoundData.getGHS();
+  const ghs = compoundData.ghs;
   console.log(ghs);
+
+  const detailedGHS = compoundData.getGHS();
+  console.log(detailedGHS);
+
+  const computed = compoundData.computed;
+
+  console.log(computed);
+
+  const experimentalData = compoundData.getExperimentalData({
+    pressure: { targetUnits: 'torr' },
+    temperature: { targetUnits: '°C' },
+  });
+
+  console.log(experimentalData);
 }
 
 doAll();

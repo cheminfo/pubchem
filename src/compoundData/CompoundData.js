@@ -1,10 +1,10 @@
-import {
-  getBoilingPoint,
-  getMeltingPoint,
-  getVaporPressure,
-  getSolubility,
-  getFlashPoint,
-} from './getExperimentalData.js';
+import { getComputedData } from './computed/getComputedData.js';
+import { getBoilingPoint } from './experimental/getBoilingPoint.js';
+import { getExperimentalData } from './experimental/getExperimentalData.js';
+import { getFlashPoint } from './experimental/getFlashPoint.js';
+import { getMeltingPoint } from './experimental/getMeltingPoint.js';
+import { getSolubility } from './experimental/getSolubility.js';
+import { getVaporPressure } from './experimental/getVaporPressure.js';
 import { getReferences } from './getReferences.js';
 import { getGHS, getGHSSummary } from './safety/getGHS.js';
 
@@ -14,6 +14,14 @@ export class CompoundData {
   }
   getReferences() {
     return getReferences(this.data);
+  }
+
+  getExperimentalData(options) {
+    return getExperimentalData(this.data, options);
+  }
+
+  get computed() {
+    return getComputedData(this.data);
   }
 
   /**
@@ -30,40 +38,20 @@ export class CompoundData {
     return getGHS(this.data);
   }
 
-  get boilingPoint() {
-    return getBoilingPoint(this.data).summary;
+  getMeltingPoint(options) {
+    return getMeltingPoint(this.data, options);
   }
 
   getBoilingPoint(options) {
     return getBoilingPoint(this.data, options);
   }
 
-  get meltingPoint() {
-    return getMeltingPoint(this.data).summary;
-  }
-
-  getMeltingPoint() {
-    return getMeltingPoint(this.data);
-  }
-
-  get vaporPressure() {
-    return getVaporPressure(this.data).summary;
-  }
-
   getVaporPressure(options) {
     return getVaporPressure(this.data, options);
   }
 
-  get solubility() {
-    return getSolubility(this.data).summary;
-  }
-
   getSolubility(options) {
     return getSolubility(this.data, options);
-  }
-
-  get flashPoint() {
-    return getFlashPoint(this.data).summary;
   }
 
   getFlashPoint(options) {
