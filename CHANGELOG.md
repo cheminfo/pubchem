@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/cheminfo/pubchem/compare/v0.2.0...v0.3.0) (2021-02-04)
+
+
+### Features
+
+* refactor to parse the experimentaData with references and units conversion ([6945fc7](https://www.github.com/cheminfo/pubchem/commit/6945fc760d7251c285479a4c57378ede20cfba85))
+
 ## [0.2.0](https://www.github.com/cheminfo/pubchem/compare/v0.1.0...v0.2.0) (2021-01-29)
 
 
