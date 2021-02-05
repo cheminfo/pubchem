@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.1](https://www.github.com/cheminfo/pubchem/compare/v0.3.0...v0.3.1) (2021-02-05)
+
+
+### Bug Fixes
+
+* support commonjs ([d7aac0e](https://www.github.com/cheminfo/pubchem/commit/d7aac0eb349d935dabb7e22a644ab06922798ff1))
+
 ## [0.3.0](https://www.github.com/cheminfo/pubchem/compare/v0.2.0...v0.3.0) (2021-02-04)
 
 
