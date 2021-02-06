@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.2](https://www.github.com/cheminfo/pubchem/compare/v0.3.1...v0.3.2) (2021-02-06)
+
+
+### Bug Fixes
+
+* publish lib folder ([a2472b0](https://www.github.com/cheminfo/pubchem/commit/a2472b0e432704862591a6ade2e813a218108c9e))
+
 ### [0.3.1](https://www.github.com/cheminfo/pubchem/compare/v0.3.0...v0.3.1) (2021-02-05)
 
 
