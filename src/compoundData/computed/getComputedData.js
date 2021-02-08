@@ -13,7 +13,7 @@ export function getComputedData(data) {
     tpsa: getTPSA(data),
     xLogP3: getxLogP3(data),
     hydrogenBondDonorCount: getHydrogenBondDonorCount(data),
-    getHydrogenBondAcceptorCount: getHydrogenBondAcceptorCount(data),
+    hydrogenBondAcceptorCount: getHydrogenBondAcceptorCount(data),
     rotableBondCount: getRotableBondCount(data),
     heavyAtomCount: getHeavyAtomCount(data),
     formalCharge: getFormalCharge(data),
