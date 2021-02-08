@@ -9,13 +9,13 @@ import { getxLogP3 } from './getxLogP3.js';
 
 export function getComputedData(data) {
   return {
-    complexity: getComplexity(data),
-    tpsa: getTPSA(data),
-    xLogP3: getxLogP3(data),
     hydrogenBondDonorCount: getHydrogenBondDonorCount(data),
     hydrogenBondAcceptorCount: getHydrogenBondAcceptorCount(data),
     rotableBondCount: getRotableBondCount(data),
     heavyAtomCount: getHeavyAtomCount(data),
     formalCharge: getFormalCharge(data),
+    complexity: getComplexity(data),
+    tpsa: getTPSA(data),
+    xLogP3: getxLogP3(data),
   };
 }
