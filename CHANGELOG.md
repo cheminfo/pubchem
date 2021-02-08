@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/cheminfo/pubchem/compare/v0.3.2...v0.4.0) (2021-02-08)
+
+
+### Features
+
+* add label in computed properties ([9ad31f1](https://www.github.com/cheminfo/pubchem/commit/9ad31f1e0cfe245e7c4eda4ed07712076a6c4b0f))
+
+
+### Bug Fixes
+
+* wrong property name getHydrogenBondAcceptorCount ([f47b079](https://www.github.com/cheminfo/pubchem/commit/f47b079e1bf4eb3f470d34dac0ac54c6b7179023))
+
 ### [0.3.2](https://www.github.com/cheminfo/pubchem/compare/v0.3.1...v0.3.2) (2021-02-06)
 
 
