@@ -10,6 +10,7 @@ export function getNumberProperties(data, sectionName) {
 
   let output = {
     value: section.Value.Number[0],
+    label: sectionName,
     reference: {
       description: section.Reference[0],
     },
