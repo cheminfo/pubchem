@@ -6,7 +6,6 @@ import { getGHS, getGHSSummary } from '../getGHS.js';
 describe('getGHS', () => {
   it('triethylamine', () => {
     let result = getGHS(triethylamine);
-
     expect(result.pictograms).toHaveLength(6);
     expect(result.hStatements).toHaveLength(6);
     expect(result.pStatements).toHaveLength(6);

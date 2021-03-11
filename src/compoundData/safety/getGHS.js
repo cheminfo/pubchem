@@ -7,22 +7,30 @@ import { hazardStatements } from './hazardStatements.js';
 import { precautionaryStatements } from './precautionaryStatements.js';
 
 /**
+ * @typedef {Object} ReferenceData
+ * @property {String} url
+ * @property {String} sourceName
+ * @property {String} name
+ * @property {String} description
+ */
+
+/**
+ * @typedef {Object} StatementData
+ * @property {String} code
+ * @property {String} description
+ */
+
+/**
+ * @typedef {Object} SafteyData
+ * @property {ReferenceData} references
+ * @property {StatementData} data
+ */
+
+/**
  * @typedef {Object} GHSData
- * @property {Object} summary
- * @property {Array<String>} summary.pictograms - Array of unique GHS pictogram names, e.g., ["GHS01", "GHS02"]
- * @property {Array<String>} summary.hStatements - Array of unique hStatements, e.g., ["H226", "H315"]
- * @property {Array<String>} summary.hStatements - Array of unique hStatements, e.g., ["Flammable liquid and vapour", "Causes skin irritation"]
- * @property {Array<String>} summary.pStatements - Array of unique pStatements, e.g., ["P210", "P233"]
- * @property {Array<String>} summary.pStatements - Array of unique pStatements, e.g., ["Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]"]
- * @property {Object} details
- * @property {Object.<string, Array<String>} details.pictograms - Keys are the reference numbers, values arrays of GHS pictograms reported by reference
- * @property {Object.<string, Array<String>} details.hStatements - Keys are the reference numbers, values arrays of H codes reported by reference
- * @property {Object.<string, Array<String>} details.pStatements -Keys are the reference numbers, values arrays of P codes reported by reference
- * @property {Object} references
- * @property {String} references.url -
- * @property {String} references.sourceName -
- * @property {String} references.name -
- * @property {String} references.description -
+ * @property {Array<SafteyData>} pictograms
+ * @property {Array<SafteyData>} hStatements
+ * @property {Array<SafteyData>} pStatements
  */
 
 /**
