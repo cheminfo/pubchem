@@ -2,8 +2,6 @@ import { getComputedDataSection } from './getComputedDataSection.js';
 import { getComputedPropertySection } from './getComputedPropertySection.js';
 
 export function getNumberProperties(data, sectionName) {
-  const computationalData = getComputedDataSection(data);
-
   let output = {
     value: null,
     label: null,
@@ -13,6 +11,7 @@ export function getNumberProperties(data, sectionName) {
   };
 
   try {
+    const computationalData = getComputedDataSection(data);
     let section = getComputedPropertySection(
       computationalData[0],
       sectionName,
