@@ -1,5 +1,6 @@
 import bromopentane from '../../../../data/bromopentane.json';
 import triethylamine from '../../../../data/triethylamine.json';
+import ethyleneglycol from '../../../../data/ethyleneglycol.json';
 import { getGHS, getGHSSummary } from '../getGHS.js';
 
 describe('getGHS', () => {
@@ -70,6 +71,17 @@ describe('getGHSSummry', () => {
 
   it('triethylamine', () => {
     let result = getGHSSummary(triethylamine);
+    expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
+      'GHS02',
+      'GHS05',
+      'GHS06',
+      'GHS07',
+      'GHS08',
+    ]);
+  });
+
+  it('ethylene glycol', () => {
+    let result = getGHSSummary(ethyleneglycol);
     expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
       'GHS02',
       'GHS05',
