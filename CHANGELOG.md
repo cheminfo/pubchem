@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.1](https://www.github.com/cheminfo/pubchem/compare/v0.4.0...v0.4.1) (2021-03-12)
+
+
+### Bug Fixes
+
+* getGHS fails gracefully ([0cbec1c](https://www.github.com/cheminfo/pubchem/commit/0cbec1cd573a913b4fb206f7c6863581e0731179))
+
 ## [0.4.0](https://www.github.com/cheminfo/pubchem/compare/v0.3.2...v0.4.0) (2021-02-08)
 
 
