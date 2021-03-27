@@ -9,11 +9,6 @@ import { getNumberProperties } from './getNumberProperties.js';
  */
 
 export function getHeavyAtomCount(data) {
-  const description = 'The number of atoms except hydrogen in the molecule.';
-  const heavyAtomCount = getNumberProperties(
-    data,
-    'Heavy Atom Count',
-    description,
-  );
+  const heavyAtomCount = getNumberProperties(data, 'Heavy Atom Count');
   return heavyAtomCount;
 }
