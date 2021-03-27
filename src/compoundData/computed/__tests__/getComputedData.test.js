@@ -8,7 +8,7 @@ test('getComputedData', () => {
       value: 19.9,
       label: 'Complexity',
       description:
-        'The complexity rating is computed using the <a href="https://pubs.acs.org/doi/abs/10.1021/ci00054a004">Bertz/Hendrickson/Ihlenfeldt formula</a> and gives a numerical estimate of how complex a molecule is.',
+        'The complexity rating of a compound is a rough estimate of how complicated a structure is, seen from both the point of view of the elements contained and the displayed structural features including symmetry. This complexity rating is computed using the Bertz/Hendrickson/Ihlenfeldt formula.',
       reference: {
         description: 'Computed by Cactvs 3.4.6.11 (PubChem release 2019.06.18)',
       },
@@ -17,7 +17,7 @@ test('getComputedData', () => {
       value: 0,
       label: 'Topological Polar Surface Area',
       description:
-        'The topological polar surface area is the surface sum over all polar atoms in a molecule. It is an important estimator of transport properties of drugs.',
+        'The topological polar surface area (TPSA) of a molecule is defined as the surface sum over all polar atoms in a molecule.',
       reference: {
         description: 'Computed by Cactvs 3.4.6.11 (PubChem release 2019.06.18)',
       },
@@ -26,8 +26,7 @@ test('getComputedData', () => {
     xLogP3: {
       value: 3.4,
       label: 'XLogP3',
-      description:
-        'The octanol water partiion coefficient can be used as estimate of  molecular hydrophobicity.',
+      description: 'Computed Octanol/Water Partition Coefficient',
       reference: {
         description: 'Computed by XLogP3 3.0 (PubChem release 2019.06.18)',
       },
@@ -35,8 +34,7 @@ test('getComputedData', () => {
     hydrogenBondDonorCount: {
       value: 0,
       label: 'Hydrogen Bond Donor Count',
-      description:
-        'The number of hydrogen bond donor atoms in the structure. A hydrogen bond donor site can contribute a H to hydrogen bond formation.',
+      description: 'The number of hydrogen bond donors in the structure.',
       reference: {
         description: 'Computed by Cactvs 3.4.6.11 (PubChem release 2019.06.18)',
       },
@@ -44,8 +42,7 @@ test('getComputedData', () => {
     hydrogenBondAcceptorCount: {
       value: 0,
       label: 'Hydrogen Bond Acceptor Count',
-      description:
-        'The number of hydrogen bond acceptor atoms in the structure. A hydrogen bond acceptor has a lone pair that can form hydrogen bonds.',
+      description: 'The number of hydrogen bond acceptors in the structure.',
       reference: {
         description: 'Computed by Cactvs 3.4.6.11 (PubChem release 2019.06.18)',
       },
@@ -54,7 +51,7 @@ test('getComputedData', () => {
       value: 3,
       label: 'Rotatable Bond Count',
       description:
-        'Rotable bonds are single bonds that are not part of a ring and for which, rotation around the bond changes the overall shape of the molecule.',
+        'A rotatable bond is defined as any single-order non-ring bond, where atoms on either side of the bond are in turn bound to nonterminal heavy (i.e., non-hydrogen) atoms. That is, where rotation around the bond axis changes the overall shape of the molecule, and generates conformers which can be distinguished by standard fast spectroscopic methods.',
       reference: {
         description: 'Computed by Cactvs 3.4.6.11 (PubChem release 2019.06.18)',
       },
@@ -62,14 +59,15 @@ test('getComputedData', () => {
     heavyAtomCount: {
       value: 6,
       label: 'Heavy Atom Count',
-      description: 'The number of atoms except hydrogen in the molecule.',
+      description:
+        'A heavy atom is defined as any atom except hydrogen in a chemical structure.',
       reference: { description: 'Computed by PubChem' },
     },
     formalCharge: {
       value: 0,
       label: 'Formal Charge',
       description:
-        'The formal charge is the difference between the number of valence electrons of each atom and the number of electrons the atom is associated with (assuming that the electrons in each bond are split equally between the bonded atoms).',
+        'Formal charge is the difference between the number of valence electrons of each atom and the number of electrons the atom is associated with. Formal charge assumes any shared electrons are equally shared between the two bonded atoms.',
       reference: { description: 'Computed by PubChem' },
     },
   });
