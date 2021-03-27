@@ -9,6 +9,8 @@ import jp from 'jsonpath';
  * @property {String} references.sourceName -
  * @property {String} references.name -
  * @property {String} references.description -
+ * @property {String} label - human readable name of the property
+ * @property {String} description - description of the property
  */
 
 export function getComputedDataSection(data) {

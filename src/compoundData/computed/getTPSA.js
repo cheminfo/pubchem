@@ -9,6 +9,12 @@ import { getNumberProperties } from './getNumberProperties.js';
  */
 
 export function getTPSA(data) {
-  const tpsa = getNumberProperties(data, 'Topological Polar Surface Area');
+  const description =
+    'The topological polar surface area is the surface sum over all polar atoms in a molecule. It is an important estimator of transport properties of drugs.';
+  const tpsa = getNumberProperties(
+    data,
+    'Topological Polar Surface Area',
+    description,
+  );
   return tpsa;
 }

@@ -9,6 +9,8 @@ import { getNumberProperties } from './getNumberProperties.js';
  */
 
 export function getxLogP3(data) {
-  const xLogP3 = getNumberProperties(data, 'XLogP3');
+  const description =
+    'The octanol water partiion coefficient can be used as estimate of  molecular hydrophobicity.';
+  const xLogP3 = getNumberProperties(data, 'XLogP3', description);
   return xLogP3;
 }

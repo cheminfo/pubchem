@@ -1,13 +1,14 @@
 import { getComputedDataSection } from './getComputedDataSection.js';
 import { getComputedPropertySection } from './getComputedPropertySection.js';
 
-export function getNumberProperties(data, sectionName) {
+export function getNumberProperties(data, sectionName, description) {
   let output = {
     value: null,
     label: null,
     reference: {
       description: null,
     },
+    description: description,
   };
 
   try {
