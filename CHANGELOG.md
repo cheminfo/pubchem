@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/cheminfo/pubchem/compare/v0.4.1...v0.5.0) (2021-03-27)
+
+
+### Features
+
+* get description from pubchem instead of hard coding ([#33](https://www.github.com/cheminfo/pubchem/issues/33)) ([94cfb50](https://www.github.com/cheminfo/pubchem/commit/94cfb50887973ced4007e857b3d52ac051c4fdb4))
+
 ### [0.4.1](https://www.github.com/cheminfo/pubchem/compare/v0.4.0...v0.4.1) (2021-03-12)
 
 
