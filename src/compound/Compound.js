@@ -1,5 +1,6 @@
 import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID.js';
 
+import { compoundFromInchiKey } from './from/compoundFromInchiKey.js';
 import { compoundFromSmiles } from './from/compoundFromSmiles.js';
 
 export class Compound {
@@ -34,3 +35,4 @@ export class Compound {
 }
 
 Compound.fromSmiles = compoundFromSmiles;
+Compound.fromInchiKey = compoundFromInchiKey;
