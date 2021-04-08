@@ -47,24 +47,24 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
+    "@types/jest": "^26.0.22",
     "cheminfo-build": "^1.1.10",
     "cross-env": "^7.0.3",
-    "eslint": "^7.21.0",
+    "eslint": "^7.23.0",
     "eslint-config-cheminfo": "^5.2.3",
     "jest": "^27.0.0-next.2",
     "jest-matcher-deep-close-to": "^2.0.1",
     "md5": "^2.3.0",
     "prettier": "^2.2.1",
-    "rollup": "^2.41.1"
+    "rollup": "^2.44.0"
   },
   "dependencies": {
     "deepmerge": "^4.2.2",
     "js-quantities": "^1.7.6",
-    "jsonpath": "^1.1.0",
-    "ml-array-mean": "^1.1.4",
-    "ml-array-median": "^1.1.4",
-    "ml-array-standard-deviation": "^1.1.5",
+    "jsonpath": "^1.1.1",
+    "ml-array-mean": "^1.1.5",
+    "ml-array-median": "^1.1.5",
+    "ml-array-standard-deviation": "^1.1.6",
     "node-fetch": "^2.6.1",
     "physical-parser": "^0.3.0"
   }
