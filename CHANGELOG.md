@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://www.github.com/cheminfo/pubchem/compare/v0.5.0...v0.6.0) (2021-04-13)
+
+
+### Features
+
+* add inchikey lookup ([#35](https://www.github.com/cheminfo/pubchem/issues/35)) ([2fc1931](https://www.github.com/cheminfo/pubchem/commit/2fc19316b2d47d75cb1bfa94f64f3429e6de3fa1))
+
+
+### Bug Fixes
+
+* throw error in case SMILES is not found ([#38](https://www.github.com/cheminfo/pubchem/issues/38)) ([ff76f9f](https://www.github.com/cheminfo/pubchem/commit/ff76f9fbb185041f4baef852d9640e002b576471))
+
 ## [0.5.0](https://www.github.com/cheminfo/pubchem/compare/v0.4.1...v0.5.0) (2021-03-27)
 
 
