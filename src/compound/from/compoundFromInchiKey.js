@@ -2,6 +2,8 @@ import fetch from 'node-fetch';
 
 import { Compound } from '../Compound.js';
 
+import { checkCompundsResult } from './handleError.js';
+
 export async function compoundFromInchiKey(inchiKey, options = {}) {
   const { cache } = options;
 
@@ -20,12 +22,7 @@ export async function compoundFromInchiKey(inchiKey, options = {}) {
     }
   }
 
-  if (!Array.isArray(compounds) || compounds.length === 0) {
-    throw new Error('No compound found');
-  }
-  if (compounds.length !== 1) {
-    throw new Error('More than one compound found');
-  }
+  checkCompundsResult(compounds);
 
   return new Compound(compounds[0], { cache });
 }
