@@ -7,4 +7,10 @@ describe('compoundFromSmiles', () => {
     expect(compound.getCID()).toBe(7840);
     expect(compound.data.charge).toBe(0);
   });
+
+  it('COOOOOOOOOOC', async () => {
+    await expect(compoundFromSmiles('COOOOOOOOOOC', { cache })).rejects.toThrow(
+      'No compound found',
+    );
+  });
 });
