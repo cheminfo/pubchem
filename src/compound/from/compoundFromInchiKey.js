@@ -20,7 +20,9 @@ export async function compoundFromInchiKey(inchiKey, options = {}) {
     }
   }
 
-  if (!Array.isArray(compounds) || compounds.length === 0) return undefined;
+  if (!Array.isArray(compounds) || compounds.length === 0) {
+    throw new Error('No compound found');
+  }
   if (compounds.length !== 1) {
     throw new Error('More than one compound found');
   }
