@@ -1,7 +1,7 @@
 {
   "name": "pubchem",
   "version": "0.6.0",
-  "description": "Simplify PubChem API access",
+  "description": "pubchem simplifies the data retrieval from the PubChem API.",
   "type": "module",
   "main": "./lib/index.cjs",
   "module": "./src/index.js",
@@ -29,7 +29,12 @@
     "type": "git",
     "url": "git+https://github.com/cheminfo/pubchem.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Pubchem",
+    "API",
+    "Chemistry",
+    "Data"
+  ],
   "author": "Luc Patiny",
   "license": "MIT",
   "bugs": {
@@ -67,5 +72,12 @@
     "ml-array-standard-deviation": "^1.1.6",
     "node-fetch": "^2.6.1",
     "physical-parser": "^0.3.0"
+  },
+  "info": {
+    "logo": "https://raw.githubusercontent.com/cheminfo/font/master/src/misc/pubchem.svg",
+    "domain": [
+      "Organic Chemistry"
+    ],
+    "functionality": {}
   }
 }
