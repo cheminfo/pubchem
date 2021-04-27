@@ -52,10 +52,10 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.22",
+    "@types/jest": "^26.0.23",
     "cheminfo-build": "^1.1.10",
     "cross-env": "^7.0.3",
-    "eslint": "^7.24.0",
+    "eslint": "^7.25.0",
     "eslint-config-cheminfo": "^5.2.3",
     "jest": "^27.0.0-next.2",
     "jest-matcher-deep-close-to": "^2.0.1",
