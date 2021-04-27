@@ -9,6 +9,7 @@ import { getReferences } from './getReferences.js';
 import { getFormula } from './identifiers/getFormula.js';
 import { getSMILES } from './identifiers/getSMILES.js';
 import { getInChI } from './identifiers/getInChI.js';
+import { getInChIKey } from './identifiers/getInChIKey.js';
 import { getGHS, getGHSSummary } from './safety/getGHS.js';
 
 export class CompoundData {
@@ -53,6 +54,13 @@ export class CompoundData {
    */
   getInChI() {
     return getInChI(this.data);
+  }
+
+  /**
+   * International Chemical Identifier hash (InChIKey) computed from chemical structure using the International Union of Pure and Applied Chemistry (IUPAC) standard.
+   */
+  getInChIKey() {
+    return getInChIKey(this.data);
   }
 
   /**
