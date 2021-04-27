@@ -7,6 +7,7 @@ import { getSolubility } from './experimental/getSolubility.js';
 import { getVaporPressure } from './experimental/getVaporPressure.js';
 import { getReferences } from './getReferences.js';
 import { getGHS, getGHSSummary } from './safety/getGHS.js';
+import { getSMILES } from './identifiers/getSMILES.js';
 
 export class CompoundData {
   constructor(data) {
@@ -29,6 +30,13 @@ export class CompoundData {
    */
   get ghs() {
     return getGHSSummary(this.data);
+  }
+
+  /**
+   * Canonical SMILES
+   */
+  getSMILES() {
+    return getSMILES(this.data);
   }
 
   /**
