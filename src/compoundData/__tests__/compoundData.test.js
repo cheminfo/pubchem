@@ -16,6 +16,15 @@ describe('CompoundData', () => {
       'vaporPressure',
     ]);
 
+    expect(compoundData.getSMILES()).toStrictEqual('C1=CC=CC=C1');
+    expect(compoundData.getInChI()).toStrictEqual(
+      'InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H',
+    );
+    expect(compoundData.getInChIKey()).toStrictEqual(
+      'UHOVQNZJYSORNB-UHFFFAOYSA-N',
+    );
+    expect(compoundData.getFormula()).toStrictEqual('C6H6');
+
     expect(result.boilingPoint[1]).toStrictEqual({
       reference: {
         url: 'https://comptox.epa.gov/dashboard/DTXSID3039242',
