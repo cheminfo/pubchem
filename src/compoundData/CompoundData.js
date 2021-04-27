@@ -6,8 +6,10 @@ import { getMeltingPoint } from './experimental/getMeltingPoint.js';
 import { getSolubility } from './experimental/getSolubility.js';
 import { getVaporPressure } from './experimental/getVaporPressure.js';
 import { getReferences } from './getReferences.js';
-import { getGHS, getGHSSummary } from './safety/getGHS.js';
+import { getFormula } from './identifiers/getFormula.js';
 import { getSMILES } from './identifiers/getSMILES.js';
+import { getInChI } from './identifiers/getInChI.js';
+import { getGHS, getGHSSummary } from './safety/getGHS.js';
 
 export class CompoundData {
   constructor(data) {
@@ -37,6 +39,20 @@ export class CompoundData {
    */
   getSMILES() {
     return getSMILES(this.data);
+  }
+
+  /**
+   * Return molecular formula in Hill notation
+   */
+  getFormula() {
+    return getFormula(this.data);
+  }
+
+  /**
+   * Return the International Chemical Identifier (InChI) computed from chemical structure using the International Union of Pure and Applied Chemistry (IUPAC) standard
+   */
+  getInChI() {
+    return getInChI(this.data);
   }
 
   /**
