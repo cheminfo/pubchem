@@ -7,9 +7,9 @@ import { getSolubility } from './experimental/getSolubility.js';
 import { getVaporPressure } from './experimental/getVaporPressure.js';
 import { getReferences } from './getReferences.js';
 import { getFormula } from './identifiers/getFormula.js';
-import { getSMILES } from './identifiers/getSMILES.js';
 import { getInChI } from './identifiers/getInChI.js';
 import { getInChIKey } from './identifiers/getInChIKey.js';
+import { getSMILES } from './identifiers/getSMILES.js';
 import { getGHS, getGHSSummary } from './safety/getGHS.js';
 
 export class CompoundData {
