@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.0](https://www.github.com/cheminfo/pubchem/compare/v0.6.0...v0.7.0) (2021-04-27)
+
+
+### Features
+
+* add InChI ([c4145ba](https://www.github.com/cheminfo/pubchem/commit/c4145ba0224b4b9a425620c410385d21b7ee2843))
+* add InChI key ([9eb4b99](https://www.github.com/cheminfo/pubchem/commit/9eb4b99e225485e3be0b34c6eef706715731b165))
+* added smiles ([9d75c8e](https://www.github.com/cheminfo/pubchem/commit/9d75c8e731020d45a2ce3897d28ef66d1623c44e))
+
 ## [0.6.0](https://www.github.com/cheminfo/pubchem/compare/v0.5.0...v0.6.0) (2021-04-13)
 
 
