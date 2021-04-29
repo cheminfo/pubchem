@@ -5,13 +5,13 @@ import { getFormula } from '../getFormula.js';
 
 describe('get formula', () => {
   it('bromopentane', () => {
-    expect(getFormula(bromopentane)).toStrictEqual('C5H11Br');
+    expect(getFormula(bromopentane).value).toStrictEqual('C5H11Br');
   });
   it('ethyleneglycol', () => {
-    expect(getFormula(ethyleneglycol)).toStrictEqual('C2H6O2');
+    expect(getFormula(ethyleneglycol).value).toStrictEqual('C2H6O2');
   });
 
   it('triethylamine', () => {
-    expect(getFormula(triethylamine)).toStrictEqual('C6H15N');
+    expect(getFormula(triethylamine).value).toStrictEqual('C6H15N');
   });
 });
