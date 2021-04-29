@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://www.github.com/cheminfo/pubchem/compare/v0.8.0...v0.9.0) (2021-04-29)
+
+
+### Features
+
+* reformat identifier result ([#44](https://www.github.com/cheminfo/pubchem/issues/44)) ([5adb865](https://www.github.com/cheminfo/pubchem/commit/5adb8655f5de7a7064d78ab1d3879b4a1f2a05e6))
+
 ## [0.8.0](https://www.github.com/cheminfo/pubchem/compare/v0.7.0...v0.8.0) (2021-04-29)
 
 
