@@ -16,6 +16,14 @@ describe('CompoundData', () => {
       'vaporPressure',
     ]);
 
+    const identifiers = compoundData.getIdentifiers();
+    expect(Object.keys(identifiers)).toStrictEqual([
+      'formula',
+      'inchi',
+      'inchiKey',
+      'smiles',
+    ]);
+
     expect(compoundData.getSMILES()).toStrictEqual('C1=CC=CC=C1');
     expect(compoundData.getInChI()).toStrictEqual(
       'InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H',
