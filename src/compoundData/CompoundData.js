@@ -7,6 +7,7 @@ import { getSolubility } from './experimental/getSolubility.js';
 import { getVaporPressure } from './experimental/getVaporPressure.js';
 import { getReferences } from './getReferences.js';
 import { getFormula } from './identifiers/getFormula.js';
+import { getIdentifiers } from './identifiers/getIdentifiers.js';
 import { getInChI } from './identifiers/getInChI.js';
 import { getInChIKey } from './identifiers/getInChIKey.js';
 import { getSMILES } from './identifiers/getSMILES.js';
@@ -22,6 +23,10 @@ export class CompoundData {
 
   getExperimentalData(options) {
     return getExperimentalData(this.data, options);
+  }
+
+  getIdentifiers() {
+    return getIdentifiers(this.data);
   }
 
   get computed() {
