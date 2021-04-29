@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://www.github.com/cheminfo/pubchem/compare/v0.7.0...v0.8.0) (2021-04-29)
+
+
+### Features
+
+* get identifier summary ([#42](https://www.github.com/cheminfo/pubchem/issues/42)) ([c023a61](https://www.github.com/cheminfo/pubchem/commit/c023a61da4f04991f71096f42e479d48981eeba2))
+
 ## [0.7.0](https://www.github.com/cheminfo/pubchem/compare/v0.6.0...v0.7.0) (2021-04-27)
 
 
