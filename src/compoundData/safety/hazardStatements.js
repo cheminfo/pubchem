@@ -16,16 +16,14 @@ export const hazardStatements = {
   H228: 'Flammable solid',
   H229: 'Pressurized container: may burst if heated',
   H230: 'May react explosively even in the absence of air',
-  H231:
-    'May react explosively even in the absence of air at elevated pressure and/or temperature',
+  H231: 'May react explosively even in the absence of air at elevated pressure and/or temperature',
   H240: 'Heating may cause an explosion',
   H241: 'Heating may cause a fire or explosion',
   H242: 'Heating may cause a fire',
   H250: 'Catches fire spontaneously if exposed to air',
   H251: 'Self-heating; may catch fire',
   H252: 'Self-heating in large quantities; may catch fire',
-  H260:
-    'In contact with water releases flammable gases which may ignite spontaneously',
+  H260: 'In contact with water releases flammable gases which may ignite spontaneously',
   H261: 'In contact with water releases flammable gas',
   H270: 'May cause or intensify fire; oxidizer',
   H271: 'May cause fire or explosion; strong oxidizer',
@@ -54,8 +52,7 @@ export const hazardStatements = {
   H331: 'Toxic if inhaled',
   H332: 'Harmful if inhaled',
   H333: 'May be harmful if inhaled',
-  H334:
-    'May cause allergy or asthma symptoms or breathing difficulties if inhaled',
+  H334: 'May cause allergy or asthma symptoms or breathing difficulties if inhaled',
   H335: 'May cause respiratory irritation',
   H336: 'May cause drowsiness or dizziness',
   H340: 'May cause genetic defects',
@@ -77,8 +74,7 @@ export const hazardStatements = {
   H411: 'Toxic to aquatic life with long lasting effects',
   H412: 'Harmful to aquatic life with long lasting effects',
   H413: 'May cause long lasting harmful effects to aquatic life',
-  H420:
-    'Harms public health and the environment by destroying ozone in the upper atmosphere',
+  H420: 'Harms public health and the environment by destroying ozone in the upper atmosphere',
   EUH001: 'Explosive when dry',
   EUH006: 'Explosive with or without contact with air',
   EUH014: 'Reacts violently with water',

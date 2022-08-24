@@ -5,13 +5,13 @@ import { getSMILES } from '../getSMILES.js';
 
 describe('get SMILES', () => {
   it('bromopentane', () => {
-    expect(getSMILES(bromopentane).value).toStrictEqual('CCCCCBr');
+    expect(getSMILES(bromopentane).value).toBe('CCCCCBr');
   });
   it('ethyleneglycol', () => {
-    expect(getSMILES(ethyleneglycol).value).toStrictEqual('C(CO)O');
+    expect(getSMILES(ethyleneglycol).value).toBe('C(CO)O');
   });
 
   it('triethylamine', () => {
-    expect(getSMILES(triethylamine).value).toStrictEqual('CCN(CC)CC');
+    expect(getSMILES(triethylamine).value).toBe('CCN(CC)CC');
   });
 });

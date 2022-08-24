@@ -2,27 +2,28 @@
   "name": "pubchem",
   "version": "0.9.0",
   "description": "pubchem simplifies the data retrieval from the PubChem API.",
-  "type": "module",
-  "main": "./lib/index.cjs",
-  "module": "./src/index.js",
-  "exports": {
-    ".": {
-      "module": "./src/index.js",
-      "require": "./lib/index.cjs"
-    }
-  },
+  "main": "lib/index.js",
+  "module": "lib-esm/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib",
-    "src"
+    "src",
+    "lib-esm"
   ],
   "scripts": {
     "build": "cheminfo-build --entry src/index.js --root PubChem",
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf lib lib-esm",
     "eslint": "eslint src",
     "eslint-fix": "npm run eslint -- --fix",
-    "prepublishOnly": "rollup -c",
-    "test": "npm run test-coverage && npm run eslint",
-    "test-coverage": "npm run test-only -- --coverage",
-    "test-only": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
+    "prepack": "npm run tsc",
+    "prettier": "prettier --check src",
+    "prettier-write": "prettier --write src",
+    "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
+    "test-only": "vitest run --globals --coverage",
+    "tsc": "npm run clean && npm run tsc-cjs && npm run tsc-esm",
+    "tsc-cjs": "tsc --project tsconfig.cjs.json",
+    "tsc-esm": "tsc --project tsconfig.esm.json",
     "watch": "npm run test-only -- --watch"
   },
   "repository": {
@@ -41,36 +42,29 @@
     "url": "https://github.com/cheminfo/pubchem/issues"
   },
   "homepage": "https://github.com/cheminfo/pubchem#readme",
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "all"
-  },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
+    "@types/jest": "^28.1.7",
+    "@vitest/coverage-c8": "^0.22.1",
     "cheminfo-build": "^1.1.11",
     "cross-env": "^7.0.3",
-    "eslint": "^7.30.0",
-    "eslint-config-cheminfo": "^5.2.4",
-    "jest": "^27.0.6",
-    "jest-matcher-deep-close-to": "^2.0.1",
+    "eslint": "^8.22.0",
+    "jest": "^28.1.3",
+    "jest-matcher-deep-close-to": "^3.0.2",
     "md5": "^2.3.0",
-    "prettier": "^2.3.2",
-    "rollup": "^2.52.7"
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
+    "vitest": "^0.22.1"
   },
   "dependencies": {
     "deepmerge": "^4.2.2",
+    "eslint-config-cheminfo-typescript": "^11.0.1",
     "js-quantities": "^1.7.6",
     "jsonpath": "^1.1.1",
-    "ml-array-mean": "^1.1.5",
-    "ml-array-median": "^1.1.5",
-    "ml-array-standard-deviation": "^1.1.6",
-    "node-fetch": "^2.6.1",
+    "ml-array-mean": "^1.1.6",
+    "ml-array-median": "^1.1.6",
+    "ml-array-standard-deviation": "^1.1.8",
+    "node-fetch": "^3.2.10",
     "physical-parser": "^0.3.0"
   },
   "info": {
