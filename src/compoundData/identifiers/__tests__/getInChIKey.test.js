@@ -5,18 +5,16 @@ import { getInChIKey } from '../getInChIKey.js';
 
 describe('get InChI key', () => {
   it('bromopentane', () => {
-    expect(getInChIKey(bromopentane).value).toStrictEqual(
-      'YZWKKMVJZFACSU-UHFFFAOYSA-N',
-    );
+    expect(getInChIKey(bromopentane).value).toBe('YZWKKMVJZFACSU-UHFFFAOYSA-N');
   });
   it('ethyleneglycol', () => {
-    expect(getInChIKey(ethyleneglycol).value).toStrictEqual(
+    expect(getInChIKey(ethyleneglycol).value).toBe(
       'LYCAIKOWRPUZTN-UHFFFAOYSA-N',
     );
   });
 
   it('triethylamine', () => {
-    expect(getInChIKey(triethylamine).value).toStrictEqual(
+    expect(getInChIKey(triethylamine).value).toBe(
       'ZMANZCXQSJIPKH-UHFFFAOYSA-N',
     );
   });

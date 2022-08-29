@@ -8,7 +8,7 @@ test('getBoilingPoint', () => {
   });
 
   expect(result).toHaveLength(6);
-  expect(result[0].reference.sourceName).toStrictEqual('CAMEO Chemicals');
+  expect(result[0].reference.sourceName).toBe('CAMEO Chemicals');
 
   expect(result[1].data).toStrictEqual({
     original: '80.0 °C',

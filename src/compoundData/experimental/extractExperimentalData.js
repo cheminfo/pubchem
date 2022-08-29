@@ -10,6 +10,10 @@ export function extractExperimentalData(data, sectionName, options = {}) {
 
   let results = [];
 
+  if (!experimentalSection || experimentalSection.length === 0) {
+    return results;
+  }
+
   jp.query(
     experimentalSection[0],
     `$.Section[?(@.TOCHeading==="${sectionName}")].Information[*]`,
