@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/cheminfo/pubchem/compare/v0.9.0...v0.9.1) (2022-08-29)
+
+
+### Bug Fixes
+
+* crash when no experimental data ([acc6d31](https://github.com/cheminfo/pubchem/commit/acc6d3107bac826e4e96591081465078ee6117df))
+
 ## [0.9.0](https://www.github.com/cheminfo/pubchem/compare/v0.8.0...v0.9.0) (2021-04-29)
 
 
