@@ -1,7 +1,7 @@
 import { cache } from '../../../util/cache.js';
 import { compoundFromInchiKey } from '../compoundFromInchiKey.js';
 
-describe('compoundFromSmiles', () => {
+describe('compoundFromInchiKey', () => {
   it('N2', async () => {
     const compound = await compoundFromInchiKey('IJGRMHOSHXDMSA-UHFFFAOYSA-N', {
       cache,

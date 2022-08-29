@@ -446,7 +446,7 @@
               ]
             },
             {
-              "TOCHeading": "InChI Key",
+              "TOCHeading": "InChIKey",
               "Description": "International Chemical Identifier hash (InChIKey) computed from chemical structure using the International Union of Pure and Applied Chemistry (IUPAC) standard.",
               "URL": "http://www.iupac.org/home/publications/e-resources/inchi.html",
               "Information": [
@@ -4678,17 +4678,8 @@
                   "Name": "Standard polar",
                   "Value": {
                     "Number": [
-                      1621,
-                      1635,
-                      1635,
-                      1652,
-                      1667,
-                      1670,
-                      1695,
-                      1660,
-                      1634.7,
-                      1660,
-                      1657.8
+                      1621, 1635, 1635, 1652, 1667, 1670, 1695, 1660, 1634.7,
+                      1660, 1657.8
                     ]
                   }
                 }

@@ -3,7 +3,7 @@ import ethyleneglycol from '../../../../data/ethyleneglycol.json';
 import triethylamine from '../../../../data/triethylamine.json';
 import { getInChIKey } from '../getInChIKey.js';
 
-describe('get InChI key', () => {
+describe('get InChIKey', () => {
   it('bromopentane', () => {
     expect(getInChIKey(bromopentane).value).toBe('YZWKKMVJZFACSU-UHFFFAOYSA-N');
   });

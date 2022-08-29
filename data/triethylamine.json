@@ -264,7 +264,7 @@
               ]
             },
             {
-              "TOCHeading": "InChI Key",
+              "TOCHeading": "InChIKey",
               "Description": "International Chemical Identifier hash (InChIKey) computed from chemical structure using the International Union of Pure and Applied Chemistry (IUPAC) standard.",
               "URL": "http://www.iupac.org/home/publications/e-resources/inchi.html",
               "Information": [
@@ -4928,19 +4928,8 @@
                   "Name": "Semi-standard non-polar",
                   "Value": {
                     "Number": [
-                      711,
-                      673.6,
-                      673.6,
-                      676,
-                      672,
-                      676,
-                      727,
-                      679,
-                      680,
-                      680,
-                      695,
-                      696,
-                      677
+                      711, 673.6, 673.6, 676, 672, 676, 727, 679, 680, 680, 695,
+                      696, 677
                     ]
                   }
                 },
