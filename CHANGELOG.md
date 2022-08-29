@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.2](https://github.com/cheminfo/pubchem/compare/v0.9.1...v0.9.2) (2022-08-29)
+
+
+### Bug Fixes
+
+* correctly look for InChIKey and not 'InChI Key' ([cf46505](https://github.com/cheminfo/pubchem/commit/cf465055869d18e2fbf21fecde8052eea983ece3))
+
 ## [0.9.1](https://github.com/cheminfo/pubchem/compare/v0.9.0...v0.9.1) (2022-08-29)
 
 ### Bug Fixes
