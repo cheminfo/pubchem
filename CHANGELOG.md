@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.3](https://github.com/cheminfo/pubchem/compare/v0.9.2...v0.9.3) (2022-10-31)
+
+
+### Bug Fixes
+
+* add the correct code for P statements ([2fa5d16](https://github.com/cheminfo/pubchem/commit/2fa5d16e2c3370d9cb8fb2fe7de010ac26704e22))
+
 ## [0.9.2](https://github.com/cheminfo/pubchem/compare/v0.9.1...v0.9.2) (2022-08-29)
 
 
