@@ -38,8 +38,10 @@ export const precautionaryStatements = {
   P283: 'Wear fire/flame resistant/retardant clothing.',
   P284: '[In case of inadequate ventilation] wear respiratory protection. [As modified by IV ATP]',
   P285: '[Deleted by IV ATP]',
-  'P231+232': 'Handle under inert gas. Protect from moisture',
-  'P235+410': 'Keep cool. Protect from sunlight',
+  'P231+P232': 'Handle under inert gas. Protect from moisture',
+  'P264+P265':
+    'Wash hands [and …] thoroughly after handling. Do not touch eyes',
+  'P235+P410': 'Keep cool. Protect from sunlight',
   P301: 'IF SWALLOWED:',
   P302: 'IF ON SKIN:',
   P303: 'IF ON SKIN (or hair):',
@@ -91,47 +93,49 @@ export const precautionaryStatements = {
   P380: 'Evacuate area.',
   P381: 'Eliminate all ignition sources if safe to do so.',
   P391: 'Collect spillage.',
-  'P301+310':
+  'P301+P310':
     'IF SWALLOWED: Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]',
-  'P301+312':
+  'P301+P312':
     'IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]',
-  'P301+330+331': 'IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.',
-  'P302+334': 'IF ON SKIN: Immerse in cool water/wrap in wet bandages.',
-  'P302+350': '[Deleted by IV ATP]',
-  'P302+352': 'IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]',
-  'P303+361+353':
+  'P301+P316': 'IF SWALLOWED: Get emergency medical help immediately.',
+  'P301+P330+P331': 'IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.',
+  'P302+P334': 'IF ON SKIN: Immerse in cool water/wrap in wet bandages.',
+  'P302+P350': '[Deleted by IV ATP]',
+  'P302+P352':
+    'IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]',
+  'P303+P361+P353':
     'IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]',
-  'P304+312':
+  'P304+P312':
     'IF INHALED: Call a POISON CENTER or doctor/physician if you feel unwell.',
-  'P304+340':
+  'P304+P340':
     'IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]',
-  'P304+341': '[Deleted by IV ATP]',
-  'P305+351+338':
+  'P304+P341': '[Deleted by IV ATP]',
+  'P305+P351+P338':
     'IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.',
   'P306+360':
     'IF ON CLOTHING: Rinse immediately contaminated clothing and skin with plenty of water before removing clothes.',
-  'P307+311': 'IF exposed: Call a POISON CENTER or doctor/physician.',
-  'P308+311':
+  'P307+P311': 'IF exposed: Call a POISON CENTER or doctor/physician.',
+  'P308+P311':
     'IF exposed or concerned: Call a POISON CENTER/ doctor/… [Added by IV ATP]',
-  'P309+311': '[Deleted by IV ATP]',
-  'P332+313': 'If skin irritation occurs: Get medical advice/attention.',
-  'P333+313':
+  'P309+P311': '[Deleted by IV ATP]',
+  'P332+P313': 'If skin irritation occurs: Get medical advice/attention.',
+  'P333+P313':
     'If skin irritation or a rash occurs: Get medical advice/attention.',
-  'P335+334':
+  'P335+P334':
     'Brush off loose particles from skin. Immerse in cool water/wrap in wet bandages.',
-  'P337+313': 'If eye irritation persists get medical advice/attention.',
-  'P342+311':
+  'P337+P313': 'If eye irritation persists get medical advice/attention.',
+  'P342+P311':
     'If experiencing respiratory symptoms: Call a POISON CENTER/doctor/… [As modified by IV ATP]',
-  'P361+364':
+  'P361+P364':
     'Take off immediately all contaminated clothing and wash it before reuse. [Added by IV ATP]',
-  'P362+364':
+  'P362+P364':
     'Take off contaminated clothing and wash it before reuse. [Added by IV ATP]',
-  'P370+376': 'In case of fire: Stop leak if safe to do so.',
-  'P370+378': 'In case of fire: Use … to extinguish. [As modified by IV ATP]',
-  'P370+380': 'In case of fire: Evacuate area.',
-  'P370+380+375':
+  'P370+P376': 'In case of fire: Stop leak if safe to do so.',
+  'P370+P378': 'In case of fire: Use … to extinguish. [As modified by IV ATP]',
+  'P370+P380': 'In case of fire: Evacuate area.',
+  'P370+P380+P375':
     'In case of fire: Evacuate area. Fight fire remotely due to the risk of explosion.',
-  'P371+380+375':
+  'P371+P380+P375':
     'In case of major fire and large quantities: Evacuate area. Fight fire remotely due to the risk of explosion.',
   P401: 'Store …',
   P402: 'Store in a dry place.',
@@ -146,13 +150,13 @@ export const precautionaryStatements = {
   P413: 'Store bulk masses greater than … kg/… lbs at temperatures not exceeding … °C/… °F.',
   P420: 'Store away from other materials.',
   P422: 'Store contents under …',
-  'P402+404': 'Store in a dry place. Store in a closed container.',
-  'P403+233':
+  'P402+P404': 'Store in a dry place. Store in a closed container.',
+  'P403+P233':
     'Store in a well ventilated place. Keep container tightly closed.',
-  'P403+235': 'Store in a well ventilated place. Keep cool.',
-  'P410+403': 'Protect from sunlight. Store in a well-ventilated place.',
-  'P410+412':
+  'P403+P235': 'Store in a well ventilated place. Keep cool.',
+  'P410+P403': 'Protect from sunlight. Store in a well-ventilated place.',
+  'P410+P412':
     'Protect from sunlight. Do not expose to temperatures exceeding 50 °C/122 °F.',
-  'P411+235': 'Store at temperatures not exceeding … °C/… °F. Keep cool.',
+  'P411+P235': 'Store at temperatures not exceeding … °C/… °F. Keep cool.',
   P501: 'Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].',
 };
