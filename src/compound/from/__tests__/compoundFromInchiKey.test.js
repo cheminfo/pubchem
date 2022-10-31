@@ -1,3 +1,4 @@
+import { it, expect, describe } from 'vitest';
 import { cache } from '../../../util/cache.js';
 import { compoundFromInchiKey } from '../compoundFromInchiKey.js';
 

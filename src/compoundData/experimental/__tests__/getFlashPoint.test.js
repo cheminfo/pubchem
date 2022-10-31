@@ -1,4 +1,5 @@
 import { toBeDeepCloseTo, toMatchCloseTo } from 'jest-matcher-deep-close-to';
+import { test, expect } from 'vitest';
 
 import benzene from '../../../../data/benzene.json';
 import { getFlashPoint } from '../getFlashPoint.js';

@@ -1,3 +1,5 @@
+import { it, expect, describe } from 'vitest';
+
 import { cache } from '../../../util/cache.js';
 import { compoundFromSmiles } from '../compoundFromSmiles.js';
 

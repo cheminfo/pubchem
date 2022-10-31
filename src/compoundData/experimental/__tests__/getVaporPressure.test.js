@@ -1,3 +1,5 @@
+import { test, expect } from 'vitest';
+
 import benzene from '../../../../data/benzene.json';
 import { getVaporPressure } from '../getVaporPressure.js';
 

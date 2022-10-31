@@ -1,3 +1,5 @@
+import { it, expect, describe } from 'vitest';
+
 import bromopentane from '../../../../data/bromopentane.json';
 import penicillin from '../../../../data/penicillin.json';
 import { getExperimentalData } from '../getExperimentalData.js';

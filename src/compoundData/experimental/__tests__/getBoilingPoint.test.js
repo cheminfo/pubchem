@@ -1,3 +1,5 @@
+import { expect, test } from 'vitest';
+
 import benzene from '../../../../data/benzene.json';
 import { getBoilingPoint } from '../getBoilingPoint.js';
 
