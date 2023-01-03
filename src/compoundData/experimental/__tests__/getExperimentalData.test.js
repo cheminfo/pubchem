@@ -39,6 +39,7 @@ describe('getExperimentalData', () => {
         },
       ],
       flashPoint: [],
+      refractiveIndex: [],
       meltingPoint: [
         {
           reference: {
@@ -101,6 +102,7 @@ describe('getExperimentalData', () => {
       meltingPoint: [],
       solubility: [],
       vaporPressure: [],
+      refractiveIndex: [],
     });
   });
 });

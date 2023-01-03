@@ -16,6 +16,7 @@ describe('CompoundData', () => {
       'meltingPoint',
       'solubility',
       'vaporPressure',
+      'refractiveIndex',
     ]);
 
     const identifiers = compoundData.getIdentifiers();

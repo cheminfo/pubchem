@@ -1,6 +1,7 @@
 import { getBoilingPoint } from './getBoilingPoint.js';
 import { getFlashPoint } from './getFlashPoint.js';
 import { getMeltingPoint } from './getMeltingPoint.js';
+import { getRefractiveIndex } from './getRefractiveIndex.js';
 import { getSolubility } from './getSolubility.js';
 import { getVaporPressure } from './getVaporPressure.js';
 
@@ -26,5 +27,6 @@ export function getExperimentalData(data, options) {
     meltingPoint: getMeltingPoint(data, options),
     solubility: getSolubility(data, options),
     vaporPressure: getVaporPressure(data, options),
+    refractiveIndex: getRefractiveIndex(data, options),
   };
 }
