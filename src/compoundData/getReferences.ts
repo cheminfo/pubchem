@@ -1,13 +1,14 @@
 import jp from 'jsonpath';
 
+import { DataType } from './CompoundData';
+
 /**
  * Returns all references cited in the PubChem entry
  *
- * @export
- * @param {Object} data response of a compound data request to the PubChem API
- * @returns {Array<Object>.<String,String>} References
+ * @param data Data of a compound data request to the PubChem API
+ * @returns References
  */
-export function getReferences(data) {
+export function getReferences(data: DataType) {
   const references = jp.query(data, '$.Reference[*]').reduce((ref, entry) => {
     ref[entry.ReferenceNumber] = {
       url: entry.URL,

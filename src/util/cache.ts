@@ -2,7 +2,7 @@ import { readFileSync, existsSync, writeFileSync } from 'fs';
 
 import md5 from 'md5';
 
-export function cache(query, value) {
+export function cache(query: string, value?: string) {
   const filename = new URL(`../../cache/${md5(query)}.json`, import.meta.url);
 
   if (!value) {

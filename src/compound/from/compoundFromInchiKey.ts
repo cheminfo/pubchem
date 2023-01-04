@@ -1,15 +1,18 @@
 import fetch from 'cross-fetch';
 
-import { Compound } from '../Compound.js';
+import { Compound, CompoundOptions } from '../Compound.js';
 
 import { checkCompundsResult } from './handleError.js';
 
-export async function compoundFromInchiKey(inchiKey, options = {}) {
+export async function compoundFromInchiKey(
+  inchiKey: string,
+  options: CompoundOptions = {},
+) {
   const { cache } = options;
 
   let compounds;
 
-  if (cache && cache(inchiKey)) {
+  if (cache?.(inchiKey)) {
     compounds = cache(inchiKey);
   } else {
     const encodedInchiKey = encodeURIComponent(inchiKey);

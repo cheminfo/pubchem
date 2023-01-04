@@ -1,8 +1,20 @@
+import { ComputedData, DataType } from '../CompoundData.js';
+
 import { getComputedDataSection } from './getComputedDataSection.js';
 import { getComputedPropertySection } from './getComputedPropertySection.js';
 
-export function getNumberProperties(data, sectionName) {
-  let output = {
+/**
+ * Returns the number properties of a compound
+ *
+ * @param data Data of a compound data request to the PubChem API
+ * @param sectionName Name of the section to get the data from
+ * @returns Computed Data
+ */
+export function getNumberProperties(
+  data: DataType,
+  sectionName: string,
+): ComputedData {
+  const output: ComputedData = {
     value: null,
     label: null,
     reference: {

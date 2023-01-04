@@ -1,4 +1,4 @@
-export function checkCompundsResult(compounds) {
+export function checkCompundsResult(compounds: Array<any>) {
   if (!Array.isArray(compounds) || compounds.length === 0) {
     throw new Error('No compound found');
   }

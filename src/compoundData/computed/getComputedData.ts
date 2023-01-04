@@ -1,3 +1,5 @@
+import { DataType } from '../CompoundData.js';
+
 import { getComplexity } from './getComplexity.js';
 import { getFormalCharge } from './getFormalCharge.js';
 import { getHeavyAtomCount } from './getHeavyAtomCount.js';
@@ -7,7 +9,13 @@ import { getRotableBondCount } from './getRotableBondCount.js';
 import { getTPSA } from './getTPSA.js';
 import { getxLogP3 } from './getxLogP3.js';
 
-export function getComputedData(data) {
+/**
+ * Returns an object of computed data
+ *
+ * @param data Data of a compound data request to the PubChem API
+ * @returns Object of computed data
+ */
+export function getComputedData(data: DataType) {
   return {
     hydrogenBondDonorCount: getHydrogenBondDonorCount(data),
     hydrogenBondAcceptorCount: getHydrogenBondAcceptorCount(data),

@@ -1,7 +1,7 @@
 import { it, expect, describe } from 'vitest';
 
 import benzene from '../../../data/benzene.json';
-import { CompoundData } from '../CompoundData.js';
+import { CompoundData } from '../CompoundData';
 
 describe('CompoundData', () => {
   let compoundData = new CompoundData(benzene);

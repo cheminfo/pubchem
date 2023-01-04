@@ -13,8 +13,59 @@ import { getInChIKey } from './identifiers/getInChIKey.js';
 import { getSMILES } from './identifiers/getSMILES.js';
 import { getGHS, getGHSSummary } from './safety/getGHS.js';
 
+export type DataType = any;
+
+export interface ComputedData {
+  /**
+   * Value of the property
+   * @type {Number}
+   * @default null
+   */
+  value: number | null;
+  /**
+   * Human readable name of the property
+   * @type {String}
+   * @default null
+   */
+  label: string | null;
+  /**
+   * Description of the property
+   * @type {String}
+   * @default null
+   */
+  description: string | null;
+  /**
+   * Units of the property
+   * @type {String}
+   */
+  units?: string;
+  reference: {
+    /**
+     * URL of the reference
+     * @type {String}
+     */
+    url?: string;
+    /**
+     * Name of the source
+     * @type {String}
+     */
+    sourceName?: string;
+    /**
+     * Name of the reference
+     * @type {String}
+     */
+    name?: string;
+    /**
+     * Description of the reference
+     * @type {String}
+     * @default null
+     */
+    description: string | null;
+  };
+}
 export class CompoundData {
-  constructor(data) {
+  data: DataType;
+  constructor(data: DataType) {
     this.data = data;
   }
   getReferences() {

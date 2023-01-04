@@ -46,6 +46,8 @@
     "@babel/plugin-transform-modules-commonjs": "^7.20.11",
     "@babel/preset-typescript": "^7.18.6",
     "@types/jest": "^29.2.5",
+    "@types/jsonpath": "^0.2.0",
+    "@types/md5": "^2.3.2",
     "@vitest/coverage-c8": "^0.26.3",
     "cheminfo-build": "^1.1.11",
     "cross-env": "^7.0.3",
