@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/cheminfo/pubchem/compare/v0.9.3...v0.10.0) (2023-01-04)
+
+
+### Features
+
+* add experimental refractive index ([c8933aa](https://github.com/cheminfo/pubchem/commit/c8933aac6f61c2d3213f71f1be86b95c144328c1))
+
 ## [0.9.3](https://github.com/cheminfo/pubchem/compare/v0.9.2...v0.9.3) (2022-10-31)
 
 
