@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "checkJs": true,
     "declaration": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "noImplicitAny": false,
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
