@@ -1,7 +1,7 @@
 import { it, expect, describe } from 'vitest';
 
-import { cache } from '../../../util/cache.js';
-import { compoundFromInchiKey } from '../compoundFromInchiKey.js';
+import { cache } from '../../../util/cache';
+import { compoundFromInchiKey } from '../compoundFromInchiKey';
 
 describe('compoundFromInchiKey', () => {
   it('N2', async () => {

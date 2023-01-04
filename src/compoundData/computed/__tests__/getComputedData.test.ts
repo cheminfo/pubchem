@@ -1,7 +1,7 @@
 import { test, expect } from 'vitest';
 
 import data from '../../../../data/bromopentane.json';
-import { getComputedData } from '../getComputedData.js';
+import { getComputedData } from '../getComputedData';
 
 test('getComputedData', () => {
   let result = getComputedData(data);

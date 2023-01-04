@@ -1,6 +1,6 @@
-import { ComputedData, DataType } from '../CompoundData.js';
+import { ComputedData, DataType } from '../CompoundData';
 
-import { getNumberProperties } from './getNumberProperties.js';
+import { getNumberProperties } from './getNumberProperties';
 
 /**
  * Returns the xLogP3 of a compound

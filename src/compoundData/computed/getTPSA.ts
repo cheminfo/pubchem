@@ -1,6 +1,6 @@
-import { ComputedData, DataType } from '../CompoundData.js';
+import { ComputedData, DataType } from '../CompoundData';
 
-import { getNumberProperties } from './getNumberProperties.js';
+import { getNumberProperties } from './getNumberProperties';
 
 /**
  * Returns the topological polar surface area in angstrom^2

@@ -1,7 +1,7 @@
 import { it, expect, describe } from 'vitest';
 
-import { cache } from '../../../util/cache.js';
-import { compoundFromSmiles } from '../compoundFromSmiles.js';
+import { cache } from '../../../util/cache';
+import { compoundFromSmiles } from '../compoundFromSmiles';
 
 describe('compoundFromSmiles', () => {
   it('CCCBr', async () => {

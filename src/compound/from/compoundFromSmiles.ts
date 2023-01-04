@@ -1,12 +1,12 @@
 import fetch from 'cross-fetch';
 
-import { Compound, CompoundOptions } from '../Compound.js';
+import { Compound, Options } from '../Compound';
 
-import { checkCompundsResult } from './handleError.js';
+import { checkCompundsResult } from './handleError';
 
 export async function compoundFromSmiles(
   smiles,
-  options: CompoundOptions = {},
+  options: Pick<Options, 'cache'> = {},
 ) {
   const { cache } = options;
 

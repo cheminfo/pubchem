@@ -1,23 +1,38 @@
-import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID.js';
+import { DataType } from '../compoundData/CompoundData';
+import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID';
 
-import { compoundFromInchiKey } from './from/compoundFromInchiKey.js';
-import { compoundFromSmiles } from './from/compoundFromSmiles.js';
+import { compoundFromInchiKey } from './from/compoundFromInchiKey';
+import { compoundFromSmiles } from './from/compoundFromSmiles';
 
-export interface CompoundOptions {
-  cache?: (query: string, value?: string) => any;
+export interface Options {
+  cache?: (query: string, value?: string) => DataType;
+  parser?: (value: string, options?: Options) => any;
+  targetUnits?: string;
+  pressure?: {
+    defaultValue?: number;
+    defaultUnits?: string;
+    targetUnits?: string;
+    optional?: boolean;
+  };
+  temperature?: {
+    defaultValue?: number;
+    defaultUnits?: string;
+    targetUnits?: string;
+    optional?: boolean;
+  };
 }
 export class Compound {
-  data: any;
-  cache?: (query: string, value?: string) => any;
+  data: DataType;
+  cache?: (query: string, value?: string) => DataType;
   static fromSmiles: (
-    smiles: any,
-    options?: CompoundOptions,
+    smiles: string,
+    options?: Pick<Options, 'cache'>,
   ) => Promise<Compound>;
   static fromInchiKey: (
-    inchiKey: any,
-    options?: CompoundOptions,
+    inchiKey: string,
+    options?: Pick<Options, 'cache'>,
   ) => Promise<Compound>;
-  constructor(data: any, options: CompoundOptions = {}) {
+  constructor(data: DataType, options: Pick<Options, 'cache'> = {}) {
     this.data = data;
     this.cache = options.cache;
   }

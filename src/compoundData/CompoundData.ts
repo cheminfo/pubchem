@@ -1,17 +1,17 @@
-import { getComputedData } from './computed/getComputedData.js';
-import { getBoilingPoint } from './experimental/getBoilingPoint.js';
-import { getExperimentalData } from './experimental/getExperimentalData.js';
-import { getFlashPoint } from './experimental/getFlashPoint.js';
-import { getMeltingPoint } from './experimental/getMeltingPoint.js';
-import { getSolubility } from './experimental/getSolubility.js';
-import { getVaporPressure } from './experimental/getVaporPressure.js';
-import { getReferences } from './getReferences.js';
-import { getFormula } from './identifiers/getFormula.js';
-import { getIdentifiers } from './identifiers/getIdentifiers.js';
-import { getInChI } from './identifiers/getInChI.js';
-import { getInChIKey } from './identifiers/getInChIKey.js';
-import { getSMILES } from './identifiers/getSMILES.js';
-import { getGHS, getGHSSummary } from './safety/getGHS.js';
+import { getComputedData } from './computed/getComputedData';
+import { getBoilingPoint } from './experimental/getBoilingPoint';
+import { getExperimentalData } from './experimental/getExperimentalData';
+import { getFlashPoint } from './experimental/getFlashPoint';
+import { getMeltingPoint } from './experimental/getMeltingPoint';
+import { getSolubility } from './experimental/getSolubility';
+import { getVaporPressure } from './experimental/getVaporPressure';
+import { getReferences } from './getReferences';
+import { getFormula } from './identifiers/getFormula';
+import { getIdentifiers } from './identifiers/getIdentifiers';
+import { getInChI } from './identifiers/getInChI';
+import { getInChIKey } from './identifiers/getInChIKey';
+import { getSMILES } from './identifiers/getSMILES';
+import { getGHS, getGHSSummary } from './safety/getGHS';
 
 export type DataType = any;
 
@@ -138,8 +138,8 @@ export class CompoundData {
     return getVaporPressure(this.data, options);
   }
 
-  getSolubility(options) {
-    return getSolubility(this.data, options);
+  getSolubility() {
+    return getSolubility(this.data);
   }
 
   getFlashPoint(options) {

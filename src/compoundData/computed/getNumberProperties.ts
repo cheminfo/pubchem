@@ -1,7 +1,7 @@
-import { ComputedData, DataType } from '../CompoundData.js';
+import { ComputedData, DataType } from '../CompoundData';
 
-import { getComputedDataSection } from './getComputedDataSection.js';
-import { getComputedPropertySection } from './getComputedPropertySection.js';
+import { getComputedDataSection } from './getComputedDataSection';
+import { getComputedPropertySection } from './getComputedPropertySection';
 
 /**
  * Returns the number properties of a compound

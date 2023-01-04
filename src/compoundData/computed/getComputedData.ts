@@ -1,13 +1,13 @@
-import { DataType } from '../CompoundData.js';
+import { DataType } from '../CompoundData';
 
-import { getComplexity } from './getComplexity.js';
-import { getFormalCharge } from './getFormalCharge.js';
-import { getHeavyAtomCount } from './getHeavyAtomCount.js';
-import { getHydrogenBondAcceptorCount } from './getHydrogenBondAcceptorCount.js';
-import { getHydrogenBondDonorCount } from './getHydrogenBondDonorCount.js';
-import { getRotableBondCount } from './getRotableBondCount.js';
-import { getTPSA } from './getTPSA.js';
-import { getxLogP3 } from './getxLogP3.js';
+import { getComplexity } from './getComplexity';
+import { getFormalCharge } from './getFormalCharge';
+import { getHeavyAtomCount } from './getHeavyAtomCount';
+import { getHydrogenBondAcceptorCount } from './getHydrogenBondAcceptorCount';
+import { getHydrogenBondDonorCount } from './getHydrogenBondDonorCount';
+import { getRotableBondCount } from './getRotableBondCount';
+import { getTPSA } from './getTPSA';
+import { getxLogP3 } from './getxLogP3';
 
 /**
  * Returns an object of computed data
