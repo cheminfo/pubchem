@@ -1,4 +1,3 @@
-import merge from 'deepmerge';
 import { parseRefractiveIndex } from 'physical-parser';
 
 import { extractExperimentalData } from './extractExperimentalData.js';
