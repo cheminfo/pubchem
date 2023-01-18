@@ -7,11 +7,11 @@
   "types": "lib/index.d.ts",
   "files": [
     "lib",
-    "src",
-    "lib-esm"
+    "lib-esm",
+    "src"
   ],
   "scripts": {
-    "build": "cheminfo-build --entry src/index.js --root PubChem",
+    "build": "npm run tsc-cjs && cheminfo-build --entry lib/index.js --root PubChem",
     "check-types": "tsc --noEmit",
     "clean": "rimraf lib lib-esm",
     "eslint": "eslint src",
@@ -48,17 +48,17 @@
     "@types/jest": "^29.2.5",
     "@types/jsonpath": "^0.2.0",
     "@types/md5": "^2.3.2",
-    "@vitest/coverage-c8": "^0.26.3",
+    "@vitest/coverage-c8": "^0.27.2",
     "cheminfo-build": "^1.1.11",
     "cross-env": "^7.0.3",
-    "eslint": "^8.31.0",
+    "eslint": "^8.32.0",
     "eslint-config-cheminfo-typescript": "^11.2.2",
     "jest-matcher-deep-close-to": "^3.0.2",
     "md5": "^2.3.0",
-    "prettier": "^2.8.1",
-    "rimraf": "^3.0.2",
+    "prettier": "^2.8.3",
+    "rimraf": "^4.1.1",
     "typescript": "^4.9.4",
-    "vitest": "^0.26.3"
+    "vitest": "^0.27.2"
   },
   "dependencies": {
     "cross-fetch": "^3.1.5",
