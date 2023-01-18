@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.1](https://github.com/cheminfo/pubchem/compare/v0.10.0...v0.10.1) (2023-01-18)
+
+
+### Bug Fixes
+
+* create build for lactame ([673d667](https://github.com/cheminfo/pubchem/commit/673d667c4f24f13132826fa6fcf6a57cf0e7cee7))
+
 ## [0.10.0](https://github.com/cheminfo/pubchem/compare/v0.9.3...v0.10.0) (2023-01-04)
 
 
