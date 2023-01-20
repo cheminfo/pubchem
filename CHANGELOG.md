@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/cheminfo/pubchem/compare/v0.11.0...v1.0.0) (2023-01-20)
+
+
+### release-as
+
+* 1.0.0 ([b7577c5](https://github.com/cheminfo/pubchem/commit/b7577c5973482296aeefddebf8d8a83060bf1bb9))
+
 ## [0.11.0](https://github.com/cheminfo/pubchem/compare/v0.10.1...v0.11.0) (2023-01-20)
 
 
