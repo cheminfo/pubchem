@@ -2,6 +2,7 @@ import { DataType } from '../compoundData/CompoundData';
 import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID';
 
 import { compoundFromInchiKey } from './from/compoundFromInchiKey';
+import { compoundFromName } from './from/compoundFromName';
 import { compoundFromSmiles } from './from/compoundFromSmiles';
 
 export interface Options {
@@ -30,6 +31,10 @@ export class Compound {
   ) => Promise<Compound>;
   static fromInchiKey: (
     inchiKey: string,
+    options?: Pick<Options, 'cache'>,
+  ) => Promise<Compound>;
+  static fromName: (
+    name: string,
     options?: Pick<Options, 'cache'>,
   ) => Promise<Compound>;
   constructor(data: DataType, options: Pick<Options, 'cache'> = {}) {
@@ -63,4 +68,5 @@ export class Compound {
 }
 
 Compound.fromSmiles = compoundFromSmiles;
+Compound.fromName = compoundFromName;
 Compound.fromInchiKey = compoundFromInchiKey;
