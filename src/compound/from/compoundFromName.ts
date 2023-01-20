@@ -2,7 +2,7 @@ import fetch from 'cross-fetch';
 
 import { Compound, Options } from '../Compound';
 
-import { checkCompundsResult } from './handleError';
+import { checkCompoundsResult } from './handleError';
 
 export async function compoundFromName(
   smiles,
@@ -25,7 +25,7 @@ export async function compoundFromName(
     }
   }
 
-  checkCompundsResult(compounds);
+  checkCompoundsResult(compounds);
 
   return new Compound(compounds[0], { cache });
 }
