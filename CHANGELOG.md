@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.0](https://github.com/cheminfo/pubchem/compare/v0.10.1...v0.11.0) (2023-01-20)
+
+
+### Features
+
+* add compound fromName ([bccade8](https://github.com/cheminfo/pubchem/commit/bccade8606ae5fd6a3ddda448dd89222c95afa8b))
+
 ## [0.10.1](https://github.com/cheminfo/pubchem/compare/v0.10.0...v0.10.1) (2023-01-18)
 
 
