@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/cheminfo/pubchem/compare/v1.0.0...v1.1.0) (2023-04-04)
+
+
+### Features
+
+* add density ([db2aed2](https://github.com/cheminfo/pubchem/commit/db2aed2782241ce1b4d786754e0f146a0001d064))
+
 ## [1.0.0](https://github.com/cheminfo/pubchem/compare/v0.11.0...v1.0.0) (2023-01-20)
 
 
