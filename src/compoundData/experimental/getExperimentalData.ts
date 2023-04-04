@@ -2,6 +2,7 @@ import { Options } from '../../compound/Compound';
 import { DataType } from '../CompoundData';
 
 import { getBoilingPoint } from './getBoilingPoint';
+import { getDensity } from './getDensity';
 import { getFlashPoint } from './getFlashPoint';
 import { getMeltingPoint } from './getMeltingPoint';
 import { getRefractiveIndex } from './getRefractiveIndex';
@@ -17,6 +18,7 @@ import { getVaporPressure } from './getVaporPressure';
 export function getExperimentalData(data: DataType, options: Options) {
   return {
     boilingPoint: getBoilingPoint(data, options),
+    density: getDensity(data, options),
     flashPoint: getFlashPoint(data, options),
     meltingPoint: getMeltingPoint(data, options),
     solubility: getSolubility(data),

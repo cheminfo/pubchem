@@ -12,6 +12,7 @@ describe('CompoundData', () => {
     });
     expect(Object.keys(result)).toStrictEqual([
       'boilingPoint',
+      'density',
       'flashPoint',
       'meltingPoint',
       'solubility',

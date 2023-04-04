@@ -1,5 +1,6 @@
 import { getComputedData } from './computed/getComputedData';
 import { getBoilingPoint } from './experimental/getBoilingPoint';
+import { getDensity } from './experimental/getDensity';
 import { getExperimentalData } from './experimental/getExperimentalData';
 import { getFlashPoint } from './experimental/getFlashPoint';
 import { getMeltingPoint } from './experimental/getMeltingPoint';
@@ -132,6 +133,10 @@ export class CompoundData {
 
   getBoilingPoint(options) {
     return getBoilingPoint(this.data, options);
+  }
+
+  getDensity(options) {
+    return getDensity(this.data, options);
   }
 
   getVaporPressure(options) {

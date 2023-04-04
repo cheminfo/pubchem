@@ -14,7 +14,6 @@ describe('getExperimentalData', () => {
         targetUnits: 'bar',
       },
     });
-
     expect(result).toStrictEqual({
       boilingPoint: [
         {
@@ -38,6 +37,7 @@ describe('getExperimentalData', () => {
           },
         },
       ],
+      density: [],
       flashPoint: [],
       refractiveIndex: [],
       meltingPoint: [
@@ -98,6 +98,7 @@ describe('getExperimentalData', () => {
     });
     expect(result).toStrictEqual({
       boilingPoint: [],
+      density: [],
       flashPoint: [],
       meltingPoint: [],
       solubility: [],
