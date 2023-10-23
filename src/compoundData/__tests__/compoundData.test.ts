@@ -4,7 +4,7 @@ import benzene from '../../../data/benzene.json';
 import { CompoundData } from '../CompoundData';
 
 describe('CompoundData', () => {
-  let compoundData = new CompoundData(benzene);
+  const compoundData = new CompoundData(benzene);
   it('getExperimentalData', () => {
     const result = compoundData.getExperimentalData({
       pressure: { targetUnits: 'torr' },

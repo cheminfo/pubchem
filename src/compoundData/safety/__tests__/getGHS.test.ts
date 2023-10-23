@@ -7,7 +7,7 @@ import { getGHS, getGHSSummary } from '../getGHS';
 
 describe('getGHS', () => {
   it('triethylamine', () => {
-    let result = getGHS(triethylamine);
+    const result = getGHS(triethylamine);
     expect(result.pictograms).toHaveLength(6);
     expect(result.hStatements).toHaveLength(6);
     expect(result.pStatements).toHaveLength(6);
@@ -24,7 +24,7 @@ describe('getGHS', () => {
 
 describe('getGHSSummry', () => {
   it('bromopentane', () => {
-    let result = getGHSSummary(bromopentane);
+    const result = getGHSSummary(bromopentane);
 
     expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
       'GHS02',
@@ -71,7 +71,7 @@ describe('getGHSSummry', () => {
   });
 
   it('triethylamine', () => {
-    let result = getGHSSummary(triethylamine);
+    const result = getGHSSummary(triethylamine);
     expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
       'GHS02',
       'GHS05',
@@ -82,7 +82,7 @@ describe('getGHSSummry', () => {
   });
 
   it('ethylene glycol', () => {
-    let result = getGHSSummary(ethyleneglycol);
+    const result = getGHSSummary(ethyleneglycol);
     expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
       'GHS07',
       'GHS08',

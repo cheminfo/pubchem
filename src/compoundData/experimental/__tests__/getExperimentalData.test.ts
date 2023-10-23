@@ -88,7 +88,7 @@ describe('getExperimentalData', () => {
     });
   });
   it('penicillin', () => {
-    let result = getExperimentalData(penicillin, {
+    const result = getExperimentalData(penicillin, {
       temperature: {
         targetUnits: '°K',
       },

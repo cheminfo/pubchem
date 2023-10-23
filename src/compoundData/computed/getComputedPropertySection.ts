@@ -13,7 +13,7 @@ export function getComputedPropertySection(
   data: DataType,
   sectionName: string,
 ) {
-  let returnData = jp.query(
+  const returnData = jp.query(
     data,
     `$.Section[?(@.TOCHeading==="${sectionName}")].Information[*]`,
   )[0];

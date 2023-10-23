@@ -48,7 +48,7 @@ export class Compound {
 
   getData() {
     const cid = this.getCID();
-    let cd = compoundDataFromCID(cid, { cache: this.cache });
+    const cd = compoundDataFromCID(cid, { cache: this.cache });
     return cd;
   }
 
@@ -58,8 +58,8 @@ export class Compound {
     )
       .filter(([, descriptor]) => typeof descriptor.get === 'function')
       .map(([key]) => key);
-    let result = {};
-    for (let method of methods) {
+    const result = {};
+    for (const method of methods) {
       result[method] = this[method];
     }
 

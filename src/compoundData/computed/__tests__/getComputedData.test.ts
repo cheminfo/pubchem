@@ -4,7 +4,7 @@ import data from '../../../../data/bromopentane.json';
 import { getComputedData } from '../getComputedData';
 
 test('getComputedData', () => {
-  let result = getComputedData(data);
+  const result = getComputedData(data);
   expect(result).toStrictEqual({
     complexity: {
       value: 19.9,

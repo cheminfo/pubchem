@@ -5,7 +5,7 @@ import { getIdentifiers } from '../getIdentifiers';
 
 describe('test the identifier collection', () => {
   it('triethylamine', () => {
-    let result = getIdentifiers(triethylamine);
+    const result = getIdentifiers(triethylamine);
     expect(result.smiles.value).toBe('CCN(CC)CC');
     expect(result.inchiKey.value).toBe('ZMANZCXQSJIPKH-UHFFFAOYSA-N');
   });

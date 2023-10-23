@@ -26,7 +26,10 @@ export function getNumberProperties(
   try {
     const computationalData = getComputedDataSection(data);
 
-    let section = getComputedPropertySection(computationalData[0], sectionName);
+    const section = getComputedPropertySection(
+      computationalData[0],
+      sectionName,
+    );
     output.value = section.Value.Number[0];
     output.label = sectionName;
     output.description = section.Description;

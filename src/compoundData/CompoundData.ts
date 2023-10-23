@@ -157,8 +157,8 @@ export class CompoundData {
     )
       .filter(([, descriptor]) => typeof descriptor.get === 'function')
       .map(([key]) => key);
-    let result = {};
-    for (let method of methods) {
+    const result = {};
+    for (const method of methods) {
       result[method] = this[method];
     }
 

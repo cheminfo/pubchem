@@ -61,17 +61,17 @@ export interface GHSData {
    * Pictograms of the compound
    * @type {Array<SafteyData>}
    */
-  pictograms: Array<SafteyData>;
+  pictograms: SafteyData[];
   /**
    * Hazard statements of the compound
    * @type {Array<SafteyData>}
    */
-  hStatements: Array<SafteyData>;
+  hStatements: SafteyData[];
   /**
    * Precautionary statements of the compound
    * @type {Array<SafteyData>}
    */
-  pStatements: Array<SafteyData>;
+  pStatements: SafteyData[];
 }
 
 /**
@@ -96,7 +96,7 @@ export function getGHS(data: DataType): GHSData {
         data: jp
           .query(entry, '$.Value.StringWithMarkup[*].Markup[*]')
           .map((entry) => {
-            let code = entry.URL.match(/GHS\d+/)[0];
+            const code = entry.URL.match(/GHS\d+/)[0];
             return {
               code,
               description: ghsPictogramText[code],
@@ -173,7 +173,7 @@ export function getGHS(data: DataType): GHSData {
  * We combine all the results and keep
  */
 export function getGHSSummary(data) {
-  let result = getGHS(data);
+  const result = getGHS(data);
   return {
     pictograms: getUnique(result.pictograms),
     hStatements: getUnique(result.hStatements),
@@ -182,7 +182,7 @@ export function getGHSSummary(data) {
 }
 
 function getUnique(entries) {
-  let uniqueMap = {};
+  const uniqueMap = {};
   entries.map((entry) =>
     entry.data.forEach((line) => {
       uniqueMap[line.code] = line;
