@@ -7,7 +7,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "H225",
-          "description": "Highly flammable liquid and vapour",
+          "description": "Highly Flammable liquid and vapor",
         },
         {
           "code": "H302",
@@ -37,7 +37,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "H225",
-          "description": "Highly flammable liquid and vapour",
+          "description": "Highly Flammable liquid and vapor",
         },
         {
           "code": "H302",
@@ -83,7 +83,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "H225",
-          "description": "Highly flammable liquid and vapour",
+          "description": "Highly Flammable liquid and vapor",
         },
         {
           "code": "H302",
@@ -117,7 +117,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "H225",
-          "description": "Highly flammable liquid and vapour",
+          "description": "Highly Flammable liquid and vapor",
         },
         {
           "code": "H302",
@@ -159,7 +159,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "H225",
-          "description": "Highly flammable liquid and vapour",
+          "description": "Highly Flammable liquid and vapor",
         },
         {
           "code": "H302",
@@ -191,7 +191,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "H373",
-          "description": "May cause damage to organs through prolonged or repeated exposure",
+          "description": "May causes damage to organs through prolonged or repeated exposure",
         },
         {
           "code": "H401",
@@ -213,7 +213,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "H225",
-          "description": "Highly flammable liquid and vapour",
+          "description": "Highly Flammable liquid and vapor",
         },
         {
           "code": "H302",
@@ -257,7 +257,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "P210",
-          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
         },
         {
           "code": "P233",
@@ -269,7 +269,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P241",
-          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
         },
         {
           "code": "P242",
@@ -281,15 +281,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P261",
-          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P264",
-          "description": "Wash … thoroughly after handling.",
+          "description": "Wash hands [and ...] thoroughly after handling.",
         },
         {
           "code": "P270",
@@ -301,11 +301,11 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
           "code": "P301+P312",
-          "description": "IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
         },
         {
           "code": "P301+P330+P331",
@@ -313,39 +313,39 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P302+P352",
-          "description": "IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]",
+          "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
           "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P312",
-          "description": "IF INHALED: Call a POISON CENTER or doctor/physician if you feel unwell.",
+          "description": "(Deleted) IF INHALED: Call a POISON CENTER/doctor/... if you feel unwell.",
         },
         {
           "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
           "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.",
+          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
         },
         {
           "code": "P310",
-          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P312",
-          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
         },
         {
           "code": "P321",
-          "description": "Specific treatment (see … on this label).",
+          "description": "Specific treatment (see ... on this label).",
         },
         {
           "code": "P322",
-          "description": "[Deleted by IV ATP]",
+          "description": "(Deleted) Specific measures (see ...on this label).",
         },
         {
           "code": "P330",
@@ -353,15 +353,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P363",
-          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+          "description": "Wash contaminated clothing before reuse.",
         },
         {
           "code": "P370+P378",
-          "description": "In case of fire: Use … to extinguish. [As modified by IV ATP]",
+          "description": "In case of fire: Use ... to extinguish.",
         },
         {
           "code": "P403+P235",
-          "description": "Store in a well ventilated place. Keep cool.",
+          "description": "Store in a well-ventilated place. Keep cool.",
         },
         {
           "code": "P405",
@@ -369,7 +369,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P501",
-          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+          "description": "Dispose of contents/container to ...",
         },
       ],
       "reference": {
@@ -383,7 +383,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "P210",
-          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
         },
         {
           "code": "P233",
@@ -395,7 +395,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P241",
-          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
         },
         {
           "code": "P242",
@@ -407,15 +407,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P261",
-          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P264",
-          "description": "Wash … thoroughly after handling.",
+          "description": "Wash hands [and ...] thoroughly after handling.",
         },
         {
           "code": "P270",
@@ -427,11 +427,11 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
           "code": "P301+P312",
-          "description": "IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
         },
         {
           "code": "P301+P330+P331",
@@ -439,43 +439,43 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P302+P352",
-          "description": "IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]",
+          "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
           "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P312",
-          "description": "IF INHALED: Call a POISON CENTER or doctor/physician if you feel unwell.",
+          "description": "(Deleted) IF INHALED: Call a POISON CENTER/doctor/... if you feel unwell.",
         },
         {
           "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
           "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.",
+          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
         },
         {
           "code": "P310",
-          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P311",
-          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/...",
         },
         {
           "code": "P312",
-          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
         },
         {
           "code": "P321",
-          "description": "Specific treatment (see … on this label).",
+          "description": "Specific treatment (see ... on this label).",
         },
         {
           "code": "P322",
-          "description": "[Deleted by IV ATP]",
+          "description": "(Deleted) Specific measures (see ...on this label).",
         },
         {
           "code": "P330",
@@ -483,23 +483,23 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P361",
-          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+          "description": "Take off immediately all contaminated clothing.",
         },
         {
           "code": "P363",
-          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+          "description": "Wash contaminated clothing before reuse.",
         },
         {
           "code": "P370+P378",
-          "description": "In case of fire: Use … to extinguish. [As modified by IV ATP]",
+          "description": "In case of fire: Use ... to extinguish.",
         },
         {
           "code": "P403+P233",
-          "description": "Store in a well ventilated place. Keep container tightly closed.",
+          "description": "Store in a well-ventilated place. Keep container tightly closed.",
         },
         {
           "code": "P403+P235",
-          "description": "Store in a well ventilated place. Keep cool.",
+          "description": "Store in a well-ventilated place. Keep cool.",
         },
         {
           "code": "P405",
@@ -507,7 +507,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P501",
-          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+          "description": "Dispose of contents/container to ...",
         },
       ],
       "reference": {
@@ -521,7 +521,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "P210",
-          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
         },
         {
           "code": "P233",
@@ -533,7 +533,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P241",
-          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
         },
         {
           "code": "P242",
@@ -545,15 +545,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P261",
-          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P264",
-          "description": "Wash … thoroughly after handling.",
+          "description": "Wash hands [and ...] thoroughly after handling.",
         },
         {
           "code": "P270",
@@ -565,11 +565,11 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
           "code": "P301+P312",
-          "description": "IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
         },
         {
           "code": "P301+P330+P331",
@@ -577,39 +577,39 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P302+P352",
-          "description": "IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]",
+          "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
           "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
           "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.",
+          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
         },
         {
           "code": "P310",
-          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P311",
-          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/...",
         },
         {
           "code": "P312",
-          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
         },
         {
           "code": "P321",
-          "description": "Specific treatment (see … on this label).",
+          "description": "Specific treatment (see ... on this label).",
         },
         {
           "code": "P322",
-          "description": "[Deleted by IV ATP]",
+          "description": "(Deleted) Specific measures (see ...on this label).",
         },
         {
           "code": "P330",
@@ -617,23 +617,23 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P361",
-          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+          "description": "Take off immediately all contaminated clothing.",
         },
         {
           "code": "P363",
-          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+          "description": "Wash contaminated clothing before reuse.",
         },
         {
           "code": "P370+P378",
-          "description": "In case of fire: Use … to extinguish. [As modified by IV ATP]",
+          "description": "In case of fire: Use ... to extinguish.",
         },
         {
           "code": "P403+P233",
-          "description": "Store in a well ventilated place. Keep container tightly closed.",
+          "description": "Store in a well-ventilated place. Keep container tightly closed.",
         },
         {
           "code": "P403+P235",
-          "description": "Store in a well ventilated place. Keep cool.",
+          "description": "Store in a well-ventilated place. Keep cool.",
         },
         {
           "code": "P405",
@@ -641,7 +641,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P501",
-          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+          "description": "Dispose of contents/container to ...",
         },
       ],
       "reference": {
@@ -655,7 +655,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "P210",
-          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
         },
         {
           "code": "P233",
@@ -667,7 +667,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P241",
-          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
         },
         {
           "code": "P242",
@@ -679,15 +679,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P261",
-          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P264",
-          "description": "Wash … thoroughly after handling.",
+          "description": "Wash hands [and ...] thoroughly after handling.",
         },
         {
           "code": "P270",
@@ -703,11 +703,11 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
           "code": "P301+P312",
-          "description": "IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
         },
         {
           "code": "P301+P330+P331",
@@ -715,39 +715,39 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P302+P352",
-          "description": "IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]",
+          "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
           "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
           "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.",
+          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
         },
         {
           "code": "P310",
-          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P311",
-          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/...",
         },
         {
           "code": "P312",
-          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
         },
         {
           "code": "P321",
-          "description": "Specific treatment (see … on this label).",
+          "description": "Specific treatment (see ... on this label).",
         },
         {
           "code": "P322",
-          "description": "[Deleted by IV ATP]",
+          "description": "(Deleted) Specific measures (see ...on this label).",
         },
         {
           "code": "P330",
@@ -755,23 +755,23 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P361",
-          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+          "description": "Take off immediately all contaminated clothing.",
         },
         {
           "code": "P363",
-          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+          "description": "Wash contaminated clothing before reuse.",
         },
         {
           "code": "P370+P378",
-          "description": "In case of fire: Use … to extinguish. [As modified by IV ATP]",
+          "description": "In case of fire: Use ... to extinguish.",
         },
         {
           "code": "P403+P233",
-          "description": "Store in a well ventilated place. Keep container tightly closed.",
+          "description": "Store in a well-ventilated place. Keep container tightly closed.",
         },
         {
           "code": "P403+P235",
-          "description": "Store in a well ventilated place. Keep cool.",
+          "description": "Store in a well-ventilated place. Keep cool.",
         },
         {
           "code": "P405",
@@ -779,7 +779,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P501",
-          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+          "description": "Dispose of contents/container to ...",
         },
       ],
       "reference": {
@@ -793,7 +793,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "P210",
-          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
         },
         {
           "code": "P233",
@@ -805,7 +805,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P241",
-          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
         },
         {
           "code": "P242",
@@ -817,15 +817,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P261",
-          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P264",
-          "description": "Wash … thoroughly after handling.",
+          "description": "Wash hands [and ...] thoroughly after handling.",
         },
         {
           "code": "P270",
@@ -841,11 +841,11 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
           "code": "P301+P312",
-          "description": "IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
         },
         {
           "code": "P301+P330+P331",
@@ -853,47 +853,47 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P302+P352",
-          "description": "IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]",
+          "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
           "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P312",
-          "description": "IF INHALED: Call a POISON CENTER or doctor/physician if you feel unwell.",
+          "description": "(Deleted) IF INHALED: Call a POISON CENTER/doctor/... if you feel unwell.",
         },
         {
           "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
           "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.",
+          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
         },
         {
           "code": "P307+P311",
-          "description": "IF exposed: Call a POISON CENTER or doctor/physician.",
+          "description": "(Deleted) IF exposed: call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P310",
-          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P312",
-          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
         },
         {
           "code": "P314",
-          "description": "Get Medical advice/attention if you feel unwell.",
+          "description": "(Deleted) Get medical advice/attention if you feel unwell.",
         },
         {
           "code": "P321",
-          "description": "Specific treatment (see … on this label).",
+          "description": "Specific treatment (see ... on this label).",
         },
         {
           "code": "P322",
-          "description": "[Deleted by IV ATP]",
+          "description": "(Deleted) Specific measures (see ...on this label).",
         },
         {
           "code": "P330",
@@ -901,23 +901,23 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P361",
-          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+          "description": "Take off immediately all contaminated clothing.",
         },
         {
           "code": "P363",
-          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+          "description": "Wash contaminated clothing before reuse.",
         },
         {
           "code": "P370+P378",
-          "description": "In case of fire: Use … to extinguish. [As modified by IV ATP]",
+          "description": "In case of fire: Use ... to extinguish.",
         },
         {
           "code": "P403+P233",
-          "description": "Store in a well ventilated place. Keep container tightly closed.",
+          "description": "Store in a well-ventilated place. Keep container tightly closed.",
         },
         {
           "code": "P403+P235",
-          "description": "Store in a well ventilated place. Keep cool.",
+          "description": "Store in a well-ventilated place. Keep cool.",
         },
         {
           "code": "P405",
@@ -925,7 +925,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P501",
-          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+          "description": "Dispose of contents/container to ...",
         },
       ],
       "reference": {
@@ -939,7 +939,7 @@ exports[`getGHS > triethylamine 1`] = `
       "data": [
         {
           "code": "P210",
-          "description": "Keep away from heat, hot surfaces, sparks, open flames and other ignition sources. No smoking. [As modified by IV ATP]",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
         },
         {
           "code": "P233",
@@ -951,7 +951,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P241",
-          "description": "Use explosion-proof electrical/ventilating/light/…/equipment.",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
         },
         {
           "code": "P242",
@@ -963,15 +963,15 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapours/spray.",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P261",
-          "description": "Avoid breathing dust/fume/ gas/mist/vapours/spray. [As modified by IV ATP]",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
           "code": "P264",
-          "description": "Wash … thoroughly after handling.",
+          "description": "Wash hands [and ...] thoroughly after handling.",
         },
         {
           "code": "P270",
@@ -983,11 +983,11 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection. [As modified by IV ATP]",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
           "code": "P301+P312",
-          "description": "IF SWALLOWED: Call a POISON CENTER/doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
         },
         {
           "code": "P301+P330+P331",
@@ -995,47 +995,47 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P302+P352",
-          "description": "IF ON SKIN: Wash with plenty of water/… [As modified by IV ATP]",
+          "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
           "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off immediately all contaminated clothing. Rinse skin with water/ shower. [As modified by IV ATP]",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing. [As modified by IV ATP]",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
           "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do – continue rinsing.",
+          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
         },
         {
           "code": "P307+P311",
-          "description": "IF exposed: Call a POISON CENTER or doctor/physician.",
+          "description": "(Deleted) IF exposed: call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P310",
-          "description": "Immediately call a POISON CENTER/doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
         },
         {
           "code": "P311",
-          "description": "Call a POISON CENTER/ doctor/… [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/...",
         },
         {
           "code": "P312",
-          "description": "Call a POISON CENTER/ doctor/…/if you feel unwell. [As modified by IV ATP]",
+          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
         },
         {
           "code": "P314",
-          "description": "Get Medical advice/attention if you feel unwell.",
+          "description": "(Deleted) Get medical advice/attention if you feel unwell.",
         },
         {
           "code": "P321",
-          "description": "Specific treatment (see … on this label).",
+          "description": "Specific treatment (see ... on this label).",
         },
         {
           "code": "P322",
-          "description": "[Deleted by IV ATP]",
+          "description": "(Deleted) Specific measures (see ...on this label).",
         },
         {
           "code": "P330",
@@ -1043,23 +1043,23 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P361",
-          "description": "Take off immediately all contaminated clothing. [As modified by IV ATP]",
+          "description": "Take off immediately all contaminated clothing.",
         },
         {
           "code": "P363",
-          "description": "Wash contaminated clothing before reuse. [As modified by IV ATP]",
+          "description": "Wash contaminated clothing before reuse.",
         },
         {
           "code": "P370+P378",
-          "description": "In case of fire: Use … to extinguish. [As modified by IV ATP]",
+          "description": "In case of fire: Use ... to extinguish.",
         },
         {
           "code": "P403+P233",
-          "description": "Store in a well ventilated place. Keep container tightly closed.",
+          "description": "Store in a well-ventilated place. Keep container tightly closed.",
         },
         {
           "code": "P403+P235",
-          "description": "Store in a well ventilated place. Keep cool.",
+          "description": "Store in a well-ventilated place. Keep cool.",
         },
         {
           "code": "P405",
@@ -1067,7 +1067,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
         {
           "code": "P501",
-          "description": "Dispose of contents/container to … [… in accordance with local/regional/national/international regulation (to be specified)].",
+          "description": "Dispose of contents/container to ...",
         },
       ],
       "reference": {
