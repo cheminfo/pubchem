@@ -92,6 +92,10 @@ export class CompoundData {
     return getGHSSummary(this.data);
   }
 
+  getGHSSummary(options) {
+    return getGHSSummary(this.data, options);
+  }
+
   /**
    * Canonical SMILES
    */
