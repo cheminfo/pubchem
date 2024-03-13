@@ -81,6 +81,17 @@ describe('getGHSSummry', () => {
     ]);
   });
 
+  it('triethylamine with only europe', () => {
+    const result = getGHSSummary(triethylamine, {
+      sourceName: /EU REGULATIO/i,
+    });
+    expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
+      'GHS02',
+      'GHS05',
+      'GHS07',
+    ]);
+  });
+
   it('ethylene glycol', () => {
     const result = getGHSSummary(ethyleneglycol);
     expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([

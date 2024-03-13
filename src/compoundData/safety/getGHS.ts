@@ -43,12 +43,12 @@ interface StatementData {
   description: string;
 }
 
-interface SafteyData {
+interface SafetyData {
   /**
    * Reference to the source of the data
    * @type {ReferenceData}
    */
-  references: ReferenceData;
+  reference: ReferenceData;
   /**
    * Data of the statement
    * @type {StatementData}
@@ -59,19 +59,19 @@ interface SafteyData {
 export interface GHSData {
   /**
    * Pictograms of the compound
-   * @type {Array<SafteyData>}
+   * @type {Array<SafetyData>}
    */
-  pictograms: SafteyData[];
+  pictograms: SafetyData[];
   /**
    * Hazard statements of the compound
-   * @type {Array<SafteyData>}
+   * @type {Array<SafetyData>}
    */
-  hStatements: SafteyData[];
+  hStatements: SafetyData[];
   /**
    * Precautionary statements of the compound
-   * @type {Array<SafteyData>}
+   * @type {Array<SafetyData>}
    */
-  pStatements: SafteyData[];
+  pStatements: SafetyData[];
 }
 
 /**
@@ -170,11 +170,31 @@ export function getGHS(data: DataType): GHSData {
   };
 }
 
+interface GetGHSSummaryOptions {
+  /**
+   * Name of the source to extract
+   * @type {string}
+   */
+  sourceName?: string | RegExp;
+}
+
 /**
  * We combine all the results and keep
  */
-export function getGHSSummary(data) {
+export function getGHSSummary(data, options: GetGHSSummaryOptions = {}) {
+  const { sourceName } = options;
   const result = getGHS(data);
+  if (sourceName) {
+    result.pictograms = result.pictograms.filter((entry) =>
+      entry.reference.sourceName.match(sourceName),
+    );
+    result.hStatements = result.hStatements.filter((entry) =>
+      entry.reference.sourceName.match(sourceName),
+    );
+    result.pStatements = result.pStatements.filter((entry) =>
+      entry.reference.sourceName.match(sourceName),
+    );
+  }
   return {
     pictograms: getUnique(result.pictograms),
     hStatements: getUnique(result.hStatements),
