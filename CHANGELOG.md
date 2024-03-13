@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/cheminfo/pubchem/compare/v1.1.0...v1.2.0) (2024-03-13)
+
+
+### Features
+
+* add filter to getGHSSummary ([561422f](https://github.com/cheminfo/pubchem/commit/561422f7490753b2cde6a7dd6148eaaef717b56d))
+
 ## [1.1.0](https://github.com/cheminfo/pubchem/compare/v1.0.0...v1.1.0) (2023-04-04)
 
 
