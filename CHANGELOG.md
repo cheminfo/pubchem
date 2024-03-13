@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/cheminfo/pubchem/compare/v1.2.0...v1.3.0) (2024-03-13)
+
+
+### Features
+
+* expose getGHSSummary ([c302e65](https://github.com/cheminfo/pubchem/commit/c302e6517a7f459f6eac1ac10dadbaeb8915e8f5))
+
 ## [1.2.0](https://github.com/cheminfo/pubchem/compare/v1.1.0...v1.2.0) (2024-03-13)
 
 
