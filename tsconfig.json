@@ -4,6 +4,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "noImplicitAny": false,
+    "skipLibCheck": true,
     "outDir": "lib",
     "resolveJsonModule": true,
     "sourceMap": true,

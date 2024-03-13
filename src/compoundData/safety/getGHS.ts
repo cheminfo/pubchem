@@ -150,6 +150,7 @@ export function getGHS(data: DataType): GHSData {
           .query(entry, '$.Value.StringWithMarkup[*]')
           .map((entry) =>
             entry.String.match(
+              // eslint-disable-next-line no-lookahead-lookbehind-regexp/no-lookahead-lookbehind-regexp
               /(?<oneP>(?<!\+)P\d\d\d(?!\+))|(?<twoP>P\d\d\d\+P\d\d\d(?!\+))|(?<threeP>P\d\d\d\+P\d\d\d\+P\d\d\d(?!\+))/gm,
             ),
           )[0]

@@ -73,7 +73,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
       ],
       "reference": {
-        "description": "The information provided here is aggregated from the \\"Notified classification and labelling\\" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
+        "description": "The information provided here is aggregated from the "Notified classification and labelling" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
         "name": "Triethylamine",
         "sourceName": "European Chemicals Agency (ECHA)",
         "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
@@ -511,7 +511,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
       ],
       "reference": {
-        "description": "The information provided here is aggregated from the \\"Notified classification and labelling\\" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
+        "description": "The information provided here is aggregated from the "Notified classification and labelling" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
         "name": "Triethylamine",
         "sourceName": "European Chemicals Agency (ECHA)",
         "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
@@ -1121,7 +1121,7 @@ exports[`getGHS > triethylamine 1`] = `
         },
       ],
       "reference": {
-        "description": "The information provided here is aggregated from the \\"Notified classification and labelling\\" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
+        "description": "The information provided here is aggregated from the "Notified classification and labelling" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
         "name": "Triethylamine",
         "sourceName": "European Chemicals Agency (ECHA)",
         "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
