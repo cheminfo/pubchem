@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/cheminfo/pubchem/compare/v1.3.0...v1.3.1) (2025-05-20)
+
+
+### Bug Fixes
+
+* getSMILES and update test data ([8b3f93a](https://github.com/cheminfo/pubchem/commit/8b3f93ac972efdf3751543e925270c2635a692b2))
+* update dependencies and remove unused deps ([671ee28](https://github.com/cheminfo/pubchem/commit/671ee28e1cacae44ae78ed65b7936395046f8c08))
+
 ## [1.3.0](https://github.com/cheminfo/pubchem/compare/v1.2.0...v1.3.0) (2024-03-13)
 
 
