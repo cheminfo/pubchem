@@ -17,7 +17,7 @@
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
                   "Boolean": [true]
                 }
@@ -33,7 +33,7 @@
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Description": "Cillin",
                 "Value": {
                   "Number": [2349]
@@ -56,14 +56,14 @@
             },
             "Information": [
               {
-                "ReferenceNumber": 6,
+                "ReferenceNumber": 9,
                 "Value": {
                   "StringWithMarkup": [
                     {
-                      "String": "Cillin is a natural product found in Penicillium chrysogenum with data available.",
+                      "String": "Cillin has been reported in Penicillium chrysogenum with data available.",
                       "Markup": [
                         {
-                          "Start": 37,
+                          "Start": 28,
                           "Length": 23,
                           "URL": "https://pubchem.ncbi.nlm.nih.gov/taxonomy/5076#section=Natural-Products"
                         },
@@ -91,9 +91,9 @@
                 "URL": "https://iupac.org/what-we-do/nomenclature/",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by Lexichem TK 2.7.0 (PubChem release 2021.05.07)"
+                      "Computed by Lexichem TK 2.7.0 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -111,9 +111,9 @@
                 "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by InChI 1.0.6 (PubChem release 2021.05.07)"
+                      "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -131,9 +131,9 @@
                 "URL": "https://iupac.org/who-we-are/divisions/division-details/inchi/",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by InChI 1.0.6 (PubChem release 2021.05.07)"
+                      "Computed by InChI 1.07.2 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -146,14 +146,14 @@
                 ]
               },
               {
-                "TOCHeading": "Canonical SMILES",
-                "Description": "The Simplified Molecular-Input Line-Entry System (SMILES) is a widely-used line notation for chemical structures.  PubChem computes two kinds of SMILES strings for compounds: canonical SMILES (computed from chemical structures devoid of isotopic and stereochemical information), and isomeric SMILES (computed from chemical structures containing isotopic and stereochemical information).  This section shows the canonical SMILES of the compound.",
-                "URL": "https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html",
+                "TOCHeading": "SMILES",
+                "Description": "The Simplified Molecular Input Line Entry System (SMILES) is a widely-used line notation for chemical structures. The SMILES in this section includes both sterochemical and isotopic information.",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/glossary#section=SMILES",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by OEChem 2.3.0 (PubChem release 2021.05.07)"
+                      "Computed by OEChem 2.3.0 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -176,9 +176,9 @@
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Reference": [
-                  "Computed by PubChem 2.1 (PubChem release 2021.05.07)"
+                  "Computed by PubChem 2.2 (PubChem release 2025.04.14)"
                 ],
                 "Value": {
                   "StringWithMarkup": [
@@ -200,7 +200,7 @@
                 "URL": "https://www.cas.org/support/documentation/chemical-substances/faqs",
                 "Information": [
                   {
-                    "ReferenceNumber": 3,
+                    "ReferenceNumber": 4,
                     "Name": "CAS",
                     "Value": {
                       "StringWithMarkup": [
@@ -211,7 +211,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 4,
+                    "ReferenceNumber": 5,
                     "Value": {
                       "StringWithMarkup": [
                         {
@@ -223,12 +223,116 @@
                 ]
               },
               {
+                "TOCHeading": "ChEMBL ID",
+                "Description": "ChEMBL compound identifier",
+                "URL": "https://www.ebi.ac.uk/chembl/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 1,
+                    "URL": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL300052",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "CHEMBL300052"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "DSSTox Substance ID",
+                "Description": "Substance identifier used in the Distributed Structure-Searchable Toxicity (DSSTox) Database.",
+                "URL": "https://www.epa.gov/chemical-research/distributed-structure-searchable-toxicity-dsstox-database",
+                "Information": [
+                  {
+                    "ReferenceNumber": 5,
+                    "URL": "https://comptox.epa.gov/dashboard/DTXSID20274362",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "DTXSID20274362"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 6,
+                    "URL": "https://comptox.epa.gov/dashboard/DTXSID30859048",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "DTXSID30859048"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "HMDB ID",
+                "Description": "A chemical substance identifier from the HMDB database",
+                "URL": "https://hmdb.ca/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 7,
+                    "URL": "https://hmdb.ca/metabolites/HMDB0256229",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "HMDB0256229"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Metabolomics Workbench ID",
+                "Description": "Registration number used by Metabolomics Workbench",
+                "URL": "https://www.metabolomicsworkbench.org/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 15,
+                    "URL": "https://www.metabolomicsworkbench.org/data/StructureData.php?RegNo=144455",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "144455"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Nikkaji Number",
+                "Description": "Substance identifier used in the Japan Chemical Substance Dictionary (Nikkaji).",
+                "URL": "https://jglobal.jst.go.jp/en/",
+                "Information": [
+                  {
+                    "ReferenceNumber": 8,
+                    "URL": "http://jglobal.jst.go.jp/en/redirect?Nikkaji_No=J25.642K",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "J25.642K"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
                 "TOCHeading": "NSC Number",
                 "Description": "The National Service Center (NSC) number is a numeric identifier for substances submitted to the National Cancer Institute (NCI) for testing and evaluation. It is a registration number for the Developmental Therapeutics Program (DTP) repository.",
                 "URL": "https://dtp.cancer.gov/organization/dscb/compoundSubmission/faqs.htm",
+                "DisplayControls": {
+                  "ShowAtMost": 3
+                },
                 "Information": [
                   {
-                    "ReferenceNumber": 2,
+                    "ReferenceNumber": 3,
                     "Name": "NSC Number",
                     "URL": "https://dtp.cancer.gov/dtpstandard/servlet/dwindex?searchtype=NSC&outputformat=html&searchlist=11964",
                     "Value": {
@@ -240,7 +344,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 3,
+                    "ReferenceNumber": 4,
                     "Name": "NSC Number",
                     "URL": "https://dtp.cancer.gov/dtpstandard/servlet/dwindex?searchtype=NSC&outputformat=html&searchlist=193396",
                     "Value": {
@@ -254,30 +358,12 @@
                 ]
               },
               {
-                "TOCHeading": "DSSTox Substance ID",
-                "Description": "Substance identifier used in the Distributed Structure-Searchable Toxicity (DSSTox) Database.",
-                "URL": "https://www.epa.gov/chemical-research/distributed-structure-searchable-toxicity-dsstox-database",
-                "Information": [
-                  {
-                    "ReferenceNumber": 4,
-                    "URL": "https://comptox.epa.gov/dashboard/chemical/details/DTXSID20274362",
-                    "Value": {
-                      "StringWithMarkup": [
-                        {
-                          "String": "DTXSID20274362"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              },
-              {
                 "TOCHeading": "Wikidata",
                 "Description": "Wikidata entity identifier for the given compound.",
                 "URL": "https://www.wikidata.org/w/index.php?title=Special:WhatLinksHere/Property:P662",
                 "Information": [
                   {
-                    "ReferenceNumber": 14,
+                    "ReferenceNumber": 20,
                     "URL": "https://www.wikidata.org/wiki/Q82003729",
                     "Value": {
                       "StringWithMarkup": [
@@ -304,74 +390,38 @@
                 },
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Value": {
                       "StringWithMarkup": [
                         {
                           "String": "Cillin"
                         },
                         {
-                          "String": "Benzopenicillin"
+                          "String": "7005-30-3"
                         },
                         {
-                          "String": "Dropcillin"
+                          "String": "DTXSID20274362"
                         },
                         {
-                          "String": "Gelacillin"
+                          "String": "3,3-dimethyl-7-oxo-6-[(2-phenylacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
                         },
                         {
-                          "String": "Liquacillin"
+                          "String": "3,3-dimethyl-7-oxo-6-((2-phenylacetyl)amino)-4-thia-1-azabicyclo(3.2.0)heptane-2-carboxylic acid"
                         },
                         {
-                          "String": "Pharmacillin"
-                        },
-                        {
-                          "String": "Cilopen"
-                        },
-                        {
-                          "String": "Galofak"
-                        },
-                        {
-                          "String": "Pradupen"
+                          "String": "DTXCID90225841"
                         },
                         {
                           "String": "(5S)-3,3-dimethyl-7-oxo-6-[(2-phenylacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
                         },
                         {
-                          "String": "1232134-74-5"
-                        },
-                        {
-                          "String": "Compocillin G"
-                        },
-                        {
-                          "String": "Specilline G"
-                        },
-                        {
-                          "String": "Benzylpenicillin G"
-                        },
-                        {
-                          "String": "Free penicillin G"
-                        },
-                        {
-                          "String": "Free benzylpenicillin"
-                        },
-                        {
-                          "String": "Cilloral"
-                        },
-                        {
-                          "String": "Cosmopen"
-                        },
-                        {
-                          "String": "(Phenylmethyl)penicillin"
-                        },
-                        {
                           "String": "3,3-Dimethyl-7-oxo-6-[(phenylacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
                         },
                         {
-                          "String": "NSC131815"
+                          "String": "Penicillinic acid, benzyl-"
                         },
                         {
-                          "String": "Penicillinic acid, benzyl-"
+                          "String": "1232134-74-5"
                         },
                         {
                           "String": "(Phenylmethyl)penicillinic acid"
@@ -383,13 +433,7 @@
                           "String": "Benzyl-6-aminopenicillinic acid"
                         },
                         {
-                          "String": "NSC-193396"
-                        },
-                        {
                           "String": "3,3-dimethyl-7-oxo-6-((phenylacetyl)amino)-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
-                        },
-                        {
-                          "String": "Penicilline G sodium salt"
                         },
                         {
                           "String": "Oprea1_713794"
@@ -398,16 +442,13 @@
                           "String": "Oprea1_861345"
                         },
                         {
-                          "String": "7005-30-3"
-                        },
-                        {
                           "String": "CHEMBL300052"
                         },
                         {
                           "String": "SCHEMBL2109546"
                         },
                         {
-                          "String": "DTXSID20274362"
+                          "String": "DTXSID30859048"
                         },
                         {
                           "String": "NSC11964"
@@ -416,16 +457,10 @@
                           "String": "NSC-11964"
                         },
                         {
-                          "String": "NSC193396"
-                        },
-                        {
                           "String": "STL453455"
                         },
                         {
                           "String": "AKOS030242685"
-                        },
-                        {
-                          "String": "MCULE-3899419884"
                         },
                         {
                           "String": "SB74416"
@@ -434,16 +469,13 @@
                           "String": "NCI60_000703"
                         },
                         {
-                          "String": "FT-0631271"
-                        },
-                        {
-                          "String": "FT-0770573"
+                          "String": "NS00001514"
                         },
                         {
                           "String": "WLN: T45 ANV ESTJ CMV1R& F F GVQ"
                         },
                         {
-                          "String": "3,3-Dimethyl-6-(phenylacetylamino)-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
+                          "String": "3,3-Dimethyl-7-oxo-6-(2-phenylacetamido)-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
                         },
                         {
                           "String": "4-Thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid,3-dimethyl-7-oxo-6-(2-phenylacetamido)-"
@@ -464,7 +496,7 @@
                 },
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Value": {
                       "StringWithMarkup": [
                         {
@@ -474,22 +506,61 @@
                           "String": "Penicillin"
                         },
                         {
+                          "String": "Pentids"
+                        },
+                        {
                           "String": "Benzylpenicillin"
                         },
                         {
-                          "String": "Pentids"
+                          "String": "Benzopenicillin"
                         },
                         {
                           "String": "Abbocillin"
                         },
                         {
-                          "String": "bensylpenicillin"
+                          "String": "Dropcillin"
+                        },
+                        {
+                          "String": "Gelacillin"
+                        },
+                        {
+                          "String": "Liquacillin"
+                        },
+                        {
+                          "String": "Pharmacillin"
+                        },
+                        {
+                          "String": "Cilloral"
+                        },
+                        {
+                          "String": "Cosmopen"
+                        },
+                        {
+                          "String": "Pradupen"
+                        },
+                        {
+                          "String": "Cilopen"
+                        },
+                        {
+                          "String": "Galofak"
+                        },
+                        {
+                          "String": "Compocillin G"
+                        },
+                        {
+                          "String": "Specilline G"
+                        },
+                        {
+                          "String": "Benzylpenicillin G"
+                        },
+                        {
+                          "String": "Free penicillin G"
                         },
                         {
                           "String": "Free penicillin II"
                         },
                         {
-                          "String": "Benethamine penicillin"
+                          "String": "Free benzylpenicillin"
                         },
                         {
                           "String": "Benzylpenicillinic acid"
@@ -498,7 +569,10 @@
                           "String": "Benzylpenicillin potassium"
                         },
                         {
-                          "String": "Penicillin G (potassium)"
+                          "String": "(Phenylmethyl)penicillin"
+                        },
+                        {
+                          "String": "Penicillin, calcium salt"
                         },
                         {
                           "String": "AC1L1DHC"
@@ -508,6 +582,12 @@
                         },
                         {
                           "String": "Potassium benzylpenicillin"
+                        },
+                        {
+                          "String": "Penicillin G (potassium)"
+                        },
+                        {
+                          "String": "Penicilline G sodium salt"
                         },
                         {
                           "String": "D0R1BD"
@@ -531,6 +611,18 @@
                           "String": "AR-1G4748"
                         },
                         {
+                          "String": "NSC131815"
+                        },
+                        {
+                          "String": "NSC193396"
+                        },
+                        {
+                          "String": "6-(2-Phenylacetamido)penicillanic acid"
+                        },
+                        {
+                          "String": "NSC-193396"
+                        },
+                        {
                           "String": "AN-22733"
                         },
                         {
@@ -543,13 +635,10 @@
                           "String": "LS-187243"
                         },
                         {
-                          "String": "NS00001514"
+                          "String": "FT-0631271"
                         },
                         {
                           "String": "113-98-4"
-                        },
-                        {
-                          "String": "3,3-dimethyl-7-oxo-6-[(2-phenylacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
                         },
                         {
                           "String": "4-Thia-1-azabicyclo(3.2.0)heptane-2-carboxylic acid, 3,3-dimethyl-7-oxo-6-(2-phenylacetamido)-"
@@ -558,13 +647,13 @@
                           "String": "6274-53-9"
                         },
                         {
-                          "String": "(2S,5R,6R)-3,3-dimethyl-7-oxo-6-[(2-phenylacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
+                          "String": "1406-07-1"
                         },
                         {
                           "String": "1538-09-6"
                         },
                         {
-                          "String": "3,3-Dimethyl-7-oxo-6-(2-phenylacetamido)-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
+                          "String": "3,3-Dimethyl-6-(phenylacetylamino)-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid"
                         },
                         {
                           "String": "4-Thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid, 3,3-dimethyl-7-oxo-6-[(phenylacetyl)amino]- (2S,5R,6R)-, compd. with N,N'-bis(phenylmethyl)-1,2-ethanediamine (2:1)"
@@ -574,9 +663,6 @@
                         },
                         {
                           "String": "69-57-8"
-                        },
-                        {
-                          "String": "751-84-8"
                         }
                       ]
                     }
@@ -588,14 +674,14 @@
           {
             "TOCHeading": "Create Date",
             "Description": "Date when this compound record was created. For more information on various dates for PubChem records, visit the PubChem Record Dates help page.",
-            "URL": "https://pubchemdocs.ncbi.nlm.nih.gov/record-dates",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/record-dates",
             "DisplayControls": {
               "HideThisSection": true,
               "MoveToTop": true
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
                   "DateISO8601": ["2005-03-25"]
                 }
@@ -605,16 +691,16 @@
           {
             "TOCHeading": "Modify Date",
             "Description": "Date when this compound record was last modified. For more information on various dates for PubChem records, visit the PubChem Record Dates help page.",
-            "URL": "https://pubchemdocs.ncbi.nlm.nih.gov/record-dates",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/record-dates",
             "DisplayControls": {
               "HideThisSection": true,
               "MoveToTop": true
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
-                  "DateISO8601": ["2022-08-20"]
+                  "DateISO8601": ["2025-05-18"]
                 }
               }
             ]
@@ -650,9 +736,9 @@
                 },
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by PubChem 2.1 (PubChem release 2021.05.07)"
+                      "Computed by PubChem 2.2 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -671,9 +757,9 @@
                 "URL": "https://pubmed.ncbi.nlm.nih.gov/17985865/",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by XLogP3 3.0 (PubChem release 2021.05.07)"
+                      "Computed by XLogP3 3.0 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "Number": [1.8]
@@ -686,9 +772,9 @@
                 "Description": "The number of hydrogen bond donors in this compound.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by Cactvs 3.4.8.18 (PubChem release 2021.05.07)"
+                      "Computed by Cactvs 3.4.8.18 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "Number": [2]
@@ -701,9 +787,9 @@
                 "Description": "The number of hydrogen bond acceptors in this compound.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by Cactvs 3.4.8.18 (PubChem release 2021.05.07)"
+                      "Computed by Cactvs 3.4.8.18 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "Number": [5]
@@ -716,9 +802,9 @@
                 "Description": "A rotatable bond is defined as any single-order non-ring bond, where atoms on either side of the bond are in turn bound to nonterminal heavy (i.e., non-hydrogen) atoms. That is, where rotation around the bond axis changes the overall shape of the molecule, and generates conformers which can be distinguished by standard fast spectroscopic methods.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by Cactvs 3.4.8.18 (PubChem release 2021.05.07)"
+                      "Computed by Cactvs 3.4.8.18 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "Number": [4]
@@ -731,9 +817,9 @@
                 "Description": "The exact mass of an isotopic species is obtained by summing the masses of the individual isotopes of the molecule.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by PubChem 2.1 (PubChem release 2021.05.07)"
+                      "Computed by PubChem 2.2 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -741,7 +827,7 @@
                           "String": "334.09872823"
                         }
                       ],
-                      "Unit": "g/mol"
+                      "Unit": "Da"
                     }
                   }
                 ]
@@ -751,9 +837,9 @@
                 "Description": "The monoisotopic mass is the sum of the masses of the atoms in a molecule using the unbound, ground-state, rest mass of the principal (most abundant) isotope for each element instead of the isotopic average mass.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by PubChem 2.1 (PubChem release 2021.05.07)"
+                      "Computed by PubChem 2.2 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "StringWithMarkup": [
@@ -761,7 +847,7 @@
                           "String": "334.09872823"
                         }
                       ],
-                      "Unit": "g/mol"
+                      "Unit": "Da"
                     }
                   }
                 ]
@@ -772,13 +858,13 @@
                 "URL": "https://pubmed.ncbi.nlm.nih.gov/11020286/",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by Cactvs 3.4.8.18 (PubChem release 2021.05.07)"
+                      "Computed by Cactvs 3.4.8.18 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "Number": [112],
-                      "Unit": "Å²"
+                      "Unit": "Å²"
                     }
                   }
                 ]
@@ -788,7 +874,7 @@
                 "Description": "The number of heavy atoms (i.e., non-hydrogen atoms) in this compound.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [23]
@@ -801,7 +887,7 @@
                 "Description": "Formal charge is the difference between the number of valence electrons of each atom and the number of electrons the atom is associated with. Formal charge assumes any shared electrons are equally shared between the two bonded atoms.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [0]
@@ -812,12 +898,12 @@
               {
                 "TOCHeading": "Complexity",
                 "Description": "The complexity rating of a compound is a rough estimate of how complicated a structure is, seen from both the point of view of the elements contained and the displayed structural features including symmetry. This complexity rating is computed using the Bertz/Hendrickson/Ihlenfeldt formula.",
-                "URL": "https://pubchemdocs.ncbi.nlm.nih.gov/glossary$complexity",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/glossary#section=Complexity",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": [
-                      "Computed by Cactvs 3.4.8.18 (PubChem release 2021.05.07)"
+                      "Computed by Cactvs 3.4.8.18 (PubChem release 2025.04.14)"
                     ],
                     "Value": {
                       "Number": [530]
@@ -830,7 +916,7 @@
                 "Description": "Isotope atom count is the number of isotopes that are not most abundant for the corresponding chemical elements.  Isotopes are variants of a chemical element which differ in neutron number.  For example, among three isotopes of carbon (i.e., C-12, C-13, and C-14), the isotope atom count considers the C-13 and C-14 atoms, because C-12 is the most abundant isotope of carbon.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [0]
@@ -843,7 +929,7 @@
                 "Description": "An atom stereocenter, also known as a chiral center, is an atom that is attached to four different types of atoms (or groups of atoms) in the tetrahedral arrangement. It can have either (R)- or (S)- configurations.  Some compounds, such as racemic mixtures, have an undefined atom stereocenter, whose (R/S)-configuration is not specifically defined.  The \"defined atom stereocenter count\" is the number of atom stereocenters whose configurations are specifically defined.  ",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [0]
@@ -856,7 +942,7 @@
                 "Description": "The number of atom stereocenters whose configurations are not specifically defined.  For the definition of atom stereocenters, see the \"defined atom stereocenter count\" above.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [3]
@@ -869,7 +955,7 @@
                 "Description": "A bond stereocenter is a non-rotatable bond around which two atoms can have different arrangement (as in cis- and trans-forms of butene around its double bond).  Some compounds have an undefined bond stereocenter, whose stereochemistry is not specifically defined.  The \"defined bond stereocenter count\" is the number of bond stereocenters whose configurations are specifically defined.  ",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [0]
@@ -882,7 +968,7 @@
                 "Description": "The number of bond stereocenters whose configurations are not specifically defined.  For the definition of bond stereocenters, see the \"defined bond stereocenter count\" above.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [0]
@@ -895,7 +981,7 @@
                 "Description": "A covalently-bonded unit is a group of atoms connected by covalent bonds, ignoring other bond types (or a single atom without covalent bonds).  The \"covalently-bonded unit count\" property is the number of such units in this compound compound.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Reference": ["Computed by PubChem"],
                     "Value": {
                       "Number": [1]
@@ -908,8 +994,8 @@
                 "Description": "Whether the compound has successfully passed PubChem's valence bond canonicalization procedure. Some large, complex, or highly symmetric structures may fail this process.",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
-                    "Reference": ["Computed by PubChem (release 2021.05.07)"],
+                    "ReferenceNumber": 21,
+                    "Reference": ["Computed by PubChem (release 2025.04.14)"],
                     "Value": {
                       "StringWithMarkup": [
                         {
@@ -917,6 +1003,57 @@
                         }
                       ]
                     }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical Classes",
+            "Description": "Chemical classes are groupings that relate chemicals by similar features. Chemicals can be classified by their structure (e.g., hydrocarbons), uses (e.g., pesticides), physical properties, radiological properties, or other factors.",
+            "Section": [
+              {
+                "TOCHeading": "Drugs",
+                "Description": "Chemicals are used as active ingredients in drug/pharmaceutical products, including human drugs, animal drugs, biologics, etc.",
+                "Information": [
+                  {
+                    "ReferenceNumber": 16,
+                    "Reference": [
+                      "S10 | SWISSPHARMA | Pharmaceutical List with Consumption Data | DOI:10.5281/zenodo.2623484"
+                    ],
+                    "ExtendedReference": [
+                      {
+                        "Citation": "S10 | SWISSPHARMA | Pharmaceutical List with Consumption Data | DOI:10.5281/zenodo.2623484",
+                        "Matched": {
+                          "PCLID": 900164075
+                        }
+                      }
+                    ],
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Pharmaceuticals"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "Section": [
+                  {
+                    "TOCHeading": "Human Drugs",
+                    "Description": "Chemicals are used as active ingredients in human drug products.",
+                    "Information": [
+                      {
+                        "ReferenceNumber": 2,
+                        "Value": {
+                          "StringWithMarkup": [
+                            {
+                              "String": "Breast Feeding; Lactation; Milk, Human; Anti-Infective Agents; Antibacterial Agents; Penicillins"
+                            }
+                          ]
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -951,12 +1088,11 @@
                     "NumberOfColumns": 2,
                     "ColumnContents": ["Name", "Value"]
                   },
-                  "ListType": "Columns",
                   "ShowAtMost": 2
                 },
                 "Information": [
                   {
-                    "ReferenceNumber": 12,
+                    "ReferenceNumber": 17,
                     "Name": "Instrument Name",
                     "Value": {
                       "StringWithMarkup": [
@@ -967,7 +1103,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 12,
+                    "ReferenceNumber": 17,
                     "Name": "Source of Spectrum",
                     "Value": {
                       "StringWithMarkup": [
@@ -978,67 +1114,23 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 12,
+                    "ReferenceNumber": 17,
                     "Name": "Copyright",
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "Copyright © 2002-2021 Wiley-VCH Verlag GmbH & Co. KGaA. All Rights Reserved."
+                          "String": "Copyright © 2002-2025 Wiley-VCH GmbH. All Rights Reserved."
                         }
                       ]
                     }
                   },
                   {
-                    "ReferenceNumber": 12,
+                    "ReferenceNumber": 17,
                     "Name": "Thumbnail",
                     "URL": "https://spectrabase.com/spectrum/9pchmHnO1Qo",
                     "Value": {
                       "ExternalDataURL": [
                         "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/key/9797286_1"
-                      ],
-                      "MimeType": "image/png"
-                    }
-                  },
-                  {
-                    "ReferenceNumber": 13,
-                    "Name": "Instrument Name",
-                    "Value": {
-                      "StringWithMarkup": [
-                        {
-                          "String": "DI"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ReferenceNumber": 13,
-                    "Name": "Source of Spectrum",
-                    "Value": {
-                      "StringWithMarkup": [
-                        {
-                          "String": "Chemical Concepts, A Wiley Division, Weinheim, Germany"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ReferenceNumber": 13,
-                    "Name": "Copyright",
-                    "Value": {
-                      "StringWithMarkup": [
-                        {
-                          "String": "Copyright © 2002-2021 Wiley-VCH Verlag GmbH & Co. KGaA. All Rights Reserved."
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ReferenceNumber": 13,
-                    "Name": "Thumbnail",
-                    "URL": "https://spectrabase.com/spectrum/38B63DABWwT",
-                    "Value": {
-                      "ExternalDataURL": [
-                        "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/key/9797287_1"
                       ],
                       "MimeType": "image/png"
                     }
@@ -1059,19 +1151,19 @@
                 },
                 "Information": [
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Accession ID",
-                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=WA002371",
+                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Waters-WA002371",
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "WA002371"
+                          "String": "MSBNK-Waters-WA002371"
                         }
                       ]
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Authors",
                     "Value": {
                       "StringWithMarkup": [
@@ -1082,7 +1174,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Instrument",
                     "Value": {
                       "StringWithMarkup": [
@@ -1093,7 +1185,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Instrument Type",
                     "Value": {
                       "StringWithMarkup": [
@@ -1104,7 +1196,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "MS Level",
                     "Value": {
                       "StringWithMarkup": [
@@ -1115,7 +1207,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Ionization Mode",
                     "Value": {
                       "StringWithMarkup": [
@@ -1126,7 +1218,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Ionization",
                     "Value": {
                       "StringWithMarkup": [
@@ -1137,7 +1229,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Column Name",
                     "Value": {
                       "StringWithMarkup": [
@@ -1148,7 +1240,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Retention Time",
                     "Value": {
                       "StringWithMarkup": [
@@ -1159,7 +1251,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Top 5 Peaks",
                     "Value": {
                       "StringWithMarkup": [
@@ -1182,7 +1274,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "SPLASH",
                     "URL": "https://massbank.eu/MassBank/Result.jsp?splash=splash10-03di-0900000000-6d8b5d001fabe7da0dc4",
                     "Value": {
@@ -1194,7 +1286,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "Thumbnail",
                     "URL": "https://pubchem.ncbi.nlm.nih.gov/image/ms.cgi?peaks=114:999,160:286,176:204,373:94,189:90",
                     "Value": {
@@ -1205,7 +1297,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 7,
+                    "ReferenceNumber": 10,
                     "Name": "License",
                     "Value": {
                       "StringWithMarkup": [
@@ -1216,19 +1308,19 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Accession ID",
-                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=WA002372",
+                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Waters-WA002372",
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "WA002372"
+                          "String": "MSBNK-Waters-WA002372"
                         }
                       ]
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Authors",
                     "Value": {
                       "StringWithMarkup": [
@@ -1239,7 +1331,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Instrument",
                     "Value": {
                       "StringWithMarkup": [
@@ -1250,7 +1342,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Instrument Type",
                     "Value": {
                       "StringWithMarkup": [
@@ -1261,7 +1353,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "MS Level",
                     "Value": {
                       "StringWithMarkup": [
@@ -1272,7 +1364,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Ionization Mode",
                     "Value": {
                       "StringWithMarkup": [
@@ -1283,7 +1375,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Ionization",
                     "Value": {
                       "StringWithMarkup": [
@@ -1294,7 +1386,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Column Name",
                     "Value": {
                       "StringWithMarkup": [
@@ -1305,7 +1397,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Retention Time",
                     "Value": {
                       "StringWithMarkup": [
@@ -1316,7 +1408,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Top 5 Peaks",
                     "Value": {
                       "StringWithMarkup": [
@@ -1339,7 +1431,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "SPLASH",
                     "URL": "https://massbank.eu/MassBank/Result.jsp?splash=splash10-03di-0900000000-dc60a31d43ffd02ef8ac",
                     "Value": {
@@ -1351,7 +1443,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "Thumbnail",
                     "URL": "https://pubchem.ncbi.nlm.nih.gov/image/ms.cgi?peaks=160:999,176:686,114:396,189:157,373:90",
                     "Value": {
@@ -1362,7 +1454,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 8,
+                    "ReferenceNumber": 11,
                     "Name": "License",
                     "Value": {
                       "StringWithMarkup": [
@@ -1373,19 +1465,19 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Accession ID",
-                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=WA002373",
+                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Waters-WA002373",
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "WA002373"
+                          "String": "MSBNK-Waters-WA002373"
                         }
                       ]
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Authors",
                     "Value": {
                       "StringWithMarkup": [
@@ -1396,7 +1488,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Instrument",
                     "Value": {
                       "StringWithMarkup": [
@@ -1407,7 +1499,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Instrument Type",
                     "Value": {
                       "StringWithMarkup": [
@@ -1418,7 +1510,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "MS Level",
                     "Value": {
                       "StringWithMarkup": [
@@ -1429,7 +1521,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Ionization Mode",
                     "Value": {
                       "StringWithMarkup": [
@@ -1440,7 +1532,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Ionization",
                     "Value": {
                       "StringWithMarkup": [
@@ -1451,7 +1543,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Column Name",
                     "Value": {
                       "StringWithMarkup": [
@@ -1462,7 +1554,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Retention Time",
                     "Value": {
                       "StringWithMarkup": [
@@ -1473,7 +1565,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Top 5 Peaks",
                     "Value": {
                       "StringWithMarkup": [
@@ -1496,7 +1588,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "SPLASH",
                     "URL": "https://massbank.eu/MassBank/Result.jsp?splash=splash10-0imi-0901000000-d08b159a0e39e099af02",
                     "Value": {
@@ -1508,7 +1600,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "Thumbnail",
                     "URL": "https://pubchem.ncbi.nlm.nih.gov/image/ms.cgi?peaks=160:999,176:654,100:313,101:298,373:184",
                     "Value": {
@@ -1519,7 +1611,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 9,
+                    "ReferenceNumber": 12,
                     "Name": "License",
                     "Value": {
                       "StringWithMarkup": [
@@ -1530,19 +1622,19 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Accession ID",
-                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=WA002374",
+                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Waters-WA002374",
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "WA002374"
+                          "String": "MSBNK-Waters-WA002374"
                         }
                       ]
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Authors",
                     "Value": {
                       "StringWithMarkup": [
@@ -1553,7 +1645,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Instrument",
                     "Value": {
                       "StringWithMarkup": [
@@ -1564,7 +1656,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Instrument Type",
                     "Value": {
                       "StringWithMarkup": [
@@ -1575,7 +1667,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "MS Level",
                     "Value": {
                       "StringWithMarkup": [
@@ -1586,7 +1678,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Ionization Mode",
                     "Value": {
                       "StringWithMarkup": [
@@ -1597,7 +1689,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Ionization",
                     "Value": {
                       "StringWithMarkup": [
@@ -1608,7 +1700,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Column Name",
                     "Value": {
                       "StringWithMarkup": [
@@ -1619,7 +1711,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Retention Time",
                     "Value": {
                       "StringWithMarkup": [
@@ -1630,7 +1722,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Top 5 Peaks",
                     "Value": {
                       "StringWithMarkup": [
@@ -1653,7 +1745,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "SPLASH",
                     "URL": "https://massbank.eu/MassBank/Result.jsp?splash=splash10-002r-0908000000-9b9bfcf23e757369b866",
                     "Value": {
@@ -1665,7 +1757,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "Thumbnail",
                     "URL": "https://pubchem.ncbi.nlm.nih.gov/image/ms.cgi?peaks=177:999,335:858,373:388,160:239,101:153",
                     "Value": {
@@ -1676,7 +1768,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 10,
+                    "ReferenceNumber": 13,
                     "Name": "License",
                     "Value": {
                       "StringWithMarkup": [
@@ -1687,19 +1779,19 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Accession ID",
-                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=WA002375",
+                    "URL": "https://massbank.eu/MassBank/RecordDisplay?id=MSBNK-Waters-WA002375",
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "WA002375"
+                          "String": "MSBNK-Waters-WA002375"
                         }
                       ]
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Authors",
                     "Value": {
                       "StringWithMarkup": [
@@ -1710,7 +1802,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Instrument",
                     "Value": {
                       "StringWithMarkup": [
@@ -1721,7 +1813,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Instrument Type",
                     "Value": {
                       "StringWithMarkup": [
@@ -1732,7 +1824,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "MS Level",
                     "Value": {
                       "StringWithMarkup": [
@@ -1743,7 +1835,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Ionization Mode",
                     "Value": {
                       "StringWithMarkup": [
@@ -1754,7 +1846,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Ionization",
                     "Value": {
                       "StringWithMarkup": [
@@ -1765,7 +1857,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Column Name",
                     "Value": {
                       "StringWithMarkup": [
@@ -1776,7 +1868,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Retention Time",
                     "Value": {
                       "StringWithMarkup": [
@@ -1787,7 +1879,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Top 5 Peaks",
                     "Value": {
                       "StringWithMarkup": [
@@ -1810,7 +1902,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "SPLASH",
                     "URL": "https://massbank.eu/MassBank/Result.jsp?splash=splash10-000x-0913000000-996d4fab466cda76e0f4",
                     "Value": {
@@ -1822,7 +1914,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "Thumbnail",
                     "URL": "https://pubchem.ncbi.nlm.nih.gov/image/ms.cgi?peaks=192:999,333:407,289:133,334:114,193:98",
                     "Value": {
@@ -1833,7 +1925,7 @@
                     }
                   },
                   {
-                    "ReferenceNumber": 11,
+                    "ReferenceNumber": 14,
                     "Name": "License",
                     "Value": {
                       "StringWithMarkup": [
@@ -1841,6 +1933,61 @@
                           "String": "CC BY-NC"
                         }
                       ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 18,
+                    "Name": "Instrument Name",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "QStar XL, AB Sciex"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 18,
+                    "Name": "Technique",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Q-TOF"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 18,
+                    "Name": "Source of Spectrum",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Herbert Oberacher, Institute of Legal Medicine, Innsbruck/Austria"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 18,
+                    "Name": "Copyright",
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Copyright © 2012-2025 Herbert Oberacher. All Rights Reserved."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 18,
+                    "Name": "Thumbnail",
+                    "URL": "https://spectrabase.com/spectrum/1ScfRESuPQW",
+                    "Value": {
+                      "ExternalDataURL": [
+                        "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/key/46247974_1"
+                      ],
+                      "MimeType": "image/png"
                     }
                   }
                 ]
@@ -1859,9 +2006,30 @@
             "URL": "https://doi.org/10.1186/s13321-016-0163-1",
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
-                  "Boolean": [true]
+                  "StringWithMarkup": [
+                    {
+                      "String": "Follow these links to do a live 2D search or do a live 3D search for this compound, sorted by annotation score. This section is deprecated (see here for details), but these live search links provide equivalent functionality to the table that was previously shown here.",
+                      "Markup": [
+                        {
+                          "Start": 22,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2349%20structure&tab=similarity&sort=annothitcnt"
+                        },
+                        {
+                          "Start": 45,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2349%20structure&tab=similarity_3d&sort=annothitcnt"
+                        },
+                        {
+                          "Start": 144,
+                          "Length": 4,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/neighbor-discontinuation"
+                        }
+                      ]
+                    }
+                  ]
                 }
               }
             ]
@@ -1880,83 +2048,91 @@
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Connectivity Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_sameconnectivity_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_connectivity&list_return=redirect",
                 "Value": {
-                  "Number": [26]
+                  "Number": [28]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Stereo Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_samestereochem_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_stereo&list_return=redirect",
                 "Value": {
                   "Number": [3]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Isotope Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_sameisotopic_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_isotopes&list_return=redirect",
                 "Value": {
                   "Number": [20]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Parent, Connectivity Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_parent_connectivity_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_parent_connectivity&list_return=redirect",
                 "Value": {
-                  "Number": [104]
+                  "Number": [110]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Parent, Stereo Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_parent_stereo_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_parent_stereo&list_return=redirect",
                 "Value": {
                   "Number": [23]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Parent, Isotope Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_parent_isotopes_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_parent_isotopes&list_return=redirect",
                 "Value": {
-                  "Number": [91]
+                  "Number": [93]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Same Parent, Exact Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_parent_pulldown&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=same_parent&list_return=redirect",
                 "Value": {
                   "Number": [19]
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Mixtures, Components, and Neutralized Forms Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_mixture&from_uid=2349",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/cids/JSON?cids_type=component&list_return=redirect",
                 "Value": {
-                  "Number": [43]
+                  "Number": [44]
                 }
               },
               {
-                "ReferenceNumber": 15,
-                "Name": "Similar Compounds Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound&from_uid=2349",
+                "ReferenceNumber": 21,
+                "Name": "Similar Compounds (2D)",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2349%20structure&tab=similarity",
                 "Value": {
-                  "Number": [1035]
+                  "StringWithMarkup": [
+                    {
+                      "String": "View in PubChem Search"
+                    }
+                  ]
                 }
               },
               {
-                "ReferenceNumber": 15,
-                "Name": "Similar Conformers Count",
-                "URL": "https://www.ncbi.nlm.nih.gov/pccompound?cmd=Link&LinkName=pccompound_pccompound_3d&from_uid=2349",
+                "ReferenceNumber": 21,
+                "Name": "Similar Conformers (3D)",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2349%20structure&tab=similarity_3d",
                 "Value": {
-                  "Number": [224]
+                  "StringWithMarkup": [
+                    {
+                      "String": "View in PubChem Search"
+                    }
+                  ]
                 }
               }
             ]
@@ -1964,8 +2140,24 @@
           {
             "TOCHeading": "Substances",
             "Description": "Substance records associated with this compound.  In PubChem, the term \"substance\" refers to depositor-provided data for a chemical..",
-            "URL": "https://pubchemdocs.ncbi.nlm.nih.gov/substances",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/substances",
             "Section": [
+              {
+                "TOCHeading": "PubChem Reference Collection SID",
+                "Description": "Substances from the special PubChem Reference Collection associated with this compound.",
+                "DisplayControls": {
+                  "MoveToTop": true
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 21,
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/substance/500769557",
+                    "Value": {
+                      "Number": [500769557]
+                    }
+                  }
+                ]
+              },
               {
                 "TOCHeading": "Related Substances",
                 "Description": "Substance records related to this compound (e.g., the standardized chemical structures of these substances are the same as this compound or correspond to a mixture containing this compound as a component).",
@@ -1979,27 +2171,27 @@
                 },
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Name": "All Count",
-                    "URL": "https://www.ncbi.nlm.nih.gov/pcsubstance/?term=2349[CompoundID]",
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/sids/JSON?sids_type=all&list_return=redirect",
                     "Value": {
-                      "Number": [317]
+                      "Number": [389]
                     }
                   },
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Name": "Same Count",
-                    "URL": "https://www.ncbi.nlm.nih.gov/pcsubstance/?term=2349[StandardizedCID]",
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/sids/JSON?sids_type=standardized&list_return=redirect",
                     "Value": {
-                      "Number": [58]
+                      "Number": [64]
                     }
                   },
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Name": "Mixture Count",
-                    "URL": "https://www.ncbi.nlm.nih.gov/pcsubstance/?term=2349[ComponentCID]",
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2349/sids/JSON?sids_type=component&list_return=redirect",
                     "Value": {
-                      "Number": [259]
+                      "Number": [325]
                     }
                   }
                 ]
@@ -2009,7 +2201,7 @@
                 "Description": "Substances associated with this compound, grouped by the category of the data sources who submitted the substances to PubChem (e.g., government organizations, chemical vendors, research and development, curation efforts, NIH initiatives, etc.).",
                 "Information": [
                   {
-                    "ReferenceNumber": 15,
+                    "ReferenceNumber": 21,
                     "Value": {
                       "StringWithMarkup": [
                         {
@@ -2053,7 +2245,7 @@
             },
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "PubMed Count",
                 "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_pubmed&db=pccompound&cmd=Link&from_uid=2349",
                 "Value": {
@@ -2068,7 +2260,7 @@
             "URL": "https://www.ncbi.nlm.nih.gov/projects/linkout/",
             "Information": [
               {
-                "ReferenceNumber": 23,
+                "ReferenceNumber": 30,
                 "Value": {
                   "Boolean": [true]
                 }
@@ -2082,7 +2274,7 @@
         "Description": "A list of chemical vendors that sell this compound. Note that the order of chemical vendors on the list is randomized, and that PubChem do not endorse any of the vendors. Each vendor may have multiple products containing the same chemical, but different in various aspects, such as amount and purity.  For each product, the external identifier used to locate the product on the vendor's website is provided under the Purchasable Chemical column, and clicking this identifier directs you to the vendor's website.  The information on the product provided by the vendor to PubChem can be accessed at the Summary page of the corresponding PubChem Substance ID (SID).  ",
         "Information": [
           {
-            "ReferenceNumber": 15,
+            "ReferenceNumber": 21,
             "Value": {
               "Boolean": [true]
             }
@@ -2094,64 +2286,16 @@
         "Description": "This section provides drug and medication information for this compound, including drug indications, labeling, clinical trials, idiosyncrasies, tolerance, reported fatal doses, etc.",
         "Section": [
           {
-            "TOCHeading": "Drug Effects during Lactation",
-            "Description": "Summary of drug effects during lactation, from LactMed.",
-            "URL": "https://www.ncbi.nlm.nih.gov/books/NBK501922/",
-            "DisplayControls": {
-              "CreateTable": {
-                "FromInformationIn": "ThisSection",
-                "NumberOfColumns": 2,
-                "ColumnContents": ["Name", "Value"]
-              }
-            },
+            "TOCHeading": "Drug Classes",
+            "Description": "Drug classes of this compound, based on its therapeutic uses and/or structure. The data presented in this section is from LiverTox.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/source/15404",
             "Information": [
               {
-                "ReferenceNumber": 1,
-                "Name": "Summary",
+                "ReferenceNumber": 2,
                 "Value": {
                   "StringWithMarkup": [
                     {
-                      "String": "Limited information indicates that penicillin G produces low levels in milk that are not expected to cause adverse effects in breastfed infants. Occasionally disruption of the infant's gastrointestinal flora, resulting in diarrhea or thrush have been reported with penicillins, but these effects have not been adequately evaluated. Penicillin G is acceptable in nursing mothers.",
-                      "Markup": [
-                        {
-                          "Start": 35,
-                          "Length": 12,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/penicillin%20G",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-5904"
-                        },
-                        {
-                          "Start": 332,
-                          "Length": 12,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Penicillin%20G",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-5904"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 1,
-                "Name": "PubMed",
-                "URL": "https://www.ncbi.nlm.nih.gov/pubmed/30000119",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "30000119"
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 1,
-                "Name": "NCBI Books",
-                "URL": "https://www.ncbi.nlm.nih.gov/books/NBK501060/",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "NBK501060"
+                      "String": "Breast Feeding; Lactation; Milk, Human; Anti-Infective Agents; Antibacterial Agents; Penicillins"
                     }
                   ]
                 }
@@ -2161,184 +2305,77 @@
         ]
       },
       {
-        "TOCHeading": "Food Additives and Ingredients",
-        "Description": "This section provides information on chemicals found in food (e.g., food additives, flavoring and coloring agents).",
+        "TOCHeading": "Toxicity",
+        "Description": "Toxicity information related to this compound, including routes of exposure, related symptoms, acute and chronic effects, and numerical measures of toxicity.",
         "Section": [
           {
-            "TOCHeading": "Food Additive Classes",
-            "Description": "Classification of this compound as a chemical found in food (e.g., food additive, food contaminant, or veterinary drug).  The source of information in this section includes the EU Food improvement agents and Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA).",
-            "Information": [
-              {
-                "ReferenceNumber": 5,
-                "Name": "JECFA Functional Classes",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "Veterinary Drug -> ANTIMICROBIAL_AGENT;"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "TOCHeading": "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives - JECFA",
-            "Description": "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA) database contains the summaries of all the evaluations of flavors, food additives, contaminants, toxicants and veterinary drugs. Each summary contains basic chemical information, ADIs/TDIs (acceptable daily intake / tolerable daily intake), links to the most recent reports and monographs as well as to the specification database, and a history of JECFA evaluations.",
-            "URL": "https://apps.who.int/food-additives-contaminants-jecfa-database/",
-            "DisplayControls": {
-              "CreateTable": {
-                "FromInformationIn": "ThisSection",
-                "NumberOfColumns": 2,
-                "ColumnContents": ["Name", "Value"]
-              }
-            },
-            "Information": [
-              {
-                "ReferenceNumber": 5,
-                "Name": "Chemical Name",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "FREE BENZYLPENICILLIN"
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 5,
-                "Name": "Evaluation Year",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "1990"
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 5,
-                "Name": "ADI",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "None established"
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 5,
-                "Name": "Comments",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "No toxicological studies were available for review. Among the adverse reactions which had been reported in people consuming food containing benzylpenicillin residues, hypersensitivity reactions were the most common. The overall prevalence of allergy to penicillin was estimated to be 3 - 10%. There was no evidence of sensitization caused by benzylpenicillin residues in food. The Committee evaluated the available data on allergic reactions caused by penicillin residues. Only four cases were considered to be adequately documented to demonstrate that hypersensitivity reactions could be caused by ingestion of less than 40 µg of the drug. The Committee concluded that allergy was the determinating factor in the safety evaluation of residues of benzylpenicillin. In the absence of adequate data to establish a no-effect level, the Committee recommended that the daily intake from food be kept as low as practicable, and in any case below 30 µg of the parent drug. The risk associated with the occurrence of mild hypersensitivity reactions at this level was considered to be insignificant. Estimated maximum daily intake values for benzylpenicillin residues at the MRLs are 15 µg/p/d (muscle), 5 µg (liver), 3 µg/p/d (kidney), and 6 µg/p/d (milk), or 29 µg/p/d total.",
-                      "Markup": [
-                        {
-                          "Start": 140,
-                          "Length": 16,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/benzylpenicillin",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-5904"
-                        },
-                        {
-                          "Start": 253,
-                          "Length": 10,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/penicillin",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-2349"
-                        },
-                        {
-                          "Start": 342,
-                          "Length": 16,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/benzylpenicillin",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-5904"
-                        },
-                        {
-                          "Start": 452,
-                          "Length": 10,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/penicillin",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-2349"
-                        },
-                        {
-                          "Start": 747,
-                          "Length": 16,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/benzylpenicillin",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-5904"
-                        },
-                        {
-                          "Start": 1133,
-                          "Length": 16,
-                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/benzylpenicillin",
-                          "Type": "PubChem Internal Link",
-                          "Extra": "CID-5904"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 5,
-                "Name": "Report",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "TRS 799-JECFA 36/37",
-                      "Markup": [
-                        {
-                          "Start": 0,
-                          "Length": 19,
-                          "URL": "http://whqlibdoc.who.int/trs/WHO_TRS_799.pdf"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              },
-              {
-                "ReferenceNumber": 5,
-                "Name": "Tox Monograph",
-                "Value": {
-                  "StringWithMarkup": [
-                    {
-                      "String": "FAS 27-JECFA 36/105",
-                      "Markup": [
-                        {
-                          "Start": 0,
-                          "Length": 19,
-                          "URL": "http://www.inchem.org/documents/jecfa/jecmono/v27je05.htm"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "TOCHeading": "Use and Manufacturing",
-        "Description": "This section provides information on the use and manufacturing information for this chemical, such as uses, consumption patterns, manufacturing methods, and U.S. imports/exports/production.",
-        "Section": [
-          {
-            "TOCHeading": "Uses",
-            "Description": "Major uses of this chemical, including both consumer uses and industrial uses.",
+            "TOCHeading": "Toxicological Information",
+            "Description": "This section provides toxicological and health effects information for the chemical.  It includes the likely routes of exposure (inhalation, ingestion, skin and eye contact), and the delayed, immediate, or chronic effects/symptoms from short- and long-term exposure, and the numerical measures of toxicity [e.g., acute toxicity estimates such as the LD50 (median lethal dose, the estimated amount of a chemical expected to kill 50% of test animals in a single dose)].  This section also includes information on whether the chemical is considered as a potential carcinogen according to authoritative sources such as the National Toxicology Program (NTP) Report on Carcinogens and the International agency for Research on Cancer (IARC) Monographs.",
             "Section": [
               {
-                "TOCHeading": "Use Classification",
-                "Description": "This section contains use classification/category information for this compound from various sources.",
+                "TOCHeading": "Effects During Pregnancy and Lactation",
+                "Description": "Drug effects during pregnancy and lactation.",
                 "Information": [
                   {
-                    "ReferenceNumber": 5,
+                    "ReferenceNumber": 2,
                     "Value": {
                       "StringWithMarkup": [
                         {
-                          "String": "Veterinary Drug -> ANTIMICROBIAL_AGENT;  -> JECFA Functional Classes"
+                          "String": "◉ Summary of Use during Lactation"
+                        },
+                        {
+                          "String": "Limited information indicates that penicillin G produces low levels in milk that are not expected to cause adverse effects in breastfed infants. Occasionally disruption of the infant's gastrointestinal flora, resulting in diarrhea or thrush have been reported with penicillins, but these effects have not been adequately evaluated. Penicillin G is acceptable in nursing mothers.",
+                          "Markup": [
+                            {
+                              "Start": 35,
+                              "Length": 12,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/penicillin%20G",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5904"
+                            },
+                            {
+                              "Start": 332,
+                              "Length": 12,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Penicillin%20G",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5904"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "◉ Effects in Breastfed Infants"
+                        },
+                        {
+                          "String": "A breastfed 1-month-old infant with congenital syphilis developed a Herxheimer reaction 6 hours after its mother received 2.4 million units of benzathine penicillin G intramuscularly. However, the baby had also received 10 units of penicillin G at about the same time as the mother's injection. The reaction was possibly caused by penicillin in breastmilk.",
+                          "Markup": [
+                            {
+                              "Start": 143,
+                              "Length": 23,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/benzathine%20penicillin%20G",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-15232"
+                            },
+                            {
+                              "Start": 232,
+                              "Length": 12,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/penicillin%20G",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-5904"
+                            },
+                            {
+                              "Start": 331,
+                              "Length": 10,
+                              "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/penicillin",
+                              "Type": "PubChem Internal Link",
+                              "Extra": "CID-52946032"
+                            }
+                          ]
+                        },
+                        {
+                          "String": "◉ Effects on Lactation and Breastmilk"
+                        },
+                        {
+                          "String": "Relevant published information was not found as of the revision date."
                         }
                       ]
                     }
@@ -2350,21 +2387,39 @@
         ]
       },
       {
+        "TOCHeading": "Associated Disorders and Diseases",
+        "Description": "Disorders and diseases associated with the compound.  The contexts of the associations listed in this section vary. For example, a compound may cause its associated diseases (e.g., carcinogens and cancers) or have a therapeutic effect in treatment of the diseases (e.g., antihistamines and allergies), or be used as a marker/indicator for the diseases (e.g., glucose and diabetes).",
+        "DisplayControls": {
+          "CreateTable": {
+            "FromInformationIn": "Subsections",
+            "NumberOfColumns": 2,
+            "ColumnHeadings": ["Disease", "References"],
+            "ColumnContents": ["Name", "Value"]
+          }
+        },
+        "Information": [
+          {
+            "ReferenceNumber": 19,
+            "Value": {
+              "ExternalTableName": "consolidateddiseaseassociation"
+            }
+          }
+        ]
+      },
+      {
         "TOCHeading": "Literature",
         "Description": "Scientific articles associated with this compound.  Some chemical-literature associations in this section are provided by data contributors or derived from MeSH annotations, as explained in Kim et al., J. Cheminform. 2016, 8, 32.  This section also provides the lists of chemicals, genes/proteins, and diseases, that are co-mentioned in scientific articles, as described in Zaslavsky et al., Front. Res. Metr. Anal., 2021, 6, 689059.",
-        "URL": "https://pubchemdocs.ncbi.nlm.nih.gov/literature",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/literature",
         "Section": [
           {
-            "TOCHeading": "Depositor Provided PubMed Citations",
-            "Description": "A list of PubMed records about this compound, provided by the depositors of all PubChem substance records that are standardized into this compound.",
+            "TOCHeading": "Consolidated References",
+            "Description": "The consolidated references include literature data from all sources including Springer Nature, Thieme Chemistry, Wiley, Nature journals, depositor provided citations, and NLM curated PubMed citations.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/literature",
             "Information": [
               {
-                "ReferenceNumber": 15,
-                "Name": "Depositor Provided PubMed Citations",
-                "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_pubmed&db=pccompound&cmd=Link&from_uid=2349",
+                "ReferenceNumber": 21,
                 "Value": {
-                  "ExternalTableName": "collection=pubmed&pmidsrcs=xref",
-                  "ExternalTableNumRows": 1
+                  "ExternalTableName": "literature"
                 }
               }
             ]
@@ -2375,7 +2430,7 @@
             "URL": "https://doi.org/10.3389/frma.2021.689059",
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Co-Occurrence Panel",
                 "Value": {
                   "StringWithMarkup": [
@@ -2411,7 +2466,7 @@
             "URL": "https://doi.org/10.3389/frma.2021.689059",
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Co-Occurrence Panel",
                 "Value": {
                   "StringWithMarkup": [
@@ -2428,7 +2483,7 @@
                       "String": "GeneSymbolName"
                     },
                     {
-                      "String": "SUMMARY_URL.genesymbol"
+                      "String": "https://pubchem.ncbi.nlm.nih.gov/gene/SYMBOL:"
                     },
                     {
                       "String": "CID"
@@ -2442,35 +2497,34 @@
             ]
           },
           {
-            "TOCHeading": "Chemical-Disease Co-Occurrences in Literature",
-            "Description": "Chemical-disease co-occurrences in literature highlight chemical-disease pairs mentioned together in scientific articles. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of publications and other statistics, with the most relevant mentions appearing at the top.",
-            "URL": "https://doi.org/10.3389/frma.2021.689059",
+            "TOCHeading": "Chemical-Organism Co-Occurrences in Literature",
+            "Description": "Chemical-organism co-occurrences in literature highlight chemical-organism pairs mentioned together in scientific articles. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of publications and other statistics, with the most relevant mentions appearing at the top.",
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Name": "Co-Occurrence Panel",
                 "Value": {
                   "StringWithMarkup": [
                     {
-                      "String": "ChemicalDiseaseNeighbor"
+                      "String": "ChemicalOrganismNeighbor"
                     },
                     {
-                      "String": "Disease"
+                      "String": "Organism"
                     },
                     {
                       "String": "ChemicalName"
                     },
                     {
-                      "String": "DiseaseName"
+                      "String": "OrganismName"
                     },
                     {
-                      "String": "https://meshb.nlm.nih.gov/record/ui?ui="
+                      "String": "https://pubchem.ncbi.nlm.nih.gov/taxonomy/"
                     },
                     {
                       "String": "CID"
                     },
                     {
-                      "String": "MeSH"
+                      "String": "TaxonomyID"
                     }
                   ]
                 }
@@ -2491,13 +2545,13 @@
             "Description": "Patent identifiers provided by data depositors, along with information on those patents.",
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
                   "ExternalTableName": "patent"
                 }
               },
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
                   "StringWithMarkup": [
                     {
@@ -2521,7 +2575,7 @@
             "URL": "https://www.wipo.int/patentscope/en/",
             "Information": [
               {
-                "ReferenceNumber": 22,
+                "ReferenceNumber": 29,
                 "Value": {
                   "StringWithMarkup": [
                     {
@@ -2541,20 +2595,160 @@
                 }
               }
             ]
+          },
+          {
+            "TOCHeading": "Chemical Co-Occurrences in Patents",
+            "Description": "Chemical co-occurrences in patents highlight chemicals mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 21,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalChemical"
+                    },
+                    {
+                      "String": "Chemical"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "SUMMARY_URL.cid"
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "CID"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical-Disease Co-Occurrences in Patents",
+            "Description": "Disease co-occurrences in patents highlight chemicals and diseases mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 21,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalDisease"
+                    },
+                    {
+                      "String": "Disease"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "https://meshb.nlm.nih.gov/record/ui?ui="
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "MeSH"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical-Gene Co-Occurrences in Patents",
+            "Description": "Gene co-occurrences in patents highlight chemicals and genes mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 21,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalGene"
+                    },
+                    {
+                      "String": "Gene"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "https://pubchem.ncbi.nlm.nih.gov/gene/SYMBOL:"
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "GeneSymbol"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical-Organism Co-Occurrences in Patents",
+            "Description": "Gene co-occurrences in patents highlight chemicals and organisms mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 21,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalOrganism"
+                    },
+                    {
+                      "String": "Organism"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "https://pubchem.ncbi.nlm.nih.gov/taxonomy/"
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "TaxonomyID"
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ]
       },
       {
         "TOCHeading": "Biological Test Results",
         "Description": "A PubChem substance or compound summary page displays biological test results from the PubChem BioAssay database, if/as available, for the chemical structure currently displayed. You can embed biological test results displays within your own web pages, for a PubChem Compound or Substance of interest, by using the BioActivity Widget.",
-        "URL": "https://pubchemdocs.ncbi.nlm.nih.gov/widgets",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/widgets",
         "Section": [
           {
             "TOCHeading": "BioAssay Results",
             "Description": "Bioactivity data for this compound, reported in PubChem BioAssay records.",
             "Information": [
               {
-                "ReferenceNumber": 15,
+                "ReferenceNumber": 21,
                 "Value": {
                   "ExternalTableName": "bioactivity"
                 }
@@ -2565,15 +2759,18 @@
       },
       {
         "TOCHeading": "Taxonomy",
-        "Description": "The organism(s) where the compound originated or is associated",
+        "Description": "Organism-specific information about where this compound originated or is associated",
         "Information": [
           {
-            "ReferenceNumber": 6,
-            "Reference": [
-              "The LOTUS Initiative for Open Natural Products Research: frozen dataset union wikidata (with metadata) | DOI:10.5281/zenodo.5794106"
+            "ReferenceNumber": 9,
+            "ExtendedReference": [
+              {
+                "Citation": "The LOTUS Initiative for Open Natural Products Research: frozen dataset union wikidata (with metadata) | DOI:10.5281/zenodo.5794106",
+                "DOI": "10.5281/zenodo.5794106"
+              }
             ],
             "Value": {
-              "ExternalTableName": "collection=lotus&view=concise_cid"
+              "ExternalTableName": "consolidatedcompoundtaxonomy"
             }
           }
         ]
@@ -2588,7 +2785,7 @@
             "URL": "https://www.norman-network.com/nds/SLE/",
             "Information": [
               {
-                "ReferenceNumber": 17,
+                "ReferenceNumber": 23,
                 "Name": "HID",
                 "URL": "https://pubchem.ncbi.nlm.nih.gov/classification/#hid=101",
                 "Value": {
@@ -2603,7 +2800,7 @@
             "URL": "https://www.epa.gov/chemical-research/distributed-structure-searchable-toxicity-dsstox-database",
             "Information": [
               {
-                "ReferenceNumber": 18,
+                "ReferenceNumber": 24,
                 "Name": "HID",
                 "URL": "https://pubchem.ncbi.nlm.nih.gov/classification/#hid=105",
                 "Value": {
@@ -2614,11 +2811,11 @@
           },
           {
             "TOCHeading": "LOTUS Tree",
-            "Description": "Biological and chemical tree provided by the the naturaL prOducTs occUrrence databaSe (LOTUS)",
+            "Description": "Biological and chemical tree provided by the naturaL prOducTs occUrrence databaSe (LOTUS)",
             "URL": "https://lotus.naturalproducts.net/",
             "Information": [
               {
-                "ReferenceNumber": 20,
+                "ReferenceNumber": 26,
                 "Name": "HID",
                 "URL": "https://pubchem.ncbi.nlm.nih.gov/classification/#hid=115",
                 "Value": {
@@ -2632,11 +2829,26 @@
             "Description": "Substance Registry Services (SRS) is the Environmental Protection Agency's (EPA) central system for information about substances that are tracked or regulated by EPA or other sources. It is a resource for basic information about chemicals, biological organisms, and other substances of interest to EPA and its state and tribal partners. SRS makes it possible to identify which EPA data systems, environmental statutes, or other sources have information about a substance and which synonym is used by that system or statute.",
             "Information": [
               {
-                "ReferenceNumber": 21,
+                "ReferenceNumber": 27,
                 "Name": "HID",
                 "URL": "https://pubchem.ncbi.nlm.nih.gov/classification/#hid=123",
                 "Value": {
                   "Number": [123]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "MolGenie Organic Chemistry Ontology",
+            "Description": "An organic chemistry ontology developed by MolGenie and OntoChem to assign compounds to structural classes, currently mapped to >1.7 million per- and polyfluoroalkyl substances (PFAS) extracted from the datasets explained in Barnabas et al (2022) DOI: 10.1039/D2DD00019A",
+            "URL": "https://github.com/MolGenie/ontology/",
+            "Information": [
+              {
+                "ReferenceNumber": 28,
+                "Name": "HID",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/classification/#hid=134",
+                "Value": {
+                  "Number": [134]
                 }
               }
             ]
@@ -2647,16 +2859,26 @@
     "Reference": [
       {
         "ReferenceNumber": 1,
-        "SourceName": "Drugs and Lactation Database (LactMed)",
-        "SourceID": "NBK501060",
-        "Name": "Penicillin G",
-        "Description": "The LactMed® database contains information on drugs and other chemicals to which breastfeeding mothers may be exposed. https://www.ncbi.nlm.nih.gov/books/NBK501922/",
-        "URL": "https://www.ncbi.nlm.nih.gov/books/NBK501060/",
-        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
-        "ANID": 15969933
+        "SourceName": "ChEMBL",
+        "SourceID": "Compound::CHEMBL300052",
+        "Description": "ChEMBL or ChEMBLdb is a manually curated chemical database of bioactive molecules with drug-like properties. It is maintained by the European Bioinformatics Institute (EBI), of the European Molecular Biology Laboratory (EMBL), based at the Wellcome Trust Genome Campus, Hinxton, UK.",
+        "URL": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL300052",
+        "LicenseNote": "Access to the web interface of ChEMBL is made under the EBI's Terms of Use (http://www.ebi.ac.uk/Information/termsofuse.html). The ChEMBL data is made available on a Creative Commons Attribution-Share Alike 3.0 Unported License (http://creativecommons.org/licenses/by-sa/3.0/).",
+        "LicenseURL": "http://www.ebi.ac.uk/Information/termsofuse.html",
+        "ANID": 31951989
       },
       {
         "ReferenceNumber": 2,
+        "SourceName": "Drugs and Lactation Database (LactMed)",
+        "SourceID": "LM209",
+        "Name": "Penicillin G",
+        "Description": "The LactMed(R) database contains information on drugs and other chemicals to which breastfeeding mothers may be exposed. https://www.ncbi.nlm.nih.gov/books/NBK501922/",
+        "URL": "https://www.ncbi.nlm.nih.gov/books/n/lactmed/LM209/",
+        "LicenseURL": "https://www.nlm.nih.gov/copyright.html",
+        "ANID": 24796711
+      },
+      {
+        "ReferenceNumber": 3,
         "SourceName": "DTP/NCI",
         "SourceID": "NSC 11964",
         "Name": "NSC11964",
@@ -2667,7 +2889,7 @@
         "ANID": 6657886
       },
       {
-        "ReferenceNumber": 3,
+        "ReferenceNumber": 4,
         "SourceName": "DTP/NCI",
         "SourceID": "NSC 193396",
         "Name": "penicillin g",
@@ -2678,7 +2900,7 @@
         "ANID": 6745453
       },
       {
-        "ReferenceNumber": 4,
+        "ReferenceNumber": 5,
         "SourceName": "EPA DSSTox",
         "SourceID": "DTXSID20274362",
         "Name": "Cillin",
@@ -2688,77 +2910,125 @@
         "ANID": 1298359
       },
       {
-        "ReferenceNumber": 5,
-        "SourceName": "Joint FAO/WHO Expert Committee on Food Additives (JECFA)",
-        "SourceID": "wf_1046",
-        "Name": "FREE BENZYLPENICILLIN",
-        "Description": "Evaluations of the Joint FAO/WHO Expert Committee on Food Additives (JECFA) database contains the summaries of all the evaluations of flavors, food additives, contaminants, toxicants, and veterinary drugs.",
-        "URL": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1046",
-        "LicenseNote": "Permission from WHO is not required for the use of WHO materials issued under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Intergovernmental Organization (CC BY-NC-SA 3.0 IGO) licence.",
-        "LicenseURL": "https://www.who.int/about/policies/publishing/copyright",
-        "ANID": 15262643
-      },
-      {
         "ReferenceNumber": 6,
-        "SourceName": "LOTUS - the natural products occurrence database",
-        "SourceID": "Compound::2349",
-        "Description": "LOTUS is one of the biggest and best annotated resources for natural products occurrences available free of charge and without any restriction.",
-        "LicenseNote": "The code for LOTUS is released under the GNU General Public License v3.0.",
-        "LicenseURL": "https://lotus.nprod.net/",
-        "ANID": 14873860
+        "SourceName": "EPA DSSTox",
+        "SourceID": "DTXSID30859048",
+        "Name": "3,3-Dimethyl-7-oxo-6-(2-phenylacetamido)-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid",
+        "Description": "DSSTox provides a high quality public chemistry resource for supporting improved predictive toxicology.",
+        "URL": "https://comptox.epa.gov/dashboard/DTXSID30859048",
+        "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources",
+        "ANID": 23979513
       },
       {
         "ReferenceNumber": 7,
+        "SourceName": "Human Metabolome Database (HMDB)",
+        "SourceID": "HMDB0256229",
+        "Name": "Pentids",
+        "Description": "The Human Metabolome Database (HMDB) is a freely available electronic database containing detailed information about small molecule metabolites found in the human body.",
+        "URL": "http://www.hmdb.ca/metabolites/HMDB0256229",
+        "LicenseNote": "\u0009HMDB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (HMDB) and the original publication (see the HMDB citing page). We ask that users who download significant portions of the database cite the HMDB paper in any resulting publications.",
+        "LicenseURL": "http://www.hmdb.ca/citing",
+        "ANID": 14487384
+      },
+      {
+        "ReferenceNumber": 8,
+        "SourceName": "Japan Chemical Substance Dictionary (Nikkaji)",
+        "SourceID": "J25.642K",
+        "Description": "The Japan Chemical Substance Dictionary (Nikkaji) has a search system that helps obtain knowledge from dissimilar fields and discover concepts that cross boundaries of specializations.",
+        "URL": "http://jglobal.jst.go.jp/en/redirect?Nikkaji_No=J25.642K",
+        "ANID": 22404959
+      },
+      {
+        "ReferenceNumber": 9,
+        "SourceName": "LOTUS - the natural products occurrence database",
+        "SourceID": "Q82003729",
+        "Name": "Cillin",
+        "Description": "LOTUS is one of the biggest and best annotated resources for natural products occurrences available free of charge and without any restriction.",
+        "URL": "https://www.wikidata.org/wiki/Q82003729",
+        "LicenseNote": "The code for LOTUS is released under the GNU General Public License v3.0.",
+        "LicenseURL": "https://lotus.nprod.net/",
+        "ANID": 20005309
+      },
+      {
+        "ReferenceNumber": 10,
         "SourceName": "MassBank Europe",
         "SourceID": "JGSARLDLIJGVTE-MBNYWOFBSA-N_1",
         "Name": "Penicillin G",
         "Description": "MassBank Europe (MassBank.EU) was created in 2011 as an open access database of mass spectra of emerging substances to support identification of unknown substances within the NORMAN Network (https://www.norman-network.com/). MassBank.EU is the partner project of MassBank.JP, hosted at the Helmholtz Centre for Environmental Research (UFZ) Leipzig and jointly maintained by UFZ, LCSB (University of Luxembourg) and IPB Halle.",
         "URL": "https://massbank.eu/MassBank/Result.jsp?inchikey=JGSARLDLIJGVTE-MBNYWOFBSA-N",
-        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/master/LICENSE",
+        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/LICENSE.txt",
         "ANID": 13699982
       },
       {
-        "ReferenceNumber": 8,
+        "ReferenceNumber": 11,
         "SourceName": "MassBank Europe",
         "SourceID": "JGSARLDLIJGVTE-MBNYWOFBSA-N_2",
         "Name": "Penicillin G",
         "Description": "MassBank Europe (MassBank.EU) was created in 2011 as an open access database of mass spectra of emerging substances to support identification of unknown substances within the NORMAN Network (https://www.norman-network.com/). MassBank.EU is the partner project of MassBank.JP, hosted at the Helmholtz Centre for Environmental Research (UFZ) Leipzig and jointly maintained by UFZ, LCSB (University of Luxembourg) and IPB Halle.",
         "URL": "https://massbank.eu/MassBank/Result.jsp?inchikey=JGSARLDLIJGVTE-MBNYWOFBSA-N",
-        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/master/LICENSE",
+        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/LICENSE.txt",
         "ANID": 13699983
       },
       {
-        "ReferenceNumber": 9,
+        "ReferenceNumber": 12,
         "SourceName": "MassBank Europe",
         "SourceID": "JGSARLDLIJGVTE-MBNYWOFBSA-N_3",
         "Name": "Penicillin G",
         "Description": "MassBank Europe (MassBank.EU) was created in 2011 as an open access database of mass spectra of emerging substances to support identification of unknown substances within the NORMAN Network (https://www.norman-network.com/). MassBank.EU is the partner project of MassBank.JP, hosted at the Helmholtz Centre for Environmental Research (UFZ) Leipzig and jointly maintained by UFZ, LCSB (University of Luxembourg) and IPB Halle.",
         "URL": "https://massbank.eu/MassBank/Result.jsp?inchikey=JGSARLDLIJGVTE-MBNYWOFBSA-N",
-        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/master/LICENSE",
+        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/LICENSE.txt",
         "ANID": 13699984
       },
       {
-        "ReferenceNumber": 10,
+        "ReferenceNumber": 13,
         "SourceName": "MassBank Europe",
         "SourceID": "JGSARLDLIJGVTE-MBNYWOFBSA-N_4",
         "Name": "Penicillin G",
         "Description": "MassBank Europe (MassBank.EU) was created in 2011 as an open access database of mass spectra of emerging substances to support identification of unknown substances within the NORMAN Network (https://www.norman-network.com/). MassBank.EU is the partner project of MassBank.JP, hosted at the Helmholtz Centre for Environmental Research (UFZ) Leipzig and jointly maintained by UFZ, LCSB (University of Luxembourg) and IPB Halle.",
         "URL": "https://massbank.eu/MassBank/Result.jsp?inchikey=JGSARLDLIJGVTE-MBNYWOFBSA-N",
-        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/master/LICENSE",
+        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/LICENSE.txt",
         "ANID": 13699985
       },
       {
-        "ReferenceNumber": 11,
+        "ReferenceNumber": 14,
         "SourceName": "MassBank Europe",
         "SourceID": "JGSARLDLIJGVTE-MBNYWOFBSA-N_5",
         "Name": "Penicillin G",
         "Description": "MassBank Europe (MassBank.EU) was created in 2011 as an open access database of mass spectra of emerging substances to support identification of unknown substances within the NORMAN Network (https://www.norman-network.com/). MassBank.EU is the partner project of MassBank.JP, hosted at the Helmholtz Centre for Environmental Research (UFZ) Leipzig and jointly maintained by UFZ, LCSB (University of Luxembourg) and IPB Halle.",
         "URL": "https://massbank.eu/MassBank/Result.jsp?inchikey=JGSARLDLIJGVTE-MBNYWOFBSA-N",
-        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/master/LICENSE",
+        "LicenseURL": "https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/LICENSE.txt",
         "ANID": 13699986
       },
       {
-        "ReferenceNumber": 12,
+        "ReferenceNumber": 18,
+        "SourceName": "SpectraBase",
+        "SourceID": "1ScfRESuPQW",
+        "Name": "Benzopenicillin",
+        "Description": "Wiley Science Solutions (https://sciencesolutions.wiley.com) is a leading publisher of spectral databases and KnowItAll spectroscopy software. SpectraBase provides fast text access to hundreds of thousands of NMR, IR, Raman, UV-Vis, and mass spectra.",
+        "URL": "https://spectrabase.com/spectrum/1ScfRESuPQW",
+        "ANID": 46247974
+      },
+      {
+        "ReferenceNumber": 15,
+        "SourceName": "Metabolomics Workbench",
+        "SourceID": "144455",
+        "Name": "Cillin",
+        "Description": "The Metabolomics Workbench serves as a national and international repository for metabolomics data and metadata and provides analysis tools and access to metabolite standards, protocols, tutorials, training, and more.",
+        "URL": "https://www.metabolomicsworkbench.org/data/StructureData.php?RegNo=144455",
+        "ANID": 20290349
+      },
+      {
+        "ReferenceNumber": 16,
+        "SourceName": "NORMAN Suspect List Exchange",
+        "SourceID": "nrm_2349",
+        "Name": "PENICILLIN",
+        "Description": "The NORMAN network enhances the exchange of information on emerging environmental substances, and encourages the validation and harmonisation of common measurement methods and monitoring tools so that the requirements of risk assessors and risk managers can be better met. The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point to find suspect lists relevant for various environmental monitoring questions, described in DOI:10.1186/s12302-022-00680-6",
+        "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "ANID": 13205278
+      },
+      {
+        "ReferenceNumber": 17,
         "SourceName": "SpectraBase",
         "SourceID": "9pchmHnO1Qo",
         "Name": "PHENOXYMETHYLPENICILLIN-ARTIFACT",
@@ -2767,53 +3037,53 @@
         "ANID": 9797286
       },
       {
-        "ReferenceNumber": 13,
-        "SourceName": "SpectraBase",
-        "SourceID": "38B63DABWwT",
-        "Name": "PENICILLIN-G 1",
-        "Description": "Wiley Science Solutions (https://sciencesolutions.wiley.com) is a leading publisher of spectral databases and KnowItAll spectroscopy software. SpectraBase provides fast text access to hundreds of thousands of NMR, IR, Raman, UV-Vis, and mass spectra.",
-        "URL": "https://spectrabase.com/spectrum/38B63DABWwT",
-        "ANID": 9797287
+        "ReferenceNumber": 19,
+        "SourceName": "Therapeutic Target Database (TTD)",
+        "SourceID": "D0R1BD",
+        "Name": "Penicillin",
+        "Description": "Therapeutic Target Database (TTD) is a database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.",
+        "URL": "https://idrblab.net/ttd/data/drug/details/D0R1BD",
+        "ANID": 19781646
       },
       {
-        "ReferenceNumber": 14,
+        "ReferenceNumber": 20,
         "SourceName": "Wikidata",
-        "SourceID": "Q82003729",
+        "SourceID": "Compound::Q82003729",
         "Name": "Cillin",
-        "Description": "Link to the compound information in Wikidata.",
+        "Description": "Wikidata is a CCZero crowdsourced and curated database, linked to Wikipedia, with a strong machine readable architecture.",
         "URL": "https://www.wikidata.org/wiki/Q82003729",
         "LicenseNote": "CCZero",
         "LicenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "ANID": 16577496
+        "ANID": 44480618
       },
       {
-        "ReferenceNumber": 15,
+        "ReferenceNumber": 21,
         "SourceName": "PubChem",
         "SourceID": "PubChem",
         "Description": "Data deposited in or computed by PubChem",
         "URL": "https://pubchem.ncbi.nlm.nih.gov"
       },
       {
-        "ReferenceNumber": 17,
+        "ReferenceNumber": 23,
         "SourceName": "NORMAN Suspect List Exchange",
         "SourceID": "norman_sle_tree",
         "Name": "NORMAN Suspect List Exchange Classification",
-        "Description": "The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point for NORMAN members (and others) to find suspect lists relevant for their environmental monitoring questions.<br>Update: 07/19/22 11:57:01",
+        "Description": "The NORMAN Suspect List Exchange (NORMAN-SLE) is a central access point for NORMAN members (and others) to find suspect lists relevant for their environmental monitoring questions.",
         "URL": "https://www.norman-network.com/nds/SLE/",
         "LicenseNote": "Data: CC-BY 4.0; Code (hosted by ECI, LCSB): Artistic-2.0",
         "LicenseURL": "https://creativecommons.org/licenses/by/4.0/"
       },
       {
-        "ReferenceNumber": 18,
+        "ReferenceNumber": 24,
         "SourceName": "EPA DSSTox",
         "SourceID": "dsstoxlist_tree",
         "Name": "CompTox Chemicals Dashboard Chemical Lists",
-        "Description": "This classification lists the chemical categories from the EPA CompTox Chemicals Dashboard.<br>Update: 08/10/22 11:22:34",
+        "Description": "This classification lists the chemical categories from the EPA CompTox Chemicals Dashboard.",
         "URL": "https://comptox.epa.gov/dashboard/chemical-lists/",
         "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources"
       },
       {
-        "ReferenceNumber": 20,
+        "ReferenceNumber": 26,
         "SourceName": "LOTUS - the natural products occurrence database",
         "SourceID": "biochem",
         "Name": "LOTUS Tree",
@@ -2823,23 +3093,33 @@
         "LicenseURL": "https://lotus.nprod.net/"
       },
       {
-        "ReferenceNumber": 21,
+        "ReferenceNumber": 27,
         "SourceName": "EPA Substance Registry Services",
         "SourceID": "epasrs_tree",
         "Name": "EPA SRS List Classification",
-        "Description": "Substance Registry Services (SRS) is the Environmental Protection Agency's (EPA) central system for information about substances that are tracked or regulated by EPA or other sources. It is a resource for basic information about chemicals, biological organisms, and other substances of interest to EPA and its state and tribal partners. SRS makes it possible to identify which EPA data systems, environmental statutes, or other sources have information about a substance and which synonym is used by that system or statute.",
-        "URL": "https://sor.epa.gov/sor_internet/registry/substreg/LandingPage.do",
+        "Description": "Substance Registry Services (SRS) is the Environmental Protection Agency's (EPA) central system for information about substances that are tracked or regulated by EPA or other sources.",
+        "URL": "https://maldi.nist.gov",
         "LicenseURL": "https://www.epa.gov/privacy/privacy-act-laws-policies-and-resources"
       },
       {
-        "ReferenceNumber": 22,
+        "ReferenceNumber": 28,
+        "SourceName": "MolGenie",
+        "SourceID": "mol_classes",
+        "Name": "MolGenie Organic Chemistry Ontology",
+        "Description": "An organic chemistry ontology developed by MolGenie and OntoChem to assign chemical entities to structural classes, split into three main subsections: calculated properties, compounds and substructural concepts. The ontology contains chemistry structural classes with a focus on elements and small organic compounds, but not inorganic, polymer, biopolymer, metal complexes, metal organic frameworks (MOFs) and other chemistry entities. The ontology has been mapped to several collections of chemicals, including (a) Chemicals of Biological Interest (ChEBI), (b) the ChEMBL database of bioactive molecules, (c) the LOTUS natural product collection, (d) per- and polyfluoroalkyl substances (PFAS) extracted from Barnabas et al (2022) DOI: 10.1039/D2DD00019A (e) PubChemLite and (f) the ZeroPM Global Chemical Inventory.",
+        "URL": "https://github.com/MolGenie/ontology/",
+        "LicenseNote": "CC-BY 4.0",
+        "LicenseURL": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "ReferenceNumber": 29,
         "SourceName": "PATENTSCOPE (WIPO)",
         "Name": "SID 388341571",
         "Description": "The PATENTSCOPE database from WIPO includes patent and chemical structure search (with a free account) that gives access to millions of patent documents. The World Intellectual Property Organisation (WIPO) is a specialized United Nations (UN) agency headquartered in Geneva (Switzerland). Our mission is to lead the development of a balanced and effective international Intellectual Property (IP) system that enables innovation and creativity for the benefit of all. We help governments, businesses and society realize the benefits of Intellectual Property and are notably a world reference source for IP information.",
         "URL": "https://pubchem.ncbi.nlm.nih.gov/substance/388341571"
       },
       {
-        "ReferenceNumber": 23,
+        "ReferenceNumber": 30,
         "SourceName": "NCBI",
         "SourceID": "LinkOut",
         "Description": "LinkOut is a service that allows one to link directly from NCBI databases to a wide range of information and services beyond NCBI systems.",

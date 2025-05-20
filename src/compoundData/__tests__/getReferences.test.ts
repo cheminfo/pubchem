@@ -1,16 +1,16 @@
-import { test, expect } from 'vitest';
+import { expect, test } from 'vitest';
 
 import data from '../../../data/bromopentane.json';
 import { getReferences } from '../getReferences';
 
 test('reference parsing', () => {
   const result = getReferences(data);
-  expect(Object.keys(result)).toHaveLength(60);
+  expect(Object.keys(result)).toHaveLength(52);
   expect(result['47']).toStrictEqual({
-    url: 'https://spectrabase.com/spectrum/3N44HGBcQLq',
-    sourceName: 'SpectraBase',
-    name: '1-Bromopentane',
+    url: 'https://comptox.epa.gov/dashboard/chemical-lists/',
+    sourceName: 'EPA DSSTox',
+    name: 'CompTox Chemicals Dashboard Chemical Lists',
     description:
-      'Wiley Science Solutions (https://sciencesolutions.wiley.com) is a leading publisher of spectral databases and KnowItAll spectroscopy software. SpectraBase provides fast text access to hundreds of thousands of NMR, IR, Raman, UV-Vis, and mass spectra.',
+      'This classification lists the chemical categories from the EPA CompTox Chemicals Dashboard.',
   });
 });

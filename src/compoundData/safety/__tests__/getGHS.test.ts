@@ -1,4 +1,4 @@
-import { it, expect, describe } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import bromopentane from '../../../../data/bromopentane.json';
 import ethyleneglycol from '../../../../data/ethyleneglycol.json';
@@ -15,6 +15,7 @@ describe('getGHS', () => {
     expect(result.pictograms[0].data).toStrictEqual([
       { code: 'GHS02', description: 'Flammable' },
       { code: 'GHS05', description: 'Corrosive' },
+      { code: 'GHS06', description: 'Toxic' },
       { code: 'GHS07', description: 'Harmful Irritant' },
     ]);
 
@@ -49,6 +50,7 @@ describe('getGHSSummry', () => {
       'P243',
       'P261',
       'P264',
+      'P264+P265',
       'P271',
       'P273',
       'P280',
@@ -56,11 +58,11 @@ describe('getGHSSummry', () => {
       'P303+P361+P353',
       'P304+P340',
       'P305+P351+P338',
-      'P312',
+      'P319',
       'P321',
-      'P332+P313',
-      'P337+P313',
-      'P362',
+      'P332+P317',
+      'P337+P317',
+      'P362+P364',
       'P370+P378',
       'P391',
       'P403+P233',
@@ -78,17 +80,18 @@ describe('getGHSSummry', () => {
       'GHS06',
       'GHS07',
       'GHS08',
+      'GHS09',
     ]);
   });
 
   it('triethylamine with only europe', () => {
     const result = getGHSSummary(triethylamine, {
-      sourceName: /EU REGULATIO/i,
+      sourceName: /European Parliament/,
     });
     expect(result.pictograms.map((entry) => entry.code)).toStrictEqual([
       'GHS02',
       'GHS05',
-      'GHS07',
+      'GHS06',
     ]);
   });
 

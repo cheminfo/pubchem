@@ -1,4 +1,4 @@
-import { it, expect, describe } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import benzene from '../../../data/benzene.json';
 import { CompoundData } from '../CompoundData';
@@ -39,16 +39,16 @@ describe('CompoundData', () => {
 
     expect(result.boilingPoint[1]).toStrictEqual({
       reference: {
-        url: 'https://comptox.epa.gov/dashboard/DTXSID3039242',
-        sourceName: 'EPA DSSTox',
-        name: 'Benzene',
+        url: 'https://pubchem.ncbi.nlm.nih.gov/source/hsdb/35',
+        sourceName: 'Hazardous Substances Data Bank (HSDB)',
+        name: 'BENZENE',
         description:
-          'DSSTox provides a high quality public chemistry resource for supporting improved predictive toxicology.',
+          'The Hazardous Substances Data Bank (HSDB) is a toxicology database that focuses on the toxicology of potentially hazardous chemicals. It provides information on human exposure, industrial hygiene, emergency handling procedures, environmental fate, regulatory requirements, nanomaterials, and related areas. The information in HSDB has been assessed by a Scientific Review Panel.',
       },
       data: {
-        original: '80.0 °C',
+        original: '80.08 °C',
         parsed: {
-          temperature: { low: 80, high: undefined, units: '°C' },
+          temperature: { low: 80.08, high: undefined, units: '°C' },
           pressure: { low: 760, high: undefined, units: 'torr' },
         },
       },

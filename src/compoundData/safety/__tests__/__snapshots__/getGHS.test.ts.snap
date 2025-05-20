@@ -14,36 +14,6 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Harmful if swallowed",
         },
         {
-          "code": "H312",
-          "description": "Harmful in contact with skin",
-        },
-        {
-          "code": "H314",
-          "description": "Causes severe skin burns and eye damage",
-        },
-        {
-          "code": "H332",
-          "description": "Harmful if inhaled",
-        },
-      ],
-      "reference": {
-        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
-        "name": "triethylamine",
-        "sourceName": "EU REGULATION (EC) No 1272/2008",
-        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008R1272",
-      },
-    },
-    {
-      "data": [
-        {
-          "code": "H225",
-          "description": "Highly Flammable liquid and vapor",
-        },
-        {
-          "code": "H302",
-          "description": "Harmful if swallowed",
-        },
-        {
           "code": "H311",
           "description": "Toxic in contact with skin",
         },
@@ -74,7 +44,7 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The information provided here is aggregated from the "Notified classification and labelling" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
-        "name": "Triethylamine",
+        "name": "Triethylamine (EC: 204-469-4)",
         "sourceName": "European Chemicals Agency (ECHA)",
         "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
       },
@@ -153,6 +123,56 @@ exports[`getGHS > triethylamine 1`] = `
         "name": "TRIETHYLAMINE",
         "sourceName": "Hazardous Substances Data Bank (HSDB)",
         "url": "https://pubchem.ncbi.nlm.nih.gov/source/hsdb/896",
+      },
+    },
+    {
+      "data": [
+        {
+          "code": "H225",
+          "description": "Highly Flammable liquid and vapor",
+        },
+        {
+          "code": "H302",
+          "description": "Harmful if swallowed",
+        },
+        {
+          "code": "H311",
+          "description": "Toxic in contact with skin",
+        },
+        {
+          "code": "H314",
+          "description": "Causes severe skin burns and eye damage",
+        },
+        {
+          "code": "H318",
+          "description": "Causes serious eye damage",
+        },
+        {
+          "code": "H331",
+          "description": "Toxic if inhaled",
+        },
+        {
+          "code": "H370",
+          "description": "Causes damage to organs",
+        },
+        {
+          "code": "H372",
+          "description": "Causes damage to organs through prolonged or repeated exposure",
+        },
+        {
+          "code": "H401",
+          "description": "Toxic to aquatic life",
+        },
+        {
+          "code": "H411",
+          "description": "Toxic to aquatic life with long lasting effects",
+        },
+      ],
+      "reference": {
+        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
+        "name": "Triethylamine - FY2006 (New/original classication)",
+        "sourceName": "NITE-CMC",
+        "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
       },
     },
     {
@@ -204,9 +224,9 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
-        "name": "Triethylamine - FY2016",
+        "name": "Triethylamine - FY2016 (Revised classification)",
         "sourceName": "NITE-CMC",
-        "url": "https://www.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+        "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
       },
     },
     {
@@ -216,8 +236,8 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Highly Flammable liquid and vapor",
         },
         {
-          "code": "H302",
-          "description": "Harmful if swallowed",
+          "code": "H301",
+          "description": "Toxic if swallowed",
         },
         {
           "code": "H311",
@@ -235,20 +255,12 @@ exports[`getGHS > triethylamine 1`] = `
           "code": "H331",
           "description": "Toxic if inhaled",
         },
-        {
-          "code": "H370",
-          "description": "Causes damage to organs",
-        },
-        {
-          "code": "H372",
-          "description": "Causes damage to organs through prolonged or repeated exposure",
-        },
       ],
       "reference": {
-        "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
-        "name": "Triethylamine - FY2006",
-        "sourceName": "NITE-CMC",
-        "url": "https://www.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
+        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
+        "name": "triethylamine",
+        "sourceName": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+        "url": "https://eur-lex.europa.eu/eli/reg/2008/1272/oj",
       },
     },
   ],
@@ -288,8 +300,16 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
+          "code": "P262",
+          "description": "Do not get in eyes, on skin, or on clothing.",
+        },
+        {
           "code": "P264",
           "description": "Wash hands [and ...] thoroughly after handling.",
+        },
+        {
+          "code": "P264+P265",
+          "description": "Wash hands [and ...] thoroughly after handling. Do not touch eyes.",
         },
         {
           "code": "P270",
@@ -304,8 +324,8 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
-          "code": "P301+P312",
-          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
+          "code": "P301+P317",
+          "description": "IF SWALLOWED: Get medical help.",
         },
         {
           "code": "P301+P330+P331",
@@ -316,174 +336,48 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
-          "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
-        },
-        {
-          "code": "P304+P312",
-          "description": "(Deleted) IF INHALED: Call a POISON CENTER/doctor/... if you feel unwell.",
-        },
-        {
-          "code": "P304+P340",
-          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
-        },
-        {
-          "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
-        },
-        {
-          "code": "P310",
-          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
-        },
-        {
-          "code": "P312",
-          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
-        },
-        {
-          "code": "P321",
-          "description": "Specific treatment (see ... on this label).",
-        },
-        {
-          "code": "P322",
-          "description": "(Deleted) Specific measures (see ...on this label).",
-        },
-        {
-          "code": "P330",
-          "description": "Rinse mouth.",
-        },
-        {
-          "code": "P363",
-          "description": "Wash contaminated clothing before reuse.",
-        },
-        {
-          "code": "P370+P378",
-          "description": "In case of fire: Use ... to extinguish.",
-        },
-        {
-          "code": "P403+P235",
-          "description": "Store in a well-ventilated place. Keep cool.",
-        },
-        {
-          "code": "P405",
-          "description": "Store locked up.",
-        },
-        {
-          "code": "P501",
-          "description": "Dispose of contents/container to ...",
-        },
-      ],
-      "reference": {
-        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
-        "name": "triethylamine",
-        "sourceName": "EU REGULATION (EC) No 1272/2008",
-        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008R1272",
-      },
-    },
-    {
-      "data": [
-        {
-          "code": "P210",
-          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
-        },
-        {
-          "code": "P233",
-          "description": "Keep container tightly closed.",
-        },
-        {
-          "code": "P240",
-          "description": "Ground/bond container and receiving equipment.",
-        },
-        {
-          "code": "P241",
-          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
-        },
-        {
-          "code": "P242",
-          "description": "Use only non-sparking tools.",
-        },
-        {
-          "code": "P243",
-          "description": "Take precautionary measures against static discharge.",
-        },
-        {
-          "code": "P260",
-          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
-        },
-        {
-          "code": "P261",
-          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
-        },
-        {
-          "code": "P264",
-          "description": "Wash hands [and ...] thoroughly after handling.",
-        },
-        {
-          "code": "P270",
-          "description": "Do not eat, drink or smoke when using this product.",
-        },
-        {
-          "code": "P271",
-          "description": "Use only outdoors or in a well-ventilated area.",
-        },
-        {
-          "code": "P280",
-          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
-        },
-        {
-          "code": "P301+P312",
-          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
-        },
-        {
-          "code": "P301+P330+P331",
-          "description": "IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.",
-        },
-        {
-          "code": "P302+P352",
-          "description": "IF ON SKIN: wash with plenty of water/...",
+          "code": "P302+P361+P354",
+          "description": "IF ON SKIN: Take off Immediately all contaminated clothing. Immediately rinse with water for several minutes.",
         },
         {
           "code": "P303+P361+P353",
           "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
-          "code": "P304+P312",
-          "description": "(Deleted) IF INHALED: Call a POISON CENTER/doctor/... if you feel unwell.",
-        },
-        {
           "code": "P304+P340",
           "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
-          "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
+          "code": "P305+P354+P338",
+          "description": "IF IN EYES: Immediately rinse with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.",
         },
         {
-          "code": "P310",
-          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
+          "code": "P316",
+          "description": "Get emergency medical help immediately.",
         },
         {
-          "code": "P311",
-          "description": "(Deleted) Call a POISON CENTER or doctor/...",
+          "code": "P317",
+          "description": "Get emergency medical help.",
         },
         {
-          "code": "P312",
-          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
+          "code": "P319",
+          "description": "Get medical help if you feel unwell.",
         },
         {
           "code": "P321",
           "description": "Specific treatment (see ... on this label).",
         },
         {
-          "code": "P322",
-          "description": "(Deleted) Specific measures (see ...on this label).",
-        },
-        {
           "code": "P330",
           "description": "Rinse mouth.",
         },
         {
-          "code": "P361",
-          "description": "Take off immediately all contaminated clothing.",
+          "code": "P361+P364",
+          "description": "Take off immediately all contaminated clothing and wash it before reuse.",
+        },
+        {
+          "code": "P362+P364",
+          "description": "Take off contaminated clothing and wash it before reuse.",
         },
         {
           "code": "P363",
@@ -512,7 +406,7 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The information provided here is aggregated from the "Notified classification and labelling" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
-        "name": "Triethylamine",
+        "name": "Triethylamine (EC: 204-469-4)",
         "sourceName": "European Chemicals Agency (ECHA)",
         "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
       },
@@ -552,6 +446,10 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
+          "code": "P262",
+          "description": "Do not get in eyes, on skin, or on clothing.",
+        },
+        {
           "code": "P264",
           "description": "Wash hands [and ...] thoroughly after handling.",
         },
@@ -568,8 +466,8 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
-          "code": "P301+P312",
-          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
+          "code": "P301+P317",
+          "description": "IF SWALLOWED: Get medical help.",
         },
         {
           "code": "P301+P330+P331",
@@ -580,6 +478,10 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
+          "code": "P302+P361+P354",
+          "description": "IF ON SKIN: Take off Immediately all contaminated clothing. Immediately rinse with water for several minutes.",
+        },
+        {
           "code": "P303+P361+P353",
           "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
@@ -588,36 +490,28 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
-          "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
+          "code": "P305+P354+P338",
+          "description": "IF IN EYES: Immediately rinse with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.",
         },
         {
-          "code": "P310",
-          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
+          "code": "P316",
+          "description": "Get emergency medical help immediately.",
         },
         {
-          "code": "P311",
-          "description": "(Deleted) Call a POISON CENTER or doctor/...",
-        },
-        {
-          "code": "P312",
-          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
+          "code": "P319",
+          "description": "Get medical help if you feel unwell.",
         },
         {
           "code": "P321",
           "description": "Specific treatment (see ... on this label).",
         },
         {
-          "code": "P322",
-          "description": "(Deleted) Specific measures (see ...on this label).",
-        },
-        {
           "code": "P330",
           "description": "Rinse mouth.",
         },
         {
-          "code": "P361",
-          "description": "Take off immediately all contaminated clothing.",
+          "code": "P361+P364",
+          "description": "Take off immediately all contaminated clothing and wash it before reuse.",
         },
         {
           "code": "P363",
@@ -686,8 +580,16 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
+          "code": "P262",
+          "description": "Do not get in eyes, on skin, or on clothing.",
+        },
+        {
           "code": "P264",
           "description": "Wash hands [and ...] thoroughly after handling.",
+        },
+        {
+          "code": "P264+P265",
+          "description": "Wash hands [and ...] thoroughly after handling. Do not touch eyes.",
         },
         {
           "code": "P270",
@@ -706,8 +608,8 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
-          "code": "P301+P312",
-          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
+          "code": "P301+P317",
+          "description": "IF SWALLOWED: Get medical help.",
         },
         {
           "code": "P301+P330+P331",
@@ -718,6 +620,10 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
+          "code": "P302+P361+P354",
+          "description": "IF ON SKIN: Take off Immediately all contaminated clothing. Immediately rinse with water for several minutes.",
+        },
+        {
           "code": "P303+P361+P353",
           "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
@@ -726,36 +632,32 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
-          "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
+          "code": "P305+P354+P338",
+          "description": "IF IN EYES: Immediately rinse with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.",
         },
         {
-          "code": "P310",
-          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
+          "code": "P316",
+          "description": "Get emergency medical help immediately.",
         },
         {
-          "code": "P311",
-          "description": "(Deleted) Call a POISON CENTER or doctor/...",
+          "code": "P317",
+          "description": "Get emergency medical help.",
         },
         {
-          "code": "P312",
-          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
+          "code": "P319",
+          "description": "Get medical help if you feel unwell.",
         },
         {
           "code": "P321",
           "description": "Specific treatment (see ... on this label).",
         },
         {
-          "code": "P322",
-          "description": "(Deleted) Specific measures (see ...on this label).",
-        },
-        {
           "code": "P330",
           "description": "Rinse mouth.",
         },
         {
-          "code": "P361",
-          "description": "Take off immediately all contaminated clothing.",
+          "code": "P361+P364",
+          "description": "Take off immediately all contaminated clothing and wash it before reuse.",
         },
         {
           "code": "P363",
@@ -824,8 +726,16 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
+          "code": "P262",
+          "description": "Do not get in eyes, on skin, or on clothing.",
+        },
+        {
           "code": "P264",
           "description": "Wash hands [and ...] thoroughly after handling.",
+        },
+        {
+          "code": "P264+P265",
+          "description": "Wash hands [and ...] thoroughly after handling. Do not touch eyes.",
         },
         {
           "code": "P270",
@@ -844,8 +754,8 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
-          "code": "P301+P312",
-          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
+          "code": "P301+P317",
+          "description": "IF SWALLOWED: Get medical help.",
         },
         {
           "code": "P301+P330+P331",
@@ -856,52 +766,48 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
-          "code": "P303+P361+P353",
-          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
+          "code": "P302+P361+P354",
+          "description": "IF ON SKIN: Take off Immediately all contaminated clothing. Immediately rinse with water for several minutes.",
         },
         {
-          "code": "P304+P312",
-          "description": "(Deleted) IF INHALED: Call a POISON CENTER/doctor/... if you feel unwell.",
+          "code": "P303+P361+P353",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
         {
           "code": "P304+P340",
           "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
-          "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
+          "code": "P305+P354+P338",
+          "description": "IF IN EYES: Immediately rinse with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.",
         },
         {
-          "code": "P307+P311",
-          "description": "(Deleted) IF exposed: call a POISON CENTER or doctor/physician.",
+          "code": "P308+P316",
+          "description": "IF exposed or concerned: Get emergency medical help immediately.",
         },
         {
-          "code": "P310",
-          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
+          "code": "P316",
+          "description": "Get emergency medical help immediately.",
         },
         {
-          "code": "P312",
-          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
+          "code": "P317",
+          "description": "Get emergency medical help.",
         },
         {
-          "code": "P314",
-          "description": "(Deleted) Get medical advice/attention if you feel unwell.",
+          "code": "P319",
+          "description": "Get medical help if you feel unwell.",
         },
         {
           "code": "P321",
           "description": "Specific treatment (see ... on this label).",
         },
         {
-          "code": "P322",
-          "description": "(Deleted) Specific measures (see ...on this label).",
-        },
-        {
           "code": "P330",
           "description": "Rinse mouth.",
         },
         {
-          "code": "P361",
-          "description": "Take off immediately all contaminated clothing.",
+          "code": "P361+P364",
+          "description": "Take off immediately all contaminated clothing and wash it before reuse.",
         },
         {
           "code": "P363",
@@ -910,6 +816,10 @@ exports[`getGHS > triethylamine 1`] = `
         {
           "code": "P370+P378",
           "description": "In case of fire: Use ... to extinguish.",
+        },
+        {
+          "code": "P391",
+          "description": "Collect spillage.",
         },
         {
           "code": "P403+P233",
@@ -930,9 +840,9 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
-        "name": "Triethylamine - FY2016",
+        "name": "Triethylamine - FY2006 (New/original classication)",
         "sourceName": "NITE-CMC",
-        "url": "https://www.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+        "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
       },
     },
     {
@@ -970,8 +880,16 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
         },
         {
+          "code": "P262",
+          "description": "Do not get in eyes, on skin, or on clothing.",
+        },
+        {
           "code": "P264",
           "description": "Wash hands [and ...] thoroughly after handling.",
+        },
+        {
+          "code": "P264+P265",
+          "description": "Wash hands [and ...] thoroughly after handling. Do not touch eyes.",
         },
         {
           "code": "P270",
@@ -982,12 +900,16 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Use only outdoors or in a well-ventilated area.",
         },
         {
+          "code": "P273",
+          "description": "Avoid release to the environment.",
+        },
+        {
           "code": "P280",
           "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
         },
         {
-          "code": "P301+P312",
-          "description": "(Deleted) IF SWALLOWED: call a POISON CENTER/doctor/... IF you feel unwell.",
+          "code": "P301+P317",
+          "description": "IF SWALLOWED: Get medical help.",
         },
         {
           "code": "P301+P330+P331",
@@ -998,6 +920,10 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF ON SKIN: wash with plenty of water/...",
         },
         {
+          "code": "P302+P361+P354",
+          "description": "IF ON SKIN: Take off Immediately all contaminated clothing. Immediately rinse with water for several minutes.",
+        },
+        {
           "code": "P303+P361+P353",
           "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
         },
@@ -1006,44 +932,36 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
         },
         {
-          "code": "P305+P351+P338",
-          "description": "IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses if present and easy to do - continue rinsing.",
+          "code": "P305+P354+P338",
+          "description": "IF IN EYES: Immediately rinse with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.",
         },
         {
-          "code": "P307+P311",
-          "description": "(Deleted) IF exposed: call a POISON CENTER or doctor/physician.",
+          "code": "P308+P316",
+          "description": "IF exposed or concerned: Get emergency medical help immediately.",
         },
         {
-          "code": "P310",
-          "description": "(Deleted) Immediately call a POISON CENTER or doctor/physician.",
+          "code": "P316",
+          "description": "Get emergency medical help immediately.",
         },
         {
-          "code": "P311",
-          "description": "(Deleted) Call a POISON CENTER or doctor/...",
+          "code": "P317",
+          "description": "Get emergency medical help.",
         },
         {
-          "code": "P312",
-          "description": "(Deleted) Call a POISON CENTER or doctor/... if you feel unwell.",
-        },
-        {
-          "code": "P314",
-          "description": "(Deleted) Get medical advice/attention if you feel unwell.",
+          "code": "P319",
+          "description": "Get medical help if you feel unwell.",
         },
         {
           "code": "P321",
           "description": "Specific treatment (see ... on this label).",
         },
         {
-          "code": "P322",
-          "description": "(Deleted) Specific measures (see ...on this label).",
-        },
-        {
           "code": "P330",
           "description": "Rinse mouth.",
         },
         {
-          "code": "P361",
-          "description": "Take off immediately all contaminated clothing.",
+          "code": "P361+P364",
+          "description": "Take off immediately all contaminated clothing and wash it before reuse.",
         },
         {
           "code": "P363",
@@ -1072,9 +990,147 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
-        "name": "Triethylamine - FY2006",
+        "name": "Triethylamine - FY2016 (Revised classification)",
         "sourceName": "NITE-CMC",
-        "url": "https://www.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
+        "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+      },
+    },
+    {
+      "data": [
+        {
+          "code": "P210",
+          "description": "Keep away from heat, hot surface, sparks, open flames and other ignition sources. No smoking.",
+        },
+        {
+          "code": "P233",
+          "description": "Keep container tightly closed.",
+        },
+        {
+          "code": "P240",
+          "description": "Ground/bond container and receiving equipment.",
+        },
+        {
+          "code": "P241",
+          "description": "Use explosion-proof [electrical/ventilating/lighting/.../] equipment.",
+        },
+        {
+          "code": "P242",
+          "description": "Use only non-sparking tools.",
+        },
+        {
+          "code": "P243",
+          "description": "Take precautionary measures against static discharge.",
+        },
+        {
+          "code": "P260",
+          "description": "Do not breathe dust/fume/gas/mist/vapors/spray.",
+        },
+        {
+          "code": "P261",
+          "description": "Avoid breathing dust/fume/gas/mist/vapors/spray.",
+        },
+        {
+          "code": "P262",
+          "description": "Do not get in eyes, on skin, or on clothing.",
+        },
+        {
+          "code": "P264",
+          "description": "Wash hands [and ...] thoroughly after handling.",
+        },
+        {
+          "code": "P264+P265",
+          "description": "Wash hands [and ...] thoroughly after handling. Do not touch eyes.",
+        },
+        {
+          "code": "P270",
+          "description": "Do not eat, drink or smoke when using this product.",
+        },
+        {
+          "code": "P271",
+          "description": "Use only outdoors or in a well-ventilated area.",
+        },
+        {
+          "code": "P280",
+          "description": "Wear protective gloves/protective clothing/eye protection/face protection/hearing protection/...",
+        },
+        {
+          "code": "P301+P316",
+          "description": "IF SWALLOWED: Get emergency medical help immediately.",
+        },
+        {
+          "code": "P301+P330+P331",
+          "description": "IF SWALLOWED: Rinse mouth. Do NOT induce vomiting.",
+        },
+        {
+          "code": "P302+P352",
+          "description": "IF ON SKIN: wash with plenty of water/...",
+        },
+        {
+          "code": "P302+P361+P354",
+          "description": "IF ON SKIN: Take off Immediately all contaminated clothing. Immediately rinse with water for several minutes.",
+        },
+        {
+          "code": "P303+P361+P353",
+          "description": "IF ON SKIN (or hair): Take off Immediately all contaminated clothing. Rinse SKIN with water [or shower].",
+        },
+        {
+          "code": "P304+P340",
+          "description": "IF INHALED: Remove person to fresh air and keep comfortable for breathing.",
+        },
+        {
+          "code": "P305+P354+P338",
+          "description": "IF IN EYES: Immediately rinse with water for several minutes. Remove contact lenses if present and easy to do. Continue rinsing.",
+        },
+        {
+          "code": "P316",
+          "description": "Get emergency medical help immediately.",
+        },
+        {
+          "code": "P317",
+          "description": "Get emergency medical help.",
+        },
+        {
+          "code": "P321",
+          "description": "Specific treatment (see ... on this label).",
+        },
+        {
+          "code": "P330",
+          "description": "Rinse mouth.",
+        },
+        {
+          "code": "P361+P364",
+          "description": "Take off immediately all contaminated clothing and wash it before reuse.",
+        },
+        {
+          "code": "P363",
+          "description": "Wash contaminated clothing before reuse.",
+        },
+        {
+          "code": "P370+P378",
+          "description": "In case of fire: Use ... to extinguish.",
+        },
+        {
+          "code": "P403+P233",
+          "description": "Store in a well-ventilated place. Keep container tightly closed.",
+        },
+        {
+          "code": "P403+P235",
+          "description": "Store in a well-ventilated place. Keep cool.",
+        },
+        {
+          "code": "P405",
+          "description": "Store locked up.",
+        },
+        {
+          "code": "P501",
+          "description": "Dispose of contents/container to ...",
+        },
+      ],
+      "reference": {
+        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
+        "name": "triethylamine",
+        "sourceName": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+        "url": "https://eur-lex.europa.eu/eli/reg/2008/1272/oj",
       },
     },
   ],
@@ -1090,28 +1146,6 @@ exports[`getGHS > triethylamine 1`] = `
           "description": "Corrosive",
         },
         {
-          "code": "GHS07",
-          "description": "Harmful Irritant",
-        },
-      ],
-      "reference": {
-        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
-        "name": "triethylamine",
-        "sourceName": "EU REGULATION (EC) No 1272/2008",
-        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32008R1272",
-      },
-    },
-    {
-      "data": [
-        {
-          "code": "GHS02",
-          "description": "Flammable",
-        },
-        {
-          "code": "GHS05",
-          "description": "Corrosive",
-        },
-        {
           "code": "GHS06",
           "description": "Toxic",
         },
@@ -1122,7 +1156,7 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The information provided here is aggregated from the "Notified classification and labelling" from ECHA's C&L Inventory. Read more: https://echa.europa.eu/information-on-chemicals/cl-inventory-database",
-        "name": "Triethylamine",
+        "name": "Triethylamine (EC: 204-469-4)",
         "sourceName": "European Chemicals Agency (ECHA)",
         "url": "https://echa.europa.eu/information-on-chemicals/cl-inventory-database/-/discli/details/127374",
       },
@@ -1140,10 +1174,6 @@ exports[`getGHS > triethylamine 1`] = `
         {
           "code": "GHS06",
           "description": "Toxic",
-        },
-        {
-          "code": "GHS07",
-          "description": "Harmful Irritant",
         },
       ],
       "reference": {
@@ -1201,12 +1231,16 @@ exports[`getGHS > triethylamine 1`] = `
           "code": "GHS08",
           "description": "Health Hazard",
         },
+        {
+          "code": "GHS09",
+          "description": "Environmental Hazard",
+        },
       ],
       "reference": {
         "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
-        "name": "Triethylamine - FY2016",
+        "name": "Triethylamine - FY2006 (New/original classication)",
         "sourceName": "NITE-CMC",
-        "url": "https://www.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+        "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
       },
     },
     {
@@ -1234,9 +1268,31 @@ exports[`getGHS > triethylamine 1`] = `
       ],
       "reference": {
         "description": "The chemical classification in this section was conducted by the Chemical Management Center (CMC) of Japan National Institute of Technology and Evaluation (NITE) in accordance with GHS Classification Guidance for the Japanese Government, and is intended to provide a reference for preparing GHS labelling and SDS for users.",
-        "name": "Triethylamine - FY2006",
+        "name": "Triethylamine - FY2016 (Revised classification)",
         "sourceName": "NITE-CMC",
-        "url": "https://www.nite.go.jp/chem/english/ghs/06-imcg-0845e.html",
+        "url": "https://www.chem-info.nite.go.jp/chem/english/ghs/16-mhlw-0118e.html",
+      },
+    },
+    {
+      "data": [
+        {
+          "code": "GHS02",
+          "description": "Flammable",
+        },
+        {
+          "code": "GHS05",
+          "description": "Corrosive",
+        },
+        {
+          "code": "GHS06",
+          "description": "Toxic",
+        },
+      ],
+      "reference": {
+        "description": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures.",
+        "name": "triethylamine",
+        "sourceName": "Regulation (EC) No 1272/2008 of the European Parliament and of the Council",
+        "url": "https://eur-lex.europa.eu/eli/reg/2008/1272/oj",
       },
     },
   ],

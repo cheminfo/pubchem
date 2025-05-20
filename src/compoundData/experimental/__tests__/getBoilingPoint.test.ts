@@ -13,9 +13,9 @@ test('getBoilingPoint', () => {
   expect(result[0].reference.sourceName).toBe('CAMEO Chemicals');
 
   expect(result[1].data).toStrictEqual({
-    original: '80.0 °C',
+    original: '80.08 °C',
     parsed: {
-      temperature: { low: 80, high: undefined, units: '°C' },
+      temperature: { low: 80.08, high: undefined, units: '°C' },
       pressure: { low: 760, high: undefined, units: 'mmHg' },
     },
   });

@@ -10,15 +10,15 @@ export function getSMILES(data: DataType) {
       data,
       '$.Section[?(@.TOCHeading==="Names and Identifiers")]' +
         '.Section[?(@.TOCHeading==="Computed Descriptors")]' +
-        '.Section[?(@.TOCHeading==="Canonical SMILES")]' +
+        '.Section[?(@.TOCHeading==="SMILES")]' +
         '.Information[0]',
     )[0].Value.StringWithMarkup[0].String,
-    label: 'Canonical SMILES',
+    label: 'SMILES',
     description: jp.query(
       data,
       '$.Section[?(@.TOCHeading==="Names and Identifiers")]' +
         '.Section[?(@.TOCHeading==="Computed Descriptors")]' +
-        '.Section[?(@.TOCHeading==="Canonical SMILES")]',
+        '.Section[?(@.TOCHeading==="SMILES")]',
     )[0].Description,
   };
 }
