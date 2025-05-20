@@ -1,7 +1,7 @@
 import jp from 'jsonpath';
 
-import { Options } from '../../compound/Compound';
-import { DataType } from '../CompoundData';
+import type { Options } from '../../compound/Compound';
+import type { DataType } from '../CompoundData';
 import { getReferences } from '../getReferences';
 
 export interface ExperimentalData {
@@ -40,9 +40,9 @@ export function extractExperimentalData(
         if (parser) {
           try {
             result.data.parsed = parser(original, options);
-          } catch (e: any) {
+          } catch (error) {
             result.data.parsed = {
-              error: e.toString(),
+              error: error.toString(),
             };
           }
         }

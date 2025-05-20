@@ -1,4 +1,4 @@
-import { DataType } from '../compoundData/CompoundData';
+import type { DataType } from '../compoundData/CompoundData';
 import { compoundDataFromCID } from '../compoundData/from/compoundDataFromCID';
 
 import { compoundFromInchiKey } from './from/compoundFromInchiKey';

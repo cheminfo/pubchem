@@ -1,7 +1,7 @@
 import { parseNumbersUnits } from 'physical-parser';
 
-import { Options } from '../../compound/Compound';
-import { DataType } from '../CompoundData';
+import type { Options } from '../../compound/Compound';
+import type { DataType } from '../CompoundData';
 
 import { extractExperimentalData } from './extractExperimentalData';
 

@@ -1,6 +1,6 @@
 import { parseRefractiveIndex } from 'physical-parser';
 
-import { DataType } from '../CompoundData';
+import type { DataType } from '../CompoundData';
 
 import { extractExperimentalData } from './extractExperimentalData';
 /**

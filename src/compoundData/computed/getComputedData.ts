@@ -1,4 +1,4 @@
-import { DataType } from '../CompoundData';
+import type { DataType } from '../CompoundData';
 
 import { getComplexity } from './getComplexity';
 import { getFormalCharge } from './getFormalCharge';

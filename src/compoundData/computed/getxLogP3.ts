@@ -1,4 +1,4 @@
-import { ComputedData, DataType } from '../CompoundData';
+import type { ComputedData, DataType } from '../CompoundData';
 
 import { getNumberProperties } from './getNumberProperties';
 

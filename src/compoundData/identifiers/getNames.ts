@@ -2,7 +2,7 @@
 
 import jp from 'jsonpath';
 
-import { DataType } from '../CompoundData';
+import type { DataType } from '../CompoundData';
 
 export function getNames(data: DataType) {
   return {

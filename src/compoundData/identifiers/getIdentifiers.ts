@@ -1,4 +1,4 @@
-import { DataType } from '../CompoundData.js';
+import type { DataType } from '../CompoundData.js';
 
 import { getFormula } from './getFormula.js';
 import { getInChI } from './getInChI.js';

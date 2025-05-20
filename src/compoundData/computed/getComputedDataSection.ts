@@ -1,6 +1,6 @@
 import jp from 'jsonpath';
 
-import { DataType } from '../CompoundData';
+import type { DataType } from '../CompoundData';
 
 /**
  * Returns the computed data section of a compound

@@ -1,6 +1,6 @@
 import jp from 'jsonpath';
 
-import { DataType } from '../CompoundData.js';
+import type { DataType } from '../CompoundData.js';
 import { getReferences } from '../getReferences.js';
 
 import { ghsPictogramText } from './ghsPictograms.js';
@@ -103,7 +103,7 @@ export function getGHS(data: DataType): GHSData {
             };
           }),
       }));
-  } catch (error) {
+  } catch {
     pictograms = [];
   }
 
@@ -128,7 +128,7 @@ export function getGHS(data: DataType): GHSData {
             description: hazardStatements[hCode],
           })),
       }));
-  } catch (error) {
+  } catch {
     hStatements = [];
   }
 
@@ -150,7 +150,6 @@ export function getGHS(data: DataType): GHSData {
           .query(entry, '$.Value.StringWithMarkup[*]')
           .map((entry) =>
             entry.String.match(
-              // eslint-disable-next-line no-lookahead-lookbehind-regexp/no-lookahead-lookbehind-regexp
               /(?<oneP>(?<!\+)P\d\d\d(?!\+))|(?<twoP>P\d\d\d\+P\d\d\d(?!\+))|(?<threeP>P\d\d\d\+P\d\d\d\+P\d\d\d(?!\+))/gm,
             ),
           )[0]
@@ -159,7 +158,7 @@ export function getGHS(data: DataType): GHSData {
             description: precautionaryStatements[pCode],
           })),
       }));
-  } catch (error) {
+  } catch {
     pStatements = [];
   }
 

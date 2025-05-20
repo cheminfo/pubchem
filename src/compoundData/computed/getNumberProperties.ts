@@ -1,4 +1,4 @@
-import { ComputedData, DataType } from '../CompoundData';
+import type { ComputedData, DataType } from '../CompoundData';
 
 import { getComputedDataSection } from './getComputedDataSection';
 import { getComputedPropertySection } from './getComputedPropertySection';
@@ -37,8 +37,9 @@ export function getNumberProperties(
     if (section.Value.Unit) {
       output.units = section.Value.Unit;
     }
-    // eslint-disable-next-line no-empty
-  } catch (error) {}
+  } catch {
+    /* empty */
+  }
 
   return output;
 }

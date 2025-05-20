@@ -1,6 +1,5 @@
-import fetch from 'cross-fetch';
-
-import { Compound, Options } from '../Compound';
+import type { Options } from '../Compound';
+import { Compound } from '../Compound';
 
 import { checkCompoundsResult } from './handleError';
 

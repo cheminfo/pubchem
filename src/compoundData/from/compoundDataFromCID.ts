@@ -1,7 +1,6 @@
-import fetch from 'cross-fetch';
-
-import { Options } from '../../compound/Compound.js';
-import { CompoundData, DataType } from '../CompoundData.js';
+import type { Options } from '../../compound/Compound.js';
+import type { DataType } from '../CompoundData.js';
+import { CompoundData } from '../CompoundData.js';
 
 export async function compoundDataFromCID(
   cid: string,

@@ -1,13 +1,11 @@
 import merge from 'deepmerge';
 import { parseBoilingPoint } from 'physical-parser';
 
-import { Options } from '../../compound/Compound';
-import { DataType } from '../CompoundData';
+import type { Options } from '../../compound/Compound';
+import type { DataType } from '../CompoundData';
 
-import {
-  extractExperimentalData,
-  ExperimentalData,
-} from './extractExperimentalData';
+import type { ExperimentalData } from './extractExperimentalData';
+import { extractExperimentalData } from './extractExperimentalData';
 
 /**
  * Returns the boiling point of a compound

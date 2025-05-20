@@ -1,4 +1,4 @@
-import { DataType } from '../CompoundData';
+import type { DataType } from '../CompoundData';
 
 import { extractExperimentalData } from './extractExperimentalData';
 /**
